@@ -1,0 +1,1514 @@
+{
+  "meta": {
+    "layout": 0,
+    "layouts": [
+      {
+        "oai_TorProject_oid": {
+          "x": -6.915054339216863,
+          "y": 27.714603544566152,
+          "z": 21.70811674108534
+        },
+        "oai_RogerDingledine_oid": {
+          "x": 34.91652435179848,
+          "y": 42,
+          "z": -43.81595407053133
+        },
+        "oai_NickMathewson_oid": {
+          "x": 25.30290860099702,
+          "y": 42,
+          "z": -19.837377629312154
+        },
+        "oai_JacobAppelbaum_oid": {
+          "x": 25.912983694022167,
+          "y": 42,
+          "z": 0.21209786083733917
+        },
+        "oai_IsabelaBagueros_oid": {
+          "x": 36.34257604539797,
+          "y": 42,
+          "z": -8.941886797645942
+        },
+        "oai_DavidGoulet_oid": {
+          "x": -24.244439824660684,
+          "y": 42,
+          "z": -12.669810131388623
+        },
+        "oai_AlisonMacrina_oid": {
+          "x": -33.72595589185765,
+          "y": 42,
+          "z": -9.224053489525154
+        },
+        "oai_MattBlaze_oid": {
+          "x": -30.144770304563306,
+          "y": 42,
+          "z": 8.003049202444782
+        },
+        "oai_CindyCohn_oid": {
+          "x": 29.76191129813675,
+          "y": 42,
+          "z": -13.192587226717466
+        },
+        "oai_BruceSchneier_oid": {
+          "x": 17.86991186711675,
+          "y": 42,
+          "z": -29.454568541896023
+        },
+        "oai_PaulSyverson_oid": {
+          "x": 1.7087569082560012,
+          "y": 42,
+          "z": -35.32814750146039
+        },
+        "oai_StevenMurdoch_oid": {
+          "x": 16.01720748759693,
+          "y": 42,
+          "z": -45.26614393860868
+        },
+        "oai_WendySeltzer_oid": {
+          "x": 6.846378273058152,
+          "y": 42,
+          "z": -28.508183472256853
+        },
+        "oai_LinusNordberg_oid": {
+          "x": 30.65810387702923,
+          "y": 42,
+          "z": 6.528334367760869
+        },
+        "oai_KateKrauss_oid": {
+          "x": -32.05700375577838,
+          "y": 42,
+          "z": 17.894890806795125
+        },
+        "oai_GeorgeRosamond_oid": {
+          "x": -30.209727141128194,
+          "y": 42,
+          "z": 23.829687061336248
+        },
+        "oai_MeganPrice_oid": {
+          "x": 40.20434153679537,
+          "y": 42,
+          "z": 9.069713999480822
+        },
+        "oai_RunaSandvik_oid": {
+          "x": 39.5935634297967,
+          "y": 42,
+          "z": -18.979804959487687
+        },
+        "oai_IanGoldberg_oid": {
+          "x": 42.836833631206204,
+          "y": 42,
+          "z": -2.4297851234211842
+        },
+        "oai_DamonMcCoy_oid": {
+          "x": -8.224919082815155,
+          "y": 42,
+          "z": -26.74557389172121
+        },
+        "oai_GabriellaColeman_oid": {
+          "x": -15.174192702792267,
+          "y": 42,
+          "z": -32.940620387728835
+        },
+        "oai_OnionRouting_oid": {
+          "x": -37.306386450955834,
+          "y": 26.43577673263272,
+          "z": 23.240757991225728
+        },
+        "oai_TorBrowser_oid": {
+          "x": -9.688064919970948,
+          "y": 23.645629574481493,
+          "z": 41.17953424907516
+        },
+        "oai_HiddenServices_oid": {
+          "x": -16.627197795800782,
+          "y": 40.144849917904345,
+          "z": 44.42077361896742
+        },
+        "oai_TorNetwork_oid": {
+          "x": 1.920088563821368,
+          "y": 13.644657678430049,
+          "z": 30.31957110675622
+        },
+        "oai_OpenSSL_oid": {
+          "x": -28.264126573424647,
+          "y": 13.336906673479541,
+          "z": 29.424403656514613
+        },
+        "oai_Libevent_oid": {
+          "x": 38.6372417916996,
+          "y": 21.32816329476136,
+          "z": 31.028318101006565
+        },
+        "oai_Python_oid": {
+          "x": -6.842578757620558,
+          "y": 9.796604645865969,
+          "z": 28.628210008742926
+        },
+        "oai_CLanguage_oid": {
+          "x": -36.570665615378935,
+          "y": 38.525235671813775,
+          "z": 38.73567589898721
+        },
+        "oai_Rust_oid": {
+          "x": 24.029004242807563,
+          "y": 24.676995581709118,
+          "z": 25.60311361399732
+        },
+        "oai_MozillaFirefox_oid": {
+          "x": -35.00662275707008,
+          "y": 35.969508560011555,
+          "z": 41.66086114312047
+        },
+        "oai_MozillaCorporation_oid": {
+          "x": 47.3748940164634,
+          "y": 11.466650494313038,
+          "z": 33.56204605301866
+        },
+        "oai_Google_oid": {
+          "x": 37.485649682630026,
+          "y": 17.515990343767882,
+          "z": 13.751148775700266
+        },
+        "oai_Cloudflare_oid": {
+          "x": 29.810581239845195,
+          "y": 31.156194001299156,
+          "z": 35.89734799361269
+        },
+        "oai_Fastly_oid": {
+          "x": 45.968510009517196,
+          "y": 7.751819661836617,
+          "z": 4.3411365937961035
+        },
+        "oai_Microsoft_oid": {
+          "x": 30.912645166421523,
+          "y": 23.313505456020295,
+          "z": 24.14837948815439
+        },
+        "oai_Amazon_oid": {
+          "x": 48.9293883191585,
+          "y": 9.684592772241109,
+          "z": 14.69008719953759
+        },
+        "oai_Facebook_oid": {
+          "x": 31.174518004205197,
+          "y": 26.240059064250467,
+          "z": 29.141849745580664
+        },
+        "oai_Reddit_oid": {
+          "x": 41.68069650021725,
+          "y": 16.549337949344107,
+          "z": 7.318574984798073
+        },
+        "oai_DigitalOcean_oid": {
+          "x": 24.200599471854808,
+          "y": 33.95202359792106,
+          "z": 26.248336492335817
+        },
+        "oai_Cisco_oid": {
+          "x": 47.008386243804615,
+          "y": 14.564988154181355,
+          "z": 30.13277698672128
+        }
+      }
+    ],
+    "name": "tor",
+    "elements": [],
+    "orbitControls": {
+      "target": {
+        "x": 11.850660774078424,
+        "y": -5.157616913085175e-17,
+        "z": -4.149426634474487
+      },
+      "position": {
+        "x": 4.6255931056823005,
+        "y": 137.5258829893374,
+        "z": 49.66655336139992
+      },
+      "zoom": 1.18
+    },
+    "focusobject": {
+      "slot": "oai_TorProject_oid"
+    },
+    "encoder": "array",
+    "encoder_version": "0.1"
+  },
+  "nodes": [
+    {
+      "origin": "oai",
+      "slot": "oai_TorProject_oid",
+      "payload": {
+        "id": "1",
+        "type": "Project",
+        "name": "Tor Project",
+        "description": "A nonprofit organization focused on anonymity and privacy online",
+        "founded": "2006",
+        "website": "https://www.torproject.org/",
+        "label": "tag",
+        "uuid": "oai_TorProject_oid",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_RogerDingledine_oid",
+      "payload": {
+        "id": "2",
+        "type": "Person",
+        "name": "Roger Dingledine",
+        "role": "Co-founder and Director",
+        "professional_affiliations": [
+          "Tor Project",
+          "Electronic Frontier Foundation"
+        ],
+        "academic_affiliations": [
+          "Massachusetts Institute of Technology (MIT)",
+          "Harvard University"
+        ],
+        "disambiguation": "Computer scientist and privacy advocate",
+        "label": "tag",
+        "uuid": "oai_RogerDingledine_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_NickMathewson_oid",
+      "payload": {
+        "id": "3",
+        "type": "Person",
+        "name": "Nick Mathewson",
+        "role": "Co-founder and Chief Architect",
+        "professional_affiliations": [
+          "Tor Project",
+          "Free Haven Project"
+        ],
+        "academic_affiliations": [
+          "Massachusetts Institute of Technology (MIT)",
+          "University of Cambridge"
+        ],
+        "disambiguation": "Software developer and cryptographer",
+        "label": "tag",
+        "uuid": "oai_NickMathewson_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_JacobAppelbaum_oid",
+      "payload": {
+        "id": "4",
+        "type": "Person",
+        "name": "Jacob Appelbaum",
+        "role": "Former Developer and Advocate",
+        "professional_affiliations": [
+          "Tor Project (former)",
+          "WikiLeaks"
+        ],
+        "academic_affiliations": [
+          "No formal academic record",
+          "Self-taught"
+        ],
+        "disambiguation": "Security researcher and hacker",
+        "label": "tag",
+        "uuid": "oai_JacobAppelbaum_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_IsabelaBagueros_oid",
+      "payload": {
+        "id": "5",
+        "type": "Person",
+        "name": "Isabela Bagueros",
+        "role": "Executive Director",
+        "professional_affiliations": [
+          "Tor Project",
+          "Mozilla"
+        ],
+        "academic_affiliations": [
+          "University of California, Berkeley",
+          "Stanford University"
+        ],
+        "disambiguation": "Technology leader and advocate for internet freedom",
+        "label": "tag",
+        "uuid": "oai_IsabelaBagueros_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_DavidGoulet_oid",
+      "payload": {
+        "id": "6",
+        "type": "Person",
+        "name": "David Goulet",
+        "role": "Developer",
+        "professional_affiliations": [
+          "Tor Project",
+          "Open Source Community"
+        ],
+        "academic_affiliations": [
+          "Université de Montréal",
+          "Concordia University"
+        ],
+        "disambiguation": "Software engineer focusing on privacy tools",
+        "label": "tag",
+        "uuid": "oai_DavidGoulet_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_AlisonMacrina_oid",
+      "payload": {
+        "id": "7",
+        "type": "Person",
+        "name": "Alison Macrina",
+        "role": "Community Engagement Lead",
+        "professional_affiliations": [
+          "Tor Project",
+          "Library Freedom Project"
+        ],
+        "academic_affiliations": [
+          "Simmons University",
+          "University of Massachusetts"
+        ],
+        "disambiguation": "Librarian and privacy advocate",
+        "label": "tag",
+        "uuid": "oai_AlisonMacrina_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_MattBlaze_oid",
+      "payload": {
+        "id": "8",
+        "type": "Person",
+        "name": "Matt Blaze",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "Georgetown University"
+        ],
+        "academic_affiliations": [
+          "University of Pennsylvania",
+          "Princeton University"
+        ],
+        "disambiguation": "Cryptographer and computer security expert",
+        "label": "tag",
+        "uuid": "oai_MattBlaze_oid",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_CindyCohn_oid",
+      "payload": {
+        "id": "9",
+        "type": "Person",
+        "name": "Cindy Cohn",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "Electronic Frontier Foundation"
+        ],
+        "academic_affiliations": [
+          "University of Michigan",
+          "Harvard Law School"
+        ],
+        "disambiguation": "Legal expert in digital rights",
+        "label": "tag",
+        "uuid": "oai_CindyCohn_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_BruceSchneier_oid",
+      "payload": {
+        "id": "10",
+        "type": "Person",
+        "name": "Bruce Schneier",
+        "role": "Advisor",
+        "professional_affiliations": [
+          "Tor Project",
+          "Berkman Klein Center"
+        ],
+        "academic_affiliations": [
+          "Harvard University",
+          "University of Minnesota"
+        ],
+        "disambiguation": "Security technologist and author",
+        "label": "tag",
+        "uuid": "oai_BruceSchneier_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_PaulSyverson_oid",
+      "payload": {
+        "id": "11",
+        "type": "Person",
+        "name": "Paul Syverson",
+        "role": "Researcher and Developer",
+        "professional_affiliations": [
+          "Tor Project",
+          "Naval Research Laboratory"
+        ],
+        "academic_affiliations": [
+          "Indiana University",
+          "University of Maryland"
+        ],
+        "disambiguation": "Creator of onion routing",
+        "label": "tag",
+        "uuid": "oai_PaulSyverson_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_StevenMurdoch_oid",
+      "payload": {
+        "id": "12",
+        "type": "Person",
+        "name": "Steven Murdoch",
+        "role": "Researcher",
+        "professional_affiliations": [
+          "Tor Project",
+          "University College London"
+        ],
+        "academic_affiliations": [
+          "University of Cambridge",
+          "University of Oxford"
+        ],
+        "disambiguation": "Privacy and security researcher",
+        "label": "tag",
+        "uuid": "oai_StevenMurdoch_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_WendySeltzer_oid",
+      "payload": {
+        "id": "13",
+        "type": "Person",
+        "name": "Wendy Seltzer",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "World Wide Web Consortium"
+        ],
+        "academic_affiliations": [
+          "Harvard Law School",
+          "Brooklyn Law School"
+        ],
+        "disambiguation": "Lawyer and technologist",
+        "label": "tag",
+        "uuid": "oai_WendySeltzer_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_LinusNordberg_oid",
+      "payload": {
+        "id": "14",
+        "type": "Person",
+        "name": "Linus Nordberg",
+        "role": "Developer",
+        "professional_affiliations": [
+          "Tor Project",
+          "Swedish Internet Foundation"
+        ],
+        "academic_affiliations": [
+          "Uppsala University",
+          "Stockholm University"
+        ],
+        "disambiguation": "Swedish software developer",
+        "label": "tag",
+        "uuid": "oai_LinusNordberg_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_KateKrauss_oid",
+      "payload": {
+        "id": "15",
+        "type": "Person",
+        "name": "Kate Krauss",
+        "role": "Communications Director",
+        "professional_affiliations": [
+          "Tor Project",
+          "AIDS Policy Project"
+        ],
+        "academic_affiliations": [
+          "University of Pennsylvania",
+          "Temple University"
+        ],
+        "disambiguation": "Communications expert in tech and health",
+        "label": "tag",
+        "uuid": "oai_KateKrauss_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_GeorgeRosamond_oid",
+      "payload": {
+        "id": "16",
+        "type": "Person",
+        "name": "George Rosamond",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "ThinkPenguin"
+        ],
+        "academic_affiliations": [
+          "University of Vermont",
+          "Middlebury College"
+        ],
+        "disambiguation": "Technology entrepreneur",
+        "label": "tag",
+        "uuid": "oai_GeorgeRosamond_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_MeganPrice_oid",
+      "payload": {
+        "id": "17",
+        "type": "Person",
+        "name": "Megan Price",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "Human Rights Data Analysis Group"
+        ],
+        "academic_affiliations": [
+          "Emory University",
+          "University of California, Berkeley"
+        ],
+        "disambiguation": "Statistician and human rights advocate",
+        "label": "tag",
+        "uuid": "oai_MeganPrice_oid",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_RunaSandvik_oid",
+      "payload": {
+        "id": "18",
+        "type": "Person",
+        "name": "Runa Sandvik",
+        "role": "Former Developer",
+        "professional_affiliations": [
+          "Tor Project (former)",
+          "The New York Times"
+        ],
+        "academic_affiliations": [
+          "Norwegian University of Science and Technology",
+          "University of Oslo"
+        ],
+        "disambiguation": "Security and privacy consultant",
+        "label": "tag",
+        "uuid": "oai_RunaSandvik_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_IanGoldberg_oid",
+      "payload": {
+        "id": "19",
+        "type": "Person",
+        "name": "Ian Goldberg",
+        "role": "Researcher",
+        "professional_affiliations": [
+          "Tor Project",
+          "University of Waterloo"
+        ],
+        "academic_affiliations": [
+          "University of California, Berkeley",
+          "University of Toronto"
+        ],
+        "disambiguation": "Cryptographer and privacy researcher",
+        "label": "tag",
+        "uuid": "oai_IanGoldberg_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_DamonMcCoy_oid",
+      "payload": {
+        "id": "20",
+        "type": "Person",
+        "name": "Damon McCoy",
+        "role": "Researcher",
+        "professional_affiliations": [
+          "Tor Project",
+          "New York University"
+        ],
+        "academic_affiliations": [
+          "University of Colorado",
+          "University of California, San Diego"
+        ],
+        "disambiguation": "Computer security researcher",
+        "label": "tag",
+        "uuid": "oai_DamonMcCoy_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_GabriellaColeman_oid",
+      "payload": {
+        "id": "21",
+        "type": "Person",
+        "name": "Gabriella Coleman",
+        "role": "Board Member",
+        "professional_affiliations": [
+          "Tor Project",
+          "McGill University"
+        ],
+        "academic_affiliations": [
+          "University of Chicago",
+          "Columbia University"
+        ],
+        "disambiguation": "Anthropologist of digital activism",
+        "label": "tag",
+        "uuid": "oai_GabriellaColeman_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_OnionRouting_oid",
+      "payload": {
+        "id": "22",
+        "type": "Technology",
+        "name": "Onion Routing",
+        "description": "Core technology for Tor's anonymity",
+        "developed_by": "Naval Research Laboratory",
+        "year": "1990s",
+        "label": "tag",
+        "uuid": "oai_OnionRouting_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_TorBrowser_oid",
+      "payload": {
+        "id": "23",
+        "type": "Technology",
+        "name": "Tor Browser",
+        "description": "Browser for anonymous web browsing",
+        "based_on": "Mozilla Firefox",
+        "version": "Latest stable",
+        "label": "tag",
+        "uuid": "oai_TorBrowser_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_HiddenServices_oid",
+      "payload": {
+        "id": "24",
+        "type": "Technology",
+        "name": "Hidden Services",
+        "description": "Feature for hosting anonymous services",
+        "protocol": "Tor Protocol",
+        "introduced": "2004",
+        "label": "tag",
+        "uuid": "oai_HiddenServices_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_TorNetwork_oid",
+      "payload": {
+        "id": "25",
+        "type": "Overlay Network",
+        "name": "Tor Network",
+        "description": "Decentralized network of relays",
+        "nodes_count": "Over 6000",
+        "label": "tag",
+        "uuid": "oai_TorNetwork_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_OpenSSL_oid",
+      "payload": {
+        "id": "26",
+        "type": "Technology",
+        "name": "OpenSSL",
+        "description": "Cryptographic library for secure communication",
+        "role": "Encryption for Tor",
+        "version": "Latest",
+        "label": "tag",
+        "uuid": "oai_OpenSSL_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Libevent_oid",
+      "payload": {
+        "id": "27",
+        "type": "Technology",
+        "name": "Libevent",
+        "description": "Event notification library",
+        "role": "Asynchronous I/O for Tor",
+        "maintainer": "Open Source Community",
+        "label": "tag",
+        "uuid": "oai_Libevent_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Python_oid",
+      "payload": {
+        "id": "28",
+        "type": "Technology",
+        "name": "Python",
+        "description": "Programming language used in Tor tools",
+        "role": "Scripting and tools",
+        "version": "3.x",
+        "label": "tag",
+        "uuid": "oai_Python_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_CLanguage_oid",
+      "payload": {
+        "id": "29",
+        "type": "Technology",
+        "name": "C Language",
+        "description": "Core programming language for Tor",
+        "role": "Performance-critical components",
+        "standard": "C99",
+        "label": "tag",
+        "uuid": "oai_CLanguage_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Rust_oid",
+      "payload": {
+        "id": "30",
+        "type": "Technology",
+        "name": "Rust",
+        "description": "Language for secure and fast components",
+        "role": "Modernizing Tor codebase",
+        "adoption": "Ongoing",
+        "label": "tag",
+        "uuid": "oai_Rust_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_MozillaFirefox_oid",
+      "payload": {
+        "id": "31",
+        "type": "Technology",
+        "name": "Mozilla Firefox",
+        "description": "Base for Tor Browser",
+        "role": "Rendering and UI",
+        "version": "ESR (Extended Support Release)",
+        "label": "tag",
+        "uuid": "oai_MozillaFirefox_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_MozillaCorporation_oid",
+      "payload": {
+        "id": "32",
+        "type": "Corporation",
+        "name": "Mozilla Corporation",
+        "interest": "Support for Tor Browser development",
+        "headquarters": "Mountain View, CA",
+        "financial_contribution": "Grants and technical support",
+        "label": "tag",
+        "uuid": "oai_MozillaCorporation_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Google_oid",
+      "payload": {
+        "id": "33",
+        "type": "Corporation",
+        "name": "Google",
+        "interest": "Funding and technical collaboration",
+        "headquarters": "Mountain View, CA",
+        "financial_contribution": "Grants via Google Summer of Code",
+        "label": "tag",
+        "uuid": "oai_Google_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Cloudflare_oid",
+      "payload": {
+        "id": "34",
+        "type": "Corporation",
+        "name": "Cloudflare",
+        "interest": "Support for Tor integration in services",
+        "headquarters": "San Francisco, CA",
+        "financial_contribution": "Infrastructure support",
+        "label": "tag",
+        "uuid": "oai_Cloudflare_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Fastly_oid",
+      "payload": {
+        "id": "35",
+        "type": "Corporation",
+        "name": "Fastly",
+        "interest": "Infrastructure support for Tor relays",
+        "headquarters": "San Francisco, CA",
+        "financial_contribution": "Bandwidth and CDN services",
+        "label": "tag",
+        "uuid": "oai_Fastly_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Microsoft_oid",
+      "payload": {
+        "id": "36",
+        "type": "Corporation",
+        "name": "Microsoft",
+        "interest": "Research and indirect support",
+        "headquarters": "Redmond, WA",
+        "financial_contribution": "Limited grants and tools",
+        "label": "tag",
+        "uuid": "oai_Microsoft_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Amazon_oid",
+      "payload": {
+        "id": "37",
+        "type": "Corporation",
+        "name": "Amazon",
+        "interest": "Cloud infrastructure for Tor relays",
+        "headquarters": "Seattle, WA",
+        "financial_contribution": "AWS credits for nonprofits",
+        "label": "tag",
+        "uuid": "oai_Amazon_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Facebook_oid",
+      "payload": {
+        "id": "38",
+        "type": "Corporation",
+        "name": "Facebook",
+        "interest": "Support for Tor hidden services",
+        "headquarters": "Menlo Park, CA",
+        "financial_contribution": "Infrastructure for .onion sites",
+        "label": "tag",
+        "uuid": "oai_Facebook_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Reddit_oid",
+      "payload": {
+        "id": "39",
+        "type": "Corporation",
+        "name": "Reddit",
+        "interest": "Community and infrastructure support",
+        "headquarters": "San Francisco, CA",
+        "financial_contribution": "Donations and relay support",
+        "label": "tag",
+        "uuid": "oai_Reddit_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_DigitalOcean_oid",
+      "payload": {
+        "id": "40",
+        "type": "Corporation",
+        "name": "DigitalOcean",
+        "interest": "Hosting support for Tor nodes",
+        "headquarters": "New York, NY",
+        "financial_contribution": "Server credits for nonprofits",
+        "label": "tag",
+        "uuid": "oai_DigitalOcean_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Cisco_oid",
+      "payload": {
+        "id": "41",
+        "type": "Corporation",
+        "name": "Cisco",
+        "interest": "Networking research and support",
+        "headquarters": "San Jose, CA",
+        "financial_contribution": "Grants and hardware support",
+        "label": "tag",
+        "uuid": "oai_Cisco_oid"
+      }
+    }
+  ],
+  "links": [
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_RogerDingledine_oid",
+      "payload": {
+        "from": "1",
+        "to": "2",
+        "name": "Co-founded",
+        "type": "Leadership",
+        "since": "2006"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_NickMathewson_oid",
+      "payload": {
+        "from": "1",
+        "to": "3",
+        "name": "Co-founded",
+        "type": "Leadership",
+        "since": "2006"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_JacobAppelbaum_oid",
+      "payload": {
+        "from": "1",
+        "to": "4",
+        "name": "Contributed",
+        "type": "Development",
+        "period": "2000s-2016"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_IsabelaBagueros_oid",
+      "payload": {
+        "from": "1",
+        "to": "5",
+        "name": "Leads",
+        "type": "Executive",
+        "since": "2020"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_DavidGoulet_oid",
+      "payload": {
+        "from": "1",
+        "to": "6",
+        "name": "Develops",
+        "type": "Technical",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_AlisonMacrina_oid",
+      "payload": {
+        "from": "1",
+        "to": "7",
+        "name": "Engages",
+        "type": "Community",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_MattBlaze_oid",
+      "payload": {
+        "from": "1",
+        "to": "8",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_CindyCohn_oid",
+      "payload": {
+        "from": "1",
+        "to": "9",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_BruceSchneier_oid",
+      "payload": {
+        "from": "1",
+        "to": "10",
+        "name": "Advises",
+        "type": "Technical",
+        "since": "2000s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_PaulSyverson_oid",
+      "payload": {
+        "from": "1",
+        "to": "11",
+        "name": "Researches",
+        "type": "Technical",
+        "since": "1990s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_OnionRouting_oid",
+      "payload": {
+        "from": "1",
+        "to": "22",
+        "name": "Uses",
+        "type": "Core Technology",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_TorBrowser_oid",
+      "payload": {
+        "from": "1",
+        "to": "23",
+        "name": "Develops",
+        "type": "Software",
+        "since": "2010"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_HiddenServices_oid",
+      "payload": {
+        "from": "1",
+        "to": "24",
+        "name": "Supports",
+        "type": "Feature",
+        "since": "2004",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_TorNetwork_oid",
+      "payload": {
+        "from": "1",
+        "to": "25",
+        "name": "Operates",
+        "type": "Infrastructure",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_OpenSSL_oid",
+      "payload": {
+        "from": "1",
+        "to": "26",
+        "name": "Depends on",
+        "type": "Library",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Libevent_oid",
+      "payload": {
+        "from": "1",
+        "to": "27",
+        "name": "Depends on",
+        "type": "Library",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Python_oid",
+      "payload": {
+        "from": "1",
+        "to": "28",
+        "name": "Uses",
+        "type": "Programming",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_CLanguage_oid",
+      "payload": {
+        "from": "1",
+        "to": "29",
+        "name": "Uses",
+        "type": "Programming",
+        "since": "2002"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Rust_oid",
+      "payload": {
+        "from": "1",
+        "to": "30",
+        "name": "Adopts",
+        "type": "Programming",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_MozillaFirefox_oid",
+      "payload": {
+        "from": "1",
+        "to": "31",
+        "name": "Based on",
+        "type": "Software",
+        "since": "2010"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_MozillaCorporation_oid",
+      "payload": {
+        "from": "1",
+        "to": "32",
+        "name": "Funded by",
+        "type": "Financial",
+        "since": "2010s",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Google_oid",
+      "payload": {
+        "from": "1",
+        "to": "33",
+        "name": "Funded by",
+        "type": "Financial",
+        "since": "2000s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Cloudflare_oid",
+      "payload": {
+        "from": "1",
+        "to": "34",
+        "name": "Supported by",
+        "type": "Infrastructure",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Fastly_oid",
+      "payload": {
+        "from": "1",
+        "to": "35",
+        "name": "Supported by",
+        "type": "Infrastructure",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Microsoft_oid",
+      "payload": {
+        "from": "1",
+        "to": "36",
+        "name": "Supported by",
+        "type": "Research",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Amazon_oid",
+      "payload": {
+        "from": "1",
+        "to": "37",
+        "name": "Supported by",
+        "type": "Infrastructure",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Facebook_oid",
+      "payload": {
+        "from": "1",
+        "to": "38",
+        "name": "Supported by",
+        "type": "Infrastructure",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Reddit_oid",
+      "payload": {
+        "from": "1",
+        "to": "39",
+        "name": "Supported by",
+        "type": "Community",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_DigitalOcean_oid",
+      "payload": {
+        "from": "1",
+        "to": "40",
+        "name": "Supported by",
+        "type": "Infrastructure",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_Cisco_oid",
+      "payload": {
+        "from": "1",
+        "to": "41",
+        "name": "Supported by",
+        "type": "Research",
+        "since": "2010s"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_StevenMurdoch_oid",
+      "payload": {
+        "from": "1",
+        "to": "12",
+        "name": "Researches",
+        "type": "Technical",
+        "since": "2010s",
+        "explanation": "Steven Murdoch contributes to Tor Project through research on privacy and security"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_WendySeltzer_oid",
+      "payload": {
+        "from": "1",
+        "to": "13",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s",
+        "explanation": "Wendy Seltzer serves as a board member, providing legal and technological insights"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_LinusNordberg_oid",
+      "payload": {
+        "from": "1",
+        "to": "14",
+        "name": "Develops",
+        "type": "Technical",
+        "since": "2010s",
+        "explanation": "Linus Nordberg contributes as a developer for Tor Project"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_KateKrauss_oid",
+      "payload": {
+        "from": "1",
+        "to": "15",
+        "name": "Communicates",
+        "type": "Community",
+        "since": "2010s",
+        "explanation": "Kate Krauss handles communications for Tor Project"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_GeorgeRosamond_oid",
+      "payload": {
+        "from": "1",
+        "to": "16",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s",
+        "explanation": "George Rosamond serves as a board member with a focus on technology entrepreneurship"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_MeganPrice_oid",
+      "payload": {
+        "from": "1",
+        "to": "17",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s",
+        "explanation": "Megan Price provides statistical and human rights expertise as a board member"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_RunaSandvik_oid",
+      "payload": {
+        "from": "1",
+        "to": "18",
+        "name": "Contributed",
+        "type": "Development",
+        "period": "2000s-2010s",
+        "explanation": "Runa Sandvik contributed to Tor Project as a developer in the past"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_IanGoldberg_oid",
+      "payload": {
+        "from": "1",
+        "to": "19",
+        "name": "Researches",
+        "type": "Technical",
+        "since": "2010s",
+        "explanation": "Ian Goldberg contributes through cryptographic and privacy research"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_DamonMcCoy_oid",
+      "payload": {
+        "from": "1",
+        "to": "20",
+        "name": "Researches",
+        "type": "Technical",
+        "since": "2010s",
+        "explanation": "Damon McCoy contributes through computer security research"
+      }
+    },
+    {
+      "slota": "oai_TorProject_oid",
+      "slotb": "oai_GabriellaColeman_oid",
+      "payload": {
+        "from": "1",
+        "to": "21",
+        "name": "Advises",
+        "type": "Board",
+        "since": "2010s",
+        "explanation": "Gabriella Coleman provides insights on digital activism as a board member"
+      }
+    },
+    {
+      "slota": "oai_RogerDingledine_oid",
+      "slotb": "oai_NickMathewson_oid",
+      "payload": {
+        "from": "2",
+        "to": "3",
+        "name": "Collaborates",
+        "type": "Co-founder",
+        "since": "2006",
+        "explanation": "Roger Dingledine and Nick Mathewson co-founded Tor Project together"
+      }
+    },
+    {
+      "slota": "oai_RogerDingledine_oid",
+      "slotb": "oai_CindyCohn_oid",
+      "payload": {
+        "from": "2",
+        "to": "9",
+        "name": "Collaborates",
+        "type": "Professional",
+        "since": "2000s",
+        "explanation": "Roger Dingledine and Cindy Cohn share affiliation with Electronic Frontier Foundation"
+      }
+    },
+    {
+      "slota": "oai_RogerDingledine_oid",
+      "slotb": "oai_BruceSchneier_oid",
+      "payload": {
+        "from": "2",
+        "to": "10",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2000s",
+        "explanation": "Roger Dingledine and Bruce Schneier share academic ties through Harvard University"
+      }
+    },
+    {
+      "slota": "oai_NickMathewson_oid",
+      "slotb": "oai_StevenMurdoch_oid",
+      "payload": {
+        "from": "3",
+        "to": "12",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2000s",
+        "explanation": "Nick Mathewson and Steven Murdoch share academic ties through University of Cambridge"
+      }
+    },
+    {
+      "slota": "oai_IsabelaBagueros_oid",
+      "slotb": "oai_MeganPrice_oid",
+      "payload": {
+        "from": "5",
+        "to": "17",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2010s",
+        "explanation": "Isabela Bagueros and Megan Price share academic ties through University of California, Berkeley"
+      }
+    },
+    {
+      "slota": "oai_IsabelaBagueros_oid",
+      "slotb": "oai_IanGoldberg_oid",
+      "payload": {
+        "from": "5",
+        "to": "19",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2010s",
+        "explanation": "Isabela Bagueros and Ian Goldberg share academic ties through University of California, Berkeley"
+      }
+    },
+    {
+      "slota": "oai_MattBlaze_oid",
+      "slotb": "oai_KateKrauss_oid",
+      "payload": {
+        "from": "8",
+        "to": "15",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2010s",
+        "explanation": "Matt Blaze and Kate Krauss share academic ties through University of Pennsylvania"
+      }
+    },
+    {
+      "slota": "oai_CindyCohn_oid",
+      "slotb": "oai_WendySeltzer_oid",
+      "payload": {
+        "from": "9",
+        "to": "13",
+        "name": "Collaborates",
+        "type": "Academic",
+        "since": "2010s",
+        "explanation": "Cindy Cohn and Wendy Seltzer share academic ties through Harvard Law School"
+      }
+    },
+    {
+      "slota": "oai_PaulSyverson_oid",
+      "slotb": "oai_DamonMcCoy_oid",
+      "payload": {
+        "from": "11",
+        "to": "20",
+        "name": "Collaborates",
+        "type": "Research",
+        "since": "2010s",
+        "explanation": "Paul Syverson and Damon McCoy collaborate on security research relevant to Tor"
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+		<title>X GRAPH VIEW C {{domain}} U+4E09 U+2F31</title>
+        <base href="" target="_blank">
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<style>
+			body {
+				background-color: #000000;
+				padding:0;
+				margin:0;
+				overflow:hidden;
+				}
+			.resu{
+				border:solid #111 1px;
+				border-radius: 10px;
+				margin-bottom:8px;
+				overflow:hidden;
+			    font-size:14px;
+				cursor: pointer;
+				cursor: hand; color:#AAAAAA;
+			    background-color:rgba(1,1,1,0.6) }
+            .resutok{ background-color:white; border:solid #CCCCCC 1px; border-radius:10px; margin-bottom:8px; overflow:hidden; font-size:23px; text-align:center; padding:20px; }
+            .colu{ width:142px; display: inline-block; padding:12px;  }
+            .field1{ width:45px; }
+            .colulast{
+				display: inline-block;
+                position:absolute;
+                right:10px; top:4px; }
+            .playi{
+				width:20px;
+				display: block;
+				margin: 0 auto; }
+            .spin{ width:46px; position:absolute; right:2px; bottom:0px; }
+            .active{ display:none; }
+            .startsurv{ width:20px; margin-left:18px; margin-top:-3px; }
+            .light{ color:#CCCCCC; }
+            .brand{ position:relative; margin-top:41px; }
+            .holder{ width:500px; margin:auto; position:absolute; display:table; left:0; right: 0;}
+            .searchlogo{
+                position:absolute;
+                left:4px;
+                bottom:0px; vertical-align:bottom; font-size:16px; color:#FFFFFF; font-weight:bold; }
+            .octlogo{  width:44px; position:absolute; right:5px; margin-bottom:4px; }
+            .survmessage{ font-size:10px; color:#888888; text-align:center; }
+			.dynfunc{margin:10px;font-size:20px;cursor: pointer;color: #492290;}
+			.dynfunc a{ color:#AAFFBB; }
+            #searchbox{ background-color:#000000; color:#DDDDFF; }
+            #wrap {
+                position: fixed;
+                top: 0;
+                right:0;
+                bottom:0;
+                left: 0;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+            }
+		</style>
+
+    </head>
+
+
+
+    <body>
+
+            <!-- OVERLAP CONTROLS -->
+            <!-- May need: https://github.com/PierBover/ios-iframe-fix  if it keeps messing up. Latest iOS update fixed it for now.  -->
+            <div id="slide_drawer" style="position:absolute; width:100%; height:50%; top:-600px; background:rgba(0,0,0,0.5);">
+                IS THIS VISIBLE IS THIS X
+            </div>
+            <!-- OVERLAP CONTROLS -->
+            <div id="slide_drawer2" style="position:absolute; width:100%; height:50%; top:-600px; background:rgba(0,0,0,0.5);">
+                WOW CONTENT WOW CONTENT X
+            </div>
+            <div id="dynfuncs" style="position:absolute; width:100%; bottom:6px; font-size:20px;text-align:center; ">
+                <a id="df0" class="dynfunc" >F0</a>
+                <a id="df1" class="dynfunc" >1</a>
+                <a id="df2" class="dynfunc" >2</a>
+                <a id="df3" class="dynfunc" >3</a>
+                <a id="df4" class="dynfunc" >S</a>
+                <a id="df5" class="dynfunc" >A</a>
+                <a id="df6" class="dynfunc" >W</a>
+            </div>
+            <div id="sortmenu" style="position:absolute; right:-312px; top:83px;">
+                <img id="adder" src="img/addbuttongreen.png" style="width:38px;"/>
+                <img id="add_avatar" src="img/avatar_icon.png" style="width:38px;"/>
+                <img id="add_office" src="img/office_icon.png" style="width:38px;"/>
+                <img id="add_asset" src="img/asset_icon.png" style="width:38px;"/>
+                <img id="add_task" src="img/task_icon.png" style="width:38px;"/>
+                <img id="add_idea" src="img/idea_icon.png" style="width:38px;"/>
+                <img id="add_contract" src="img/contract_icon.png" style="width:38px;"/>
+            </div>
+
+            <!-- MAIN APP <div class="holder"></div>  -->
+
+            <!-- TEMPLATES -->
+            <div id="templates" style="display:none;">
+                <div id="result">
+                    <div class="resu">
+                        <div class="colu field1"></div>
+                        <div class="colu field2"></div>
+                        <div class="colu field3"></div>
+                        <div class="colulast">
+                            <img class="startsurv" src="img/play_button.png"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skip compile loop -->
+            <script src="js/prebundle.js"></script>
+            <script>require=requirex;</script>
+            <!-- skip compile loop -->
+
+            <!-- vendor -->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/three.js"></script>
+            <script src="js/three.interaction.js"></script>
+            <script src="http://threejs.org/examples/js/loaders/SVGLoader.js"></script>
+            <script src="js/SVGLoader.js"></script>
+            <script src="js/dat.gui.js"></script>
+            <script src="js/GLTFLoader.js"></script>
+            <script src="js/TransformControls.js"></script>
+            <script src="js/Detector.js"></script>
+            <script src="js/OrbitControls.js"></script>
+            <script src="js/slidesensor.js"></script>
+            <script src="js/stats.min.js"></script>
+            <script src='js/TweenMax.min.js'></script>
+
+            <!-- core -->
+
+            <script src='js/avatarfactory.js'></script>
+            <script src='js/loaderfactory.js'></script>
+            <script src='js/baseavatar.js'></script>
+            <script src='js/link.js'></script>
+            <script src='js/linkx.js'></script>
+            <script src="js/overlayview.js"></script>
+            <script src="js/nodemenu.js"></script>
+            <script src="js/metaview.js"></script>
+            <script src='js/isocontroller.js'></script>
+            <script src='js/avatarx.js'></script>
+            <script src="js/exptest.js"></script>
+            <script src="js/isomodel.js"></script>
+            <script src="js/swarmview.js"></script>
+            <script src="js/mainc.js"></script>
+			<script type="module">
+				import './js/components/date-widget.js';
+				import './js/components/nav-menu.js';
+			</script>            
+            <!--<script src="dist/xframe_bundle.js"></script>-->
+            <!--<script src="dist/xframe_bundle_encrypted.js"></script>-->
+
+
+    <nav-menu></nav-menu>
+	</body>
+</html>

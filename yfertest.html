@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>MAP SM XProtoV.3.35</title><base href="" target="_blank">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    </head>
+    <body>
+        <script type="module">
+            import { GameObject } from './x_modules/gameobject/index.js'
+
+
+            //var y = new Yfer( { target:document.body })
+
+            class FunApp extends GameObject{
+
+            	constructor( initObj ){
+            		super( initObj )
+            		console.log(' sub constuctor')
+
+
+            		//var menu = new Menu() // extends gameObject
+            		//addChild( menu )
+            	}
+            }
+
+
+
+            var funApp = new FunApp( { title:'Zeeapp'})
+
+
+
+            var initObj = {
+            	ui:'./examples/bubble.html',
+            	data:{ title:'Something' , descriptoin:'Wow so small' }
+            }
+
+            var g = new GameObject( initObj )
+
+        </script>        
+	</body>
+</html>

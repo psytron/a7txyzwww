@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - GLTFloader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	</head>
+
+	<body>
+		<div id="info">
+			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - GLTFLoader<br />
+			Battle Damaged Sci-fi Helmet by
+			<a href="https://sketchfab.com/theblueturtle_" target="_blank" rel="noopener">theblueturtle_</a><br />
+			<a href="https://hdrihaven.com/hdri/?h=royal_esplanade" target="_blank" rel="noopener">Royal Esplanade</a> from <a href="https://hdrihaven.com/" target="_blank" rel="noopener">HDRI Haven</a>
+		</div>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./web_modules/three.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import { OrbitControls } from './web_modules/three/addons.js';
+			import { GLTFLoader } from './web_modules/three/addons.js';
+			import { RGBELoader } from './web_modules/three/addons.js';
+
+			let camera, scene1, renderer;
+
+			init();
+
+			function init() {
+
+				const container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
+				camera.position.set( - 1.8, 0.6, 2.7 );
+
+				scene1 = new THREE.Scene();
+
+				const light = new THREE.AmbientLight( 0xFFFFFF , 1 ); // soft white light
+				scene1.add( light );
+
+				//new RGBELoader()
+				new THREE.TextureLoader()
+					.load( './media/domain/coinbase.png', function ( texture ) {
+
+						//texture.mapping = THREE.EquirectangularReflectionMapping;
+						//texture.mapping = THREE.UVMapping; 
+						//scene1.environment = texture;
+						//render();
+
+						const loader = new GLTFLoader()//.setPath( './models3d/' );
+						loader.load( './models3d/simcube.glb', async function ( gltf ) {
+
+							const model = gltf.scene;
+
+							// wait until the model can be added to the scene without blocking due to shader compilation
+							//await renderer.compileAsync( model, camera, scene );
+	                        model.traverse(function(node) {
+	                            try{
+									console.log( node.isMesh , node )
+	                                if( node.isMesh && node.material.name =='xlogo' ){
+	                                    node.material.map = texture;    //r1
+	                                    var f=3;
+	                                } 
+									scene1.add( model );
+	                            }catch(e ){
+	                                console.log(' Traverse for texture fail ')
+	                            }
+	                        });
+							
+
+							render();
+			
+						} );
+
+					} );
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.toneMapping = THREE.ACESFilmicToneMapping;
+				renderer.toneMappingExposure = 1;
+				container.appendChild( renderer.domElement );
+
+				const controls = new OrbitControls( camera, renderer.domElement );
+				controls.addEventListener( 'change', render ); // use if there is no animation loop
+				controls.minDistance = 2;
+				controls.maxDistance = 10;
+				controls.target.set( 0, 0, - 0.2 );
+				controls.update();
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				render();
+
+			}
+
+			//
+
+			function render() {
+
+				renderer.render( scene1, camera );
+
+			}
+
+		</script>
+
+	</body>
+</html>

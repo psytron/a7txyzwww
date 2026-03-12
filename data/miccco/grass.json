@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "layout": 0,
+    "layouts": [
+      {
+        "oai_GrassExtract_oid": {
+          "x": 2.4844492664388125,
+          "y": 0.8550796020841982,
+          "z": -1.1304137247363577
+        },
+        "oai_Wheatgrass_oid": {
+          "x": 2.531635853933944,
+          "y": 3.4621005254550643,
+          "z": 18.71503812398675
+        },
+        "oai_BarleyGrass_oid": {
+          "x": -10.88819515391436,
+          "y": 12.475031367075184,
+          "z": 8.181728220753488
+        },
+        "oai_Chlorophyll_oid": {
+          "x": -8.493091436584429,
+          "y": -12.536614000787658,
+          "z": -11.169554730557108
+        },
+        "oai_HealthSupplement_oid": {
+          "x": -15.252122028699588,
+          "y": 6.021824208961732,
+          "z": -8.831921969891981
+        },
+        "oai_CosmeticProduct_oid": {
+          "x": -2.052360438559849,
+          "y": -15.541154808672466,
+          "z": 9.412027130948655
+        }
+      }
+    ],
+    "name": "merged",
+    "elements": [],
+    "encoder": "array",
+    "encoder_version": "0.1",
+    "origin": "int",
+    "foreign_id": "uuid",
+    "foreign_a": "a",
+    "foreign_b": "b",
+    "orbitControls": {
+      "target": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position": {
+        "x": 0.6265328149600218,
+        "y": 38.708720831454144,
+        "z": 11.06978024355334
+      },
+      "zoom": 1.18
+    },
+    "focusobject": {
+      "slot": "oai_GrassExtract_oid"
+    }
+  },
+  "nodes": [
+    {
+      "origin": "oai",
+      "slot": "oai_GrassExtract_oid",
+      "payload": {
+        "id": "1",
+        "type": "Material",
+        "name": "Grass Extract",
+        "source": "Plant-based",
+        "usage": "Dietary Supplement, Cosmetics",
+        "label": "tag",
+        "uuid": "oai_GrassExtract_oid",
+        "level": 1,
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Wheatgrass_oid",
+      "payload": {
+        "id": "2",
+        "type": "Plant",
+        "name": "Wheatgrass",
+        "scientific_name": "Triticum aestivum",
+        "common_use": "Source of Grass Extract",
+        "label": "tag",
+        "uuid": "oai_Wheatgrass_oid",
+        "level": 1
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_BarleyGrass_oid",
+      "payload": {
+        "id": "3",
+        "type": "Plant",
+        "name": "Barley Grass",
+        "scientific_name": "Hordeum vulgare",
+        "common_use": "Source of Grass Extract",
+        "label": "tag",
+        "uuid": "oai_BarleyGrass_oid",
+        "level": 1
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_Chlorophyll_oid",
+      "payload": {
+        "id": "4",
+        "type": "Compound",
+        "name": "Chlorophyll",
+        "role": "Active Component",
+        "benefit": "Detoxification, Antioxidant",
+        "label": "tag",
+        "uuid": "oai_Chlorophyll_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_HealthSupplement_oid",
+      "payload": {
+        "id": "5",
+        "type": "Application",
+        "name": "Health Supplement",
+        "purpose": "Nutritional Support",
+        "form": "Powder, Juice, Capsule",
+        "label": "tag",
+        "uuid": "oai_HealthSupplement_oid"
+      }
+    },
+    {
+      "origin": "oai",
+      "slot": "oai_CosmeticProduct_oid",
+      "payload": {
+        "id": "6",
+        "type": "Application",
+        "name": "Cosmetic Product",
+        "purpose": "Skin Care",
+        "form": "Cream, Mask",
+        "label": "tag",
+        "uuid": "oai_CosmeticProduct_oid"
+      }
+    }
+  ],
+  "links": [
+    {
+      "slota": "oai_GrassExtract_oid",
+      "slotb": "oai_Wheatgrass_oid",
+      "payload": {
+        "from": "1",
+        "to": "6",
+        "name": "Used In",
+        "type": "Application Relationship",
+        "context": "Beauty and Skin Care"
+      }
+    },
+    {
+      "slota": "oai_GrassExtract_oid",
+      "slotb": "oai_BarleyGrass_oid",
+      "payload": {
+        "from": "1",
+        "to": "3",
+        "name": "Derived From",
+        "type": "Source Relationship",
+        "method": "Extraction from Plant"
+      }
+    },
+    {
+      "slota": "oai_GrassExtract_oid",
+      "slotb": "oai_Chlorophyll_oid",
+      "payload": {
+        "from": "1",
+        "to": "4",
+        "name": "Contains",
+        "type": "Composition Relationship",
+        "importance": "Key Active Ingredient"
+      }
+    },
+    {
+      "slota": "oai_GrassExtract_oid",
+      "slotb": "oai_HealthSupplement_oid",
+      "payload": {
+        "from": "1",
+        "to": "5",
+        "name": "Used In",
+        "type": "Application Relationship",
+        "context": "Health and Nutrition"
+      }
+    },
+    {
+      "slota": "oai_GrassExtract_oid",
+      "slotb": "oai_CosmeticProduct_oid",
+      "payload": {
+        "from": "1",
+        "to": "6",
+        "name": "Used In",
+        "type": "Application Relationship",
+        "context": "Beauty and Skin Care"
+      }
+    }
+  ]
+}

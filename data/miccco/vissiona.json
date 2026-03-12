@@ -1,0 +1,1946 @@
+{
+    "nodes": {
+        "253": {
+            "label": "Alias",
+            "name": "psytron",
+            "uuid": 253,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "266": {
+            "label": "simsuit",
+            "name": "Joey West",
+            "uuid": 266,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "subname": "Primary Key Holder"
+        },
+        "267": {
+            "label": "Repo",
+            "name": "walletcython",
+            "uuid": 267,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "268": {
+            "label": "Repo",
+            "name": "alias",
+            "uuid": 268,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "310": {
+            "github": "psytron",
+            "label": "Repo",
+            "name": "keycache",
+            "uuid": 310,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "github"
+        },
+        "343": {
+            "github": "psytron",
+            "label": "Project",
+            "name": "Xynthx",
+            "uuid": 343,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "448": {
+            "github": "psytron",
+            "label": "Repo",
+            "name": "xframe",
+            "uuid": 448,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "github"
+        },
+        "449": {
+            "github": "psytron",
+            "label": "simserver",
+            "name": "Multi-Module V0.1",
+            "uuid": 449,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "subname": "LOC: DigitalOcean"
+        },
+        "450": {
+            "github": "psytron",
+            "label": "simbot",
+            "name": "Service Check Bot",
+            "uuid": 450,
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "alphabot"
+        },
+        "a11253aac1": {
+            "label": "Flash",
+            "name": "USB-MAC",
+            "uuid": "a11253aac1",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "a11253aac2": {
+            "label": "simserver",
+            "name": "Twilio",
+            "uuid": "a11253aac2",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "11253aac": {
+            "label": "simcube",
+            "name": "Coinbase",
+            "uuid": "11253aac",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "coinbase.png",
+            "domain": "redhat"
+        },
+        "gandalf": {
+            "label": "simserver",
+            "name": "Gandalf",
+            "uuid": "gandalf",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "orient.png",
+            "subname": "DC: DigitalOcean"
+        },
+        "merlin": {
+            "label": "simserver",
+            "name": "Merlin",
+            "uuid": "merlin",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "gargamel": {
+            "label": "Tower",
+            "name": "Host: Gargamel ( Digial Ocean )",
+            "uuid": "gargamel",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "helga": {
+            "label": "simserver",
+            "name": "Host: Helga ( Hetzner )",
+            "uuid": "helga",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "auth0_icon.png",
+            "subname": "digitalocean"
+        },
+        "Generic": {
+            "label": "simcube",
+            "name": "Service: Generic ( Python )",
+            "uuid": "Generic",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "pythoncenter.png",
+            "domain": "python"
+        },
+        "dragongate": {
+            "label": "token",
+            "name": "Service: Dragon Gate( Go )",
+            "uuid": "dragongate",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "orient.png"
+        },
+        "11253aa": {
+            "label": "simbot",
+            "name": "BOT: Delete Self",
+            "uuid": "11253aa",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "blackbot.png",
+            "subname": "Started 00:00:19 04-12-20",
+            "domain": "plungebot"
+        },
+        "11253a": {
+            "label": "Alias",
+            "name": "EXTRANIUSX S",
+            "uuid": "11253a",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "orient.png"
+        },
+        "3482gc": {
+            "label": "simserver",
+            "name": "Voldumont",
+            "uuid": "3482gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "subname": "DigitalOcean"
+        },
+        "2966gc": {
+            "label": "Module",
+            "name": "MadMod",
+            "uuid": "2966gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7844gc": {
+            "label": "simcube",
+            "name": "Kraken",
+            "uuid": "7844gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "kraken.png",
+            "subname": "0.001500 ( USD EQIv)",
+            "domain": "kraken"
+        },
+        "8966gc": {
+            "label": "Token",
+            "name": "E Token",
+            "uuid": "8966gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "token.png"
+        },
+        "9351gc": {
+            "label": "Token",
+            "name": "G Token",
+            "uuid": "9351gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "addbutton.png"
+        },
+        "3271gc": {
+            "label": "Token",
+            "name": "Green Token",
+            "uuid": "3271gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "addbuttongreen.png"
+        },
+        "2461gc": {
+            "label": "simcube",
+            "name": "Wells Fargo Bank",
+            "uuid": "2461gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bankwellsfargo.png",
+            "domain": "circleci"
+        },
+        "5126gc": {
+            "label": "simcube",
+            "name": "CHASE Bank",
+            "uuid": "5126gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bankchase.png",
+            "domain": "circleci"
+        },
+        "6188gc": {
+            "label": "simbot",
+            "name": "SIM Bot",
+            "uuid": "6188gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "plunge.png",
+            "domain": "plungebot"
+        },
+        "9199gc": {
+            "label": "Token",
+            "name": "BTC",
+            "uuid": "9199gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bitcoin.png",
+            "balance": "BAL 0.4021500  ( $ 11,593 / Unit )"
+        },
+        "8543gc": {
+            "label": "token",
+            "name": "USDC",
+            "uuid": "8543gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "balance": "129.00 Market 1:1",
+            "img": "usdc.png"
+        },
+        "4133gc": {
+            "label": "Token",
+            "name": "USDT Tether",
+            "uuid": "4133gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "balance": "201.10 ( 1:1 Market ) ",
+            "img": "tether.png"
+        },
+        "6730gc": {
+            "label": "simcube",
+            "name": "Binance",
+            "uuid": "6730gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "subname": "10.01 ( BTC?USD )",
+            "img": "binance.png",
+            "domain": "paypal"
+        },
+        "1525gc": {
+            "label": "Module",
+            "name": "Untitled",
+            "uuid": "1525gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "9373gc": {
+            "label": "Token",
+            "name": "DAI Maker",
+            "uuid": "9373gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "dai.png"
+        },
+        "96gc": {
+            "label": "Token",
+            "name": "BTC",
+            "uuid": "96gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bitcoin.png"
+        },
+        "5035gc": {
+            "label": "Alias",
+            "name": "hohohi",
+            "uuid": "5035gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "1110gc": {
+            "label": "Alias",
+            "name": "B67",
+            "uuid": "1110gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7797gc": {
+            "label": "Repo",
+            "name": "Untitled",
+            "uuid": "7797gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "3698gc": {
+            "label": "Bot",
+            "name": "Untitled",
+            "uuid": "3698gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7449gc": {
+            "label": "Module",
+            "name": "Untitled",
+            "uuid": "7449gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "5132gc": {
+            "label": "Alias",
+            "name": "fffff",
+            "uuid": "5132gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "8641gc": {
+            "label": "Repo",
+            "name": "Untitled",
+            "uuid": "8641gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }
+    },
+    "links": {
+        "c65eabf8-e21c-4019-a632-0f41df51f47f": {
+            "a": 253,
+            "b": 310,
+            "label": "CONNECTS",
+            "uuid": "c65eabf8-e21c-4019-a632-0f41df51f47f",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "c65eabf8-e21c-4019-a632-0f41df51f47f",
+                "id": "c65eabf8-e21c-4019-a632-0f41df51f47f"
+            }
+        },
+        "f182f8f2-6ace-4e4d-9eaa-c0cb8302b666": {
+            "a": 253,
+            "b": 268,
+            "label": "CONNECTS",
+            "uuid": "f182f8f2-6ace-4e4d-9eaa-c0cb8302b666",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "f182f8f2-6ace-4e4d-9eaa-c0cb8302b666",
+                "id": "f182f8f2-6ace-4e4d-9eaa-c0cb8302b666"
+            }
+        },
+        "99496a98-e845-4105-a681-d8cb96f84a4b": {
+            "a": 310,
+            "b": 267,
+            "label": "CONNECTS",
+            "uuid": "99496a98-e845-4105-a681-d8cb96f84a4b",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "99496a98-e845-4105-a681-d8cb96f84a4b",
+                "id": "99496a98-e845-4105-a681-d8cb96f84a4b"
+            }
+        },
+        "28d7a5ab-bd03-4434-8d08-b12456df6d74": {
+            "a": 268,
+            "b": 267,
+            "label": "CONNECTS",
+            "uuid": "28d7a5ab-bd03-4434-8d08-b12456df6d74",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "28d7a5ab-bd03-4434-8d08-b12456df6d74",
+                "id": "28d7a5ab-bd03-4434-8d08-b12456df6d74"
+            }
+        },
+        "1e7d7cd8-809a-4aa3-b653-4b1059753a5e": {
+            "a": 266,
+            "b": 448,
+            "label": "CONNECTS",
+            "uuid": "1e7d7cd8-809a-4aa3-b653-4b1059753a5e",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "1e7d7cd8-809a-4aa3-b653-4b1059753a5e",
+                "id": "1e7d7cd8-809a-4aa3-b653-4b1059753a5e"
+            }
+        },
+        "1326518f-2d38-4b9a-aec3-8ccf58f4ef02": {
+            "a": 253,
+            "b": 448,
+            "label": "CONNECTS",
+            "uuid": "1326518f-2d38-4b9a-aec3-8ccf58f4ef02",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "1326518f-2d38-4b9a-aec3-8ccf58f4ef02",
+                "id": "1326518f-2d38-4b9a-aec3-8ccf58f4ef02"
+            }
+        },
+        "8ff127e3-1e75-481c-bbc5-c526a3a5b06d": {
+            "a": 267,
+            "b": "Generic",
+            "label": "CONNECTS",
+            "uuid": "8ff127e3-1e75-481c-bbc5-c526a3a5b06d",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "8ff127e3-1e75-481c-bbc5-c526a3a5b06d",
+                "id": "8ff127e3-1e75-481c-bbc5-c526a3a5b06d"
+            }
+        },
+        "406c4b8f-0c27-47aa-b42d-9c630baad81a": {
+            "a": 448,
+            "b": 343,
+            "label": "CONNECTS",
+            "uuid": "406c4b8f-0c27-47aa-b42d-9c630baad81a",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "406c4b8f-0c27-47aa-b42d-9c630baad81a",
+                "id": "406c4b8f-0c27-47aa-b42d-9c630baad81a"
+            }
+        },
+        "a4be90a2-00e6-4300-81c0-31e77868672f": {
+            "a": 343,
+            "b": "gandalf",
+            "label": "CONNECTS",
+            "uuid": "a4be90a2-00e6-4300-81c0-31e77868672f",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "a4be90a2-00e6-4300-81c0-31e77868672f",
+                "id": "a4be90a2-00e6-4300-81c0-31e77868672f"
+            }
+        },
+        "865541f3-462f-4f45-9cac-35f890f14782": {
+            "a": "dragongate",
+            "b": "gargamel",
+            "label": "CONNECTS",
+            "uuid": "865541f3-462f-4f45-9cac-35f890f14782",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "865541f3-462f-4f45-9cac-35f890f14782",
+                "id": "865541f3-462f-4f45-9cac-35f890f14782"
+            }
+        },
+        "713d40e6-ac5a-4c84-a205-bb7f26f86278": {
+            "a": 343,
+            "b": "merlin",
+            "label": "CONNECTS",
+            "uuid": "713d40e6-ac5a-4c84-a205-bb7f26f86278",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "713d40e6-ac5a-4c84-a205-bb7f26f86278",
+                "id": "713d40e6-ac5a-4c84-a205-bb7f26f86278"
+            }
+        },
+        "9834106a-84d8-4ed2-ad61-8511a563e1bf": {
+            "a": "Generic",
+            "b": 450,
+            "label": "CONNECTS",
+            "uuid": "9834106a-84d8-4ed2-ad61-8511a563e1bf",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "9834106a-84d8-4ed2-ad61-8511a563e1bf",
+                "id": "9834106a-84d8-4ed2-ad61-8511a563e1bf"
+            }
+        },
+        "caf6dc8a-d17a-4799-a05b-5f52b140388c": {
+            "a": "Generic",
+            "b": "11253aac",
+            "label": "CONNECTS",
+            "uuid": "caf6dc8a-d17a-4799-a05b-5f52b140388c",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "caf6dc8a-d17a-4799-a05b-5f52b140388c",
+                "id": "caf6dc8a-d17a-4799-a05b-5f52b140388c"
+            }
+        },
+        "09f97119-b556-4e00-bad9-be6942940a40": {
+            "a": "11253a",
+            "b": 343,
+            "label": "CONNECTS",
+            "uuid": "09f97119-b556-4e00-bad9-be6942940a40",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "09f97119-b556-4e00-bad9-be6942940a40",
+                "id": "09f97119-b556-4e00-bad9-be6942940a40"
+            }
+        },
+        "2c651430-7a73-4a16-85d4-17e6d88d778c": {
+            "a": 343,
+            "b": "dragongate",
+            "label": "CONNECTS",
+            "uuid": "2c651430-7a73-4a16-85d4-17e6d88d778c",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "2c651430-7a73-4a16-85d4-17e6d88d778c",
+                "id": "2c651430-7a73-4a16-85d4-17e6d88d778c"
+            }
+        },
+        "8c604e8b-8f28-4b79-8a99-61b52e983de3": {
+            "a": 253,
+            "b": 267,
+            "label": "CONNECTS",
+            "uuid": "8c604e8b-8f28-4b79-8a99-61b52e983de3",
+            "data": {
+                "label": "CONNECTS",
+                "uuid": "8c604e8b-8f28-4b79-8a99-61b52e983de3",
+                "id": "8c604e8b-8f28-4b79-8a99-61b52e983de3"
+            }
+        },
+        "5145c1cc-c5ef-4888-8ad4-8895c7a5c010": {
+            "a": "11253aac",
+            "b": "9351gc",
+            "label": "CONNECTS",
+            "uuid": "5145c1cc-c5ef-4888-8ad4-8895c7a5c010",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "5145c1cc-c5ef-4888-8ad4-8895c7a5c010",
+                "id": "5145c1cc-c5ef-4888-8ad4-8895c7a5c010"
+            }
+        },
+        "7605633c-9457-4b15-bfde-0fb8a8d93faf": {
+            "a": "11253aac",
+            "b": "3271gc",
+            "label": "CONNECTS",
+            "uuid": "7605633c-9457-4b15-bfde-0fb8a8d93faf",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "7605633c-9457-4b15-bfde-0fb8a8d93faf",
+                "id": "7605633c-9457-4b15-bfde-0fb8a8d93faf"
+            }
+        },
+        "43333d8c-d8f6-45ee-8df6-13cc8a824b95": {
+            "a": "11253aac",
+            "b": "8966gc",
+            "label": "CONNECTS",
+            "uuid": "43333d8c-d8f6-45ee-8df6-13cc8a824b95",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "43333d8c-d8f6-45ee-8df6-13cc8a824b95",
+                "id": "43333d8c-d8f6-45ee-8df6-13cc8a824b95"
+            }
+        },
+        "cc9e0573-2dae-4589-b588-239fd87b59ea": {
+            "a": "6188gc",
+            "b": "2461gc",
+            "label": "CONNECTS",
+            "uuid": "cc9e0573-2dae-4589-b588-239fd87b59ea",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "cc9e0573-2dae-4589-b588-239fd87b59ea",
+                "id": "cc9e0573-2dae-4589-b588-239fd87b59ea"
+            }
+        },
+        "74a2afce-570e-4e3a-9ac1-52847156f797": {
+            "a": "6188gc",
+            "b": "5126gc",
+            "label": "CONNECTS",
+            "uuid": "74a2afce-570e-4e3a-9ac1-52847156f797",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "74a2afce-570e-4e3a-9ac1-52847156f797",
+                "id": "74a2afce-570e-4e3a-9ac1-52847156f797"
+            }
+        },
+        "7853dfc4-98b3-4e7f-bf62-ccecaeb8b88a": {
+            "a": "Generic",
+            "b": "6188gc",
+            "label": "CONNECTS",
+            "uuid": "7853dfc4-98b3-4e7f-bf62-ccecaeb8b88a",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "7853dfc4-98b3-4e7f-bf62-ccecaeb8b88a",
+                "id": "7853dfc4-98b3-4e7f-bf62-ccecaeb8b88a"
+            }
+        },
+        "9bde5df7-b081-41a7-b0b0-67356d702e6f": {
+            "a": "11253aac",
+            "b": "9199gc",
+            "label": "CONNECTS",
+            "uuid": "9bde5df7-b081-41a7-b0b0-67356d702e6f",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "9bde5df7-b081-41a7-b0b0-67356d702e6f",
+                "id": "9bde5df7-b081-41a7-b0b0-67356d702e6f"
+            }
+        },
+        "8d556767-57fc-4ef3-843f-06f30029a48f": {
+            "a": "11253aac",
+            "b": "4133gc",
+            "label": "CONNECTS",
+            "uuid": "8d556767-57fc-4ef3-843f-06f30029a48f",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "8d556767-57fc-4ef3-843f-06f30029a48f",
+                "id": "8d556767-57fc-4ef3-843f-06f30029a48f"
+            }
+        },
+        "ad11e04f-6dfc-4a5d-b5d4-cc1fd713c228": {
+            "a": "11253aac",
+            "b": "8543gc",
+            "label": "CONNECTS",
+            "uuid": "ad11e04f-6dfc-4a5d-b5d4-cc1fd713c228",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "ad11e04f-6dfc-4a5d-b5d4-cc1fd713c228",
+                "id": "ad11e04f-6dfc-4a5d-b5d4-cc1fd713c228"
+            }
+        },
+        "c2182d8d-e356-4b5e-b8db-5f8f23951029": {
+            "a": "6730gc",
+            "b": "9199gc",
+            "label": "CONNECTS",
+            "uuid": "c2182d8d-e356-4b5e-b8db-5f8f23951029",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "c2182d8d-e356-4b5e-b8db-5f8f23951029",
+                "id": "c2182d8d-e356-4b5e-b8db-5f8f23951029"
+            }
+        },
+        "d88b7eda-13c6-455a-85c5-f80284f94421": {
+            "a": "6730gc",
+            "b": "4133gc",
+            "label": "CONNECTS",
+            "uuid": "d88b7eda-13c6-455a-85c5-f80284f94421",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "d88b7eda-13c6-455a-85c5-f80284f94421",
+                "id": "d88b7eda-13c6-455a-85c5-f80284f94421"
+            }
+        },
+        "44aec269-8dbd-4083-84d5-e00135819e9a": {
+            "a": "Generic",
+            "b": "Generic",
+            "label": "CONNECTS",
+            "uuid": "44aec269-8dbd-4083-84d5-e00135819e9a",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "44aec269-8dbd-4083-84d5-e00135819e9a",
+                "id": "44aec269-8dbd-4083-84d5-e00135819e9a"
+            }
+        }
+    },
+    "meta": {
+        "layout": 0,
+        "name": "vissiona",
+        "layouts": [
+            {
+                "253": {
+                    "x": 23.70163966674405,
+                    "y": 0.8979,
+                    "z": 5.863618512834535
+                },
+                "266": {
+                    "x": 21.519427308985065,
+                    "y": 0.8215,
+                    "z": -7.403965398367035
+                },
+                "267": {
+                    "x": 6.067171331284139,
+                    "y": 0.4399,
+                    "z": 10.572079513428736
+                },
+                "268": {
+                    "x": 6.08564052760308,
+                    "y": 0.5623,
+                    "z": 3.7773779789272908
+                },
+                "310": {
+                    "x": 10.293956417996242,
+                    "y": 0.0571,
+                    "z": 16.497606451445165
+                },
+                "343": {
+                    "x": -16.82994635718552,
+                    "y": 0.1125,
+                    "z": -2.028443952485362
+                },
+                "448": {
+                    "x": 10.435651281947136,
+                    "y": 0.592,
+                    "z": -2.0225571541950274
+                },
+                "449": {
+                    "x": -32.949770491486554,
+                    "y": 0.7702,
+                    "z": -5.195421384935674
+                },
+                "450": {
+                    "x": -26.91003456600476,
+                    "y": 0.5828,
+                    "z": 29.56972602453787
+                },
+                "a11253aac1": {
+                    "x": 3.3737,
+                    "y": 0.7007,
+                    "z": -19.7022
+                },
+                "a11253aac2": {
+                    "x": -36.88856775854527,
+                    "y": 0.3829,
+                    "z": -19.317141609287734
+                },
+                "11253aac": {
+                    "x": -4.172208743845134,
+                    "y": 0.4678,
+                    "z": 29.30788471070543
+                },
+                "gandalf": {
+                    "x": -45.522886843316755,
+                    "y": 0.7966,
+                    "z": 3.483886202967625
+                },
+                "merlin": {
+                    "x": -45.24483500074551,
+                    "y": 0.7309,
+                    "z": -2.8807795967245227
+                },
+                "gargamel": {
+                    "x": 0.3071839704514195,
+                    "y": 0.6868,
+                    "z": -33.27523703076117
+                },
+                "helga": {
+                    "x": -40.1224956339329,
+                    "y": 0.4262,
+                    "z": -10.6624506420886
+                },
+                "Generic": {
+                    "x": -11.820818831635739,
+                    "y": 0.1431,
+                    "z": 17.85785702863326
+                },
+                "dragongate": {
+                    "x": -8.844047548183633,
+                    "y": 0.1007,
+                    "z": -18.997702914794157
+                },
+                "11253aa": {
+                    "x": -26.72875587398247,
+                    "y": 0.0931,
+                    "z": 21.181981953566833
+                },
+                "11253a": {
+                    "x": -31.876054317183655,
+                    "y": 0.2585,
+                    "z": -32.75007547110763
+                },
+                "3482gc": {
+                    "x": -46.39575065927272,
+                    "y": 0.5876,
+                    "z": -15.19306831320003
+                },
+                "2966gc": {
+                    "x": 35.539483333149775,
+                    "y": 0.6286,
+                    "z": 11.077082561600212
+                },
+                "7844gc": {
+                    "x": 36.16072193995517,
+                    "y": 0.2005,
+                    "z": -14.906925936821722
+                },
+                "8966gc": {
+                    "x": -7.985872585776061,
+                    "y": 0.0247,
+                    "z": 35.221457048083295
+                },
+                "9351gc": {
+                    "x": -10.101244471675006,
+                    "y": 0.5827,
+                    "z": 32.026794640814074
+                },
+                "3271gc": {
+                    "x": -4.585135275905199,
+                    "y": 0.9063,
+                    "z": 36.493715624216065
+                },
+                "2461gc": {
+                    "x": -44.41924634133173,
+                    "y": 0.7985,
+                    "z": 18.656527631043154
+                },
+                "5126gc": {
+                    "x": -43.13304297820045,
+                    "y": 0.9636,
+                    "z": 13.359912222729136
+                },
+                "6188gc": {
+                    "x": -26.458524327634144,
+                    "y": 0.6947,
+                    "z": 14.840932354441378
+                },
+                "9199gc": {
+                    "x": -1.1691341309978371,
+                    "y": 0.8655,
+                    "z": 34.39963685386111
+                },
+                "8543gc": {
+                    "x": -9.695423747400596,
+                    "y": 0.588,
+                    "z": 28.08846863330914
+                },
+                "4133gc": {
+                    "x": 1.147151323230366,
+                    "y": 0.3553,
+                    "z": 31.049278251529408
+                },
+                "6730gc": {
+                    "x": 8.141810525577952,
+                    "y": 0.3335,
+                    "z": 59.52886136904494
+                },
+                "1525gc": {
+                    "x": 38.01987497385331,
+                    "y": 0.2026,
+                    "z": 6.750588563764595
+                },
+                "9373gc": {
+                    "x": 4.3213,
+                    "y": 0.8623,
+                    "z": -24.6816
+                },
+                "96gc": {
+                    "x": 30.5991,
+                    "y": 0.5603,
+                    "z": -21.2923
+                },
+                "5035gc": {
+                    "x": -23.305346669604706,
+                    "y": 0,
+                    "z": 42.274888761176314
+                },
+                "1110gc": {
+                    "x": 0.8345678733852513,
+                    "y": 0,
+                    "z": 52.944747134325866
+                },
+                "7797gc": {
+                    "x": 0.6260475866717052,
+                    "y": 0,
+                    "z": 60.63617993716473
+                },
+                "3698gc": {
+                    "x": 6.646302251141408,
+                    "y": 0,
+                    "z": 54.45304990923635
+                },
+                "7449gc": {
+                    "x": 0.5417299138835504,
+                    "y": 0,
+                    "z": 56.154744033424045
+                },
+                "5132gc": {
+                    "x": -1.9074365928823476,
+                    "y": 0,
+                    "z": 56.518637428820085
+                },
+                "8641gc": {
+                    "x": 4.784175966052168,
+                    "y": 0,
+                    "z": 57.51418849793718
+                }
+            },
+            {
+                "253": {
+                    "x": 19.2242,
+                    "y": 0,
+                    "z": -1.6157
+                },
+                "266": {
+                    "x": -3.3644,
+                    "y": 0,
+                    "z": 30.0903
+                },
+                "267": {
+                    "x": 15.8544,
+                    "y": 0,
+                    "z": 15.2503
+                },
+                "268": {
+                    "x": 7.4599,
+                    "y": 0,
+                    "z": 9.9617
+                },
+                "310": {
+                    "x": 14.1225,
+                    "y": 0,
+                    "z": -13.3758
+                },
+                "343": {
+                    "x": 6.6152,
+                    "y": 0,
+                    "z": -23.6227
+                },
+                "448": {
+                    "x": 6.2001,
+                    "y": 0,
+                    "z": 0.2551
+                },
+                "449": {
+                    "x": -22.5477,
+                    "y": 0,
+                    "z": 0.5078
+                },
+                "450": {
+                    "x": 33.0801,
+                    "y": 0,
+                    "z": -4.1048
+                },
+                "a11253aac1": {
+                    "x": 19.8495,
+                    "y": 0,
+                    "z": 0.3991
+                },
+                "a11253aac2": {
+                    "x": -25.263,
+                    "y": 0,
+                    "z": -8.3831
+                },
+                "11253aac": {
+                    "x": 24.4896,
+                    "y": 0,
+                    "z": 28.825
+                },
+                "gandalf": {
+                    "x": -16.772,
+                    "y": 0,
+                    "z": -2.1317
+                },
+                "merlin": {
+                    "x": -23.0965,
+                    "y": 0,
+                    "z": -14.1682
+                },
+                "gargamel": {
+                    "x": -27.7652,
+                    "y": 0,
+                    "z": 19.8535
+                },
+                "helga": {
+                    "x": -16.5587,
+                    "y": 0,
+                    "z": 30.4878
+                },
+                "Generic": {
+                    "x": 22.4656,
+                    "y": 0,
+                    "z": 17.5869
+                },
+                "dragongate": {
+                    "x": -19.3028,
+                    "y": 0,
+                    "z": 23.7829
+                },
+                "11253aa": {
+                    "x": 32.6604,
+                    "y": 0,
+                    "z": 5.0795
+                },
+                "11253a": {
+                    "x": -5.2696,
+                    "y": 0,
+                    "z": -33.7057
+                },
+                "3482gc": {
+                    "x": -25.2339,
+                    "y": 0,
+                    "z": 9.1899
+                },
+                "2966gc": {
+                    "x": 6.741880288615284,
+                    "y": 0,
+                    "z": 24.88205074946218
+                },
+                "7844gc": {
+                    "x": 21.2771,
+                    "y": 0,
+                    "z": 40.7425
+                },
+                "8966gc": {
+                    "x": 27.2746,
+                    "y": 0.7699,
+                    "z": 45.4726
+                },
+                "9351gc": {
+                    "x": 43.1701,
+                    "y": 0.6545,
+                    "z": 31.1655
+                },
+                "3271gc": {
+                    "x": 31.7713,
+                    "y": 0.7539,
+                    "z": 41.8696
+                },
+                "2461gc": {
+                    "x": 51.7662,
+                    "y": 0.8322,
+                    "z": 2.7244
+                },
+                "5126gc": {
+                    "x": 50.9627,
+                    "y": 0.6518,
+                    "z": 10.5229
+                },
+                "6188gc": {
+                    "x": 31.4527,
+                    "y": 0.7289,
+                    "z": 13.7337
+                },
+                "9199gc": {
+                    "x": 40.871,
+                    "y": 0.8268,
+                    "z": 27.8343
+                },
+                "8543gc": {
+                    "x": 43.3841,
+                    "y": 0.909,
+                    "z": 35.6499
+                },
+                "4133gc": {
+                    "x": 35.7819,
+                    "y": 0.4549,
+                    "z": 37.6037
+                },
+                "6730gc": {
+                    "x": 29.9628,
+                    "y": 0.1867,
+                    "z": 23.3047
+                },
+                "1525gc": {
+                    "x": 19.9635,
+                    "y": 0.841,
+                    "z": -41.8033
+                }
+            },
+            {
+                "253": {
+                    "x": -1.2832647319070922,
+                    "y": 0,
+                    "z": 4.506373707665773,
+                    "delay": 0.47487897338090157,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "266": {
+                    "x": 18.07764552341125,
+                    "y": 0,
+                    "z": -25.009340364051045,
+                    "delay": 0.27919505374367637,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "267": {
+                    "x": 9.7054164621108,
+                    "y": 0,
+                    "z": 12.221597922183733,
+                    "delay": 0.4866499018352305,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "268": {
+                    "x": -3.498175612644542,
+                    "y": 0,
+                    "z": 15.965549582066842,
+                    "delay": 0.43048129502924926,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "310": {
+                    "x": -0.01705847021387008,
+                    "y": 0,
+                    "z": 20.420241568188644,
+                    "delay": 0.432702062834477,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "343": {
+                    "x": -5.675622654972763,
+                    "y": 0,
+                    "z": -17.793053585413773,
+                    "delay": 0.09037775910739121,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "448": {
+                    "x": 11.849843649922846,
+                    "y": 0,
+                    "z": 3.0677010514250753,
+                    "delay": 0.4771267789250767,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "449": {
+                    "x": -27.836965025803,
+                    "y": 0,
+                    "z": 14.061609530934419,
+                    "delay": 0.17596641184729978,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "450": {
+                    "x": 22.732563716964233,
+                    "y": 0,
+                    "z": -13.073532077062993,
+                    "delay": 0.43661066560393214,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "a11253aac1": {
+                    "x": 23.8467,
+                    "y": 0,
+                    "z": -6.9721,
+                    "delay": 0.0019200158792502808,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "a11253aac2": {
+                    "x": -19.469219629585112,
+                    "y": 0,
+                    "z": 25.37665848934516,
+                    "delay": 0.4744439698643116,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "11253aac": {
+                    "x": 24.711473827657084,
+                    "y": 0,
+                    "z": 32.5493956808056,
+                    "delay": 0.3780182496062233,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "gandalf": {
+                    "x": -27.784383341296994,
+                    "y": 0,
+                    "z": 7.5968433999415055,
+                    "delay": 0.15454688581038734,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "merlin": {
+                    "x": -19.565211650017552,
+                    "y": 0,
+                    "z": 11.120956718219563,
+                    "delay": 0.023609251422027078,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "gargamel": {
+                    "x": -30.50124201383726,
+                    "y": 0,
+                    "z": -22.864451882653626,
+                    "delay": 0.46868429629923447,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "helga": {
+                    "x": -19.78365659903963,
+                    "y": 0,
+                    "z": 17.02133704125184,
+                    "delay": 0.4779931957255873,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "Generic": {
+                    "x": 15.518916128118267,
+                    "y": 0,
+                    "z": 16.558244776426704,
+                    "delay": 0.3762012039820538,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "dragongate": {
+                    "x": -24.68887178380111,
+                    "y": 0,
+                    "z": -11.529938642021563,
+                    "delay": 0.3983756303360275,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "11253aa": {
+                    "x": 33.733925772187774,
+                    "y": 0,
+                    "z": 0.6250173119558582,
+                    "delay": 0.3334393282003437,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "11253a": {
+                    "x": -15.230797672663563,
+                    "y": 0,
+                    "z": -27.745425279785366,
+                    "delay": 0.3941581045512925,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3482gc": {
+                    "x": -27.185883431765635,
+                    "y": 0,
+                    "z": 21.07693993736966,
+                    "delay": 0.15156168838333794,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2966gc": {
+                    "x": 41.217274105584515,
+                    "y": 0,
+                    "z": -8.364159607701367,
+                    "delay": 0.11999003431400812,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "7844gc": {
+                    "x": 45.541487282319714,
+                    "y": 0,
+                    "z": 20.416489388047566,
+                    "delay": 0.10458202787943738,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8966gc": {
+                    "x": 33.993003784578875,
+                    "y": 0.7699,
+                    "z": 43.90125860648384,
+                    "delay": 0.30562511566535966,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9351gc": {
+                    "x": 43.1701,
+                    "y": 0.6545,
+                    "z": 31.1655,
+                    "delay": 0.23211347291989437,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3271gc": {
+                    "x": 39.114100304675034,
+                    "y": 0.7539,
+                    "z": 39.81106467120655,
+                    "delay": 0.2530980359834524,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2461gc": {
+                    "x": 51.7662,
+                    "y": 0.8322,
+                    "z": 2.7244,
+                    "delay": 0.24653789621862632,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5126gc": {
+                    "x": 50.9627,
+                    "y": 0.6518,
+                    "z": 10.5229,
+                    "delay": 0.16460804173752785,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6188gc": {
+                    "x": 36.22140597164648,
+                    "y": 0.7289,
+                    "z": 6.984305441281691,
+                    "delay": 0.008171986398100684,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9199gc": {
+                    "x": 40.871,
+                    "y": 0.8268,
+                    "z": 27.8343,
+                    "delay": 0.4271964754023264,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8543gc": {
+                    "x": 43.3841,
+                    "y": 0.909,
+                    "z": 35.6499,
+                    "delay": 0.08700638685885953,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "4133gc": {
+                    "x": 36.72923271074806,
+                    "y": 0.4549,
+                    "z": 35.946745705993195,
+                    "delay": 0.19274309757215058,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6730gc": {
+                    "x": 36.420122419585354,
+                    "y": 0.1867,
+                    "z": 19.84349279157354,
+                    "delay": 0.10821446619674613,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1525gc": {
+                    "x": 37.977409512691864,
+                    "y": 0.841,
+                    "z": -13.182199093074793,
+                    "delay": 0.18680954222276513,
+                    "duration": 0.8,
+                    "overwrite": false
+                }
+            }
+        ]
+    },
+    "action": "savemap"
+}

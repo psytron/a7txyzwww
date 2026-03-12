@@ -1,0 +1,152 @@
+{
+    "nodes": [
+        {   
+            "slot":"dodododuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",
+                "brand":"Global Zer0",
+                "uuid": "cex_umnn,uid",
+                "country": "GB",
+                "name": "London",
+                "lat": "0.00000",
+                "lng": "0.00000"
+            }
+            
+        },    
+        {   
+            "slot":"cex_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",
+                "brand":"coinbase",
+                "uuid": "cex_umnn,uid",
+                "country": "GB",
+                "name": "London",
+                "lat": "51.50853",
+                "lng": "-0.12574"
+            }
+            
+        },    
+        {
+            "slot":"ctokehhnjmjm_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",
+                "symbol":"ETH/US22D",
+                "uuid": "ctoksssel0l0ln_uuid",
+                "country": "US",
+                "name": "New York City X",
+                "lat": "40.71427",
+                "lng": "-74.00597"
+            }
+        },                  
+        {
+            "slot":"aliash6h6huuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",
+                "uuid": "alias_upp7u7uuid",
+                "country": "US",
+                "name": "Honolulu",
+                "lat": "21.30694",
+                "lng": "-157.85833"
+            }
+        },             
+        {
+            "slot":"cataffgs_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",                
+                "country": "JP",
+                "name": "Tokyo",
+                "lat": "35.6895",
+                "lng": "139.69171",
+                "uuid":"tkyo676j67j"
+            }
+        },             
+        {
+            "slot":"catrge44rasj7j7j55juuid",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",                
+                "country": "CN",
+                "name": "Shanghai",
+                "lat": "31.22222",
+                "lng": "121.45806"
+            }
+        },           
+        {
+            "slot":"moonplotted",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",                
+                "country": "CN",
+                "name": "Moon",
+                "lat": "43.71427",
+                "lng": "-99.00597"
+            }
+        },           
+        {
+            "slot":"f3f432",
+            "origin":"internal",
+            "payload":{
+                "label": "locale",                
+                "country": "CN",
+                "name": "cze",
+                "lat": "43.71427",
+                "lng": "-49.00597"
+            }
+        }          
+
+    ],
+    "links": [],
+    "meta": {
+        "layouts": [
+            {
+                "moonplotted":{
+                    "x": 1850,
+                    "y": 0,
+                    "z": 20                    
+                },
+                "ctoken_uuid":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 22                    
+                },
+                "alias_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 10
+                },
+                "module_uuid": {
+                    "x": -10,
+                    "y": 0,
+                    "z": 10
+                },
+                "token_uuid": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                },
+                "org_uuid": {
+                    "x": 10,
+                    "y": 0,
+                    "z": 10
+                },
+                "finorg_uuid": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 10
+                },
+                "plain_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 0
+                }                                
+            }],
+        "props":["globe","frame"],
+        "name": "mega",
+        "layout": 0
+    }
+}

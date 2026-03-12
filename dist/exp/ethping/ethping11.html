@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <script src="../../v_modules/web3.min.js" type="text/javascript"></script>
+    <script src="../../v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script>
+    <script src="../../v_modules/ccxt.browser.js" type="text/javascript"> </script>
+    <script src="../../v_modules/refs.js" type="text/javascript"> </script>
+    <script src="../../v_modules/blockstate.js" type="text/javascript"> </script>
+
+    
+    <div>
+        <button class="pay-button">TEST</button>
+        <div id="status"></div>
+    </div>
+
+
+
+    <script>
+        
+        window.addEventListener('load', async () => {
+        
+            
+            if (window.ethereum) {
+                window.web3 = new Web3(ethereum);
+                try {
+                    await ethereum.enable();
+                    var accountsx = await ethereum.getAccounts()
+                    console.log(' accounts; ',accountsx )
+                } catch (err) {
+                    console.log('Web3 from MM denied?', err)
+                }
+            } else if (window.web3) {
+                window.web3 = new Web3(web3.currentProvider)
+            } else {
+                console.log('No Metamask (or other Web3 Provider) installed')
+            }
+        
+        
+
+
+            var ropstern = "https://ropsten.infura.io/v3/f7bb301d059644c6ba79f1ee780fc1cc"
+            var mainnet  = "https://mainnet.infura.io/v3/f7bb301d059644c6ba79f1ee780fc1cc"
+            var web3inf = new Web3( Web3.givenProvider || mainnet )
+            
+            web3.eth.getAccounts( function( err, accounts){
+                console.log(' wo ',accounts )
+                var accountx = accounts[0];
+                web3.eth.getBalance( accountx , (err, balance) => {
+                    console.log(  this.web3.fromWei(balance, "ether") + " ETH" )
+                });                
+            })
+
+            web3inf.eth.getAccounts( function( err , accounts){
+                console.log(' inf acounts', accounts )
+            })
+
+
+            
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

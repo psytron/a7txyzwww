@@ -1,0 +1,24 @@
+{
+    "wallets":{
+        "dcc":"0xdCc388D0E657f5cC9214A4793ae1127b8a33452f",
+        "fire":"0xD6D5cFcBc1044bD9161F5b2Ac06E077c2b81bE95"
+    },
+
+    "contracts":{
+        "mainnet":{
+            "shell_usd":"0x2E703D658f8dd21709a7B458967aB4081F8D3d05",
+            "shell_btc":"0x2E703D658f8dd21709a7B458967aB4081F8D3d05",
+            "usdt": "0xdac17f958d2ee523a2206206994597c13d831ec7", 
+            "usdc":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "susd":"0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+            "dai":"0x6b175474e89094c44da98b954eedeac495271d0f"
+        },
+        "ropsten":{
+            "BasicCoin":"0xD91371330FA8Db27C5F5Da3a750C1653d89d84B6",
+            "DLX2":"0x04719A8bADD4629172dd5Bd54B24c38256EB4670"
+        },
+        "kovan":{
+            "shell_usd":"0xD868790F57B39C9B2B51b12de046975f986675f9"
+        }
+    }
+}

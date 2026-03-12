@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apdex</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"> 
+</head>
+
+
+<body>
+    <script src='js/ext/jquery-3.2.1.min.js'></script>
+    <script src='js/ext/underscore-min.js'></script>
+    <script src="js/ext/plotly-latest.min.js"></script>
+    <script src="js/ext/d3.min.js"></script>
+    <script src='js/ext/TweenMax.min.js'></script>
+    <script src='js/ext/gsap-latest-beta.min.js'></script>
+    <script type="module">
+        import './js/flowmodel.js';
+        import './js/components/date-widget.js';
+        import './js/components/nav-menu.js';
+        import './js/components/brand-logo.js';
+        import './js/components/ticker-tape.js';
+        import './js/components/news-feed.js';
+        import './js/components/plot-chart.js';
+        import './js/components/grid-panel.js';
+        import './js/components/info-panel.js';
+        import './js/components/multi-comps.js';
+    </script>
+
+    <!--NAV-->
+    <div id="topspacer" style="position:relative; padding:16px;">
+        <brand-logo style="color:darkblue;"></brand-logo>
+    </div>
+    <ticker-tape id='tickertape'></ticker-tape>
+    <news-feed id='newsfeed'></news-feed>
+
+    <div class="container" style="position:relative; padding-left:0px; padding-right:0px;">
+        <plot-chart></plot-chart>
+
+        <date-widget style="position:absolute; top:0px; left:10px; width:340px;"></date-widget>
+        <img src="/img/world.svg" style="width:400px; position:absolute; bottom:10px; left:10px; width:340px; ">
+    </div>
+    <div class="container">
+        <div style="background:black; height:10px; "></div>
+        <grid-panel id='gridpanel'></grid-panel>
+        <info-panel></info-panel>
+    </div>
+
+    <chat-form id="chatFrm"></chat-form>
+    <chat-history id="chatHist"></chat-history>
+    <nav-menu style='color:#333333;'></nav-menu>
+
+    <script>
+        var requestURL = "/data/comodhashes.json";
+        document.addEventListener('DOMContentLoaded', function(e){
+            $.ajax({
+                url: requestURL,
+                type: "GET",
+                contentType: 'application/json;charset=UTF-8',
+                data: {
+                    //'selected': document.getElementById('first_cat').value
+                    'selected':'bars'
+                },
+                dataType:"json",
+                success:function ( data){
+                    
+                    tickertape.onDataUpdate( data )
+                    gridpanel.onDataUpdate( data )
+                    newsfeed.onDataUpdate( {nodes:[{symbol:'NEWS ITEM DYNAMIC 1'},
+                            { symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                            {symbol:'NEWS ITEM DYN44 TO THE RESCUE'},
+                            {symbol:'ETHER BTC BRIDGE PUMPING JAMMING EXCITEMENT'},
+                            {symbol:'FANTASTIC MOTTO M$ ROBOTO BTC UPROADING'},
+                            {symbol:'NASDAQ GIANT DIP HAPPENING NOW BIGGEST DIP EVER'},
+                            {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}] } )
+
+                    l = 33
+                }.bind(this)
+            });
+        }, false);
+
+        document.addEventListener('DOMContentLoaded', function(e){
+            $.ajax({
+                url: "/data/news.json",
+                type: "GET",
+                contentType: 'application/json;charset=UTF-8',
+                data: {
+                    //'selected': document.getElementById('first_cat').value
+                    'selected':'bars'
+                },
+                dataType:"json",
+                success:function ( data){
+
+
+                    newsfeed.onDataUpdate( {nodes:[{symbol:'NEWS ITEM DYNAMIC 1'},
+                            { symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                            {symbol:'NEWS ITEM DYN %%$44'},
+                            {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}] } )
+
+                    l = 33
+                }.bind(this)
+            });
+        }, false);
+
+        chatFrm.addEventListener('send', e => {
+            chatHist.add(e.detail.message)
+            tickertape.ping( ' YES from base ')
+        });
+
+    </script>
+
+
+</body>
+</html>

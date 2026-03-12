@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["map.ac658cdc.css","src/css/main.css"],"sourcesContent":["body {\n  background-color: #000;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n}\n/*# sourceMappingURL=map.ac658cdc.css.map */\n","body{background-color: #000000;padding:0;margin:0;overflow:hidden;}"],"names":[],"version":3,"file":"map.ac658cdc.css.map"}

@@ -1,0 +1,51 @@
+
+<!-- OVERLAP--CONTROLS -->
+<div id="slide_drawer" style="position:absolute; width:100%; height:13%; top:-600px; background:rgba(0,0,0,0.5);">
+    X-VISIBLE-X<!-- May need: https://github.com/PierBover/ios-iframe-fix  if it keeps messing up. Latest iOS update fixed it for now.  -->
+</div>
+<div id="slide_drawer2" style="position:absolute; width:100%; height:50%; bottom:-600px; background:rgba(0,0,0,0.5);">
+    <div class="container" style="">
+        <grid-panel id='gridpanel'></grid-panel>
+        <info-panel></info-panel>
+        <style>
+            .commandinput{
+                background: transparent;
+                border: none;
+                outline: none;
+                color:lightgreen;
+                position: absolute;
+                bottom: 0px;
+                width:100%;
+            }
+        </style>
+        <term-tiler></term-tiler>
+        <!-- THIS WILL BE THE INPUT TERMINAL -->
+    </div>
+</div>
+
+
+
+var drawer = document.getElementById( 'slide_drawer')
+var drawer2 = document.getElementById( 'slide_drawer2')
+var sortmenu = document.getElementById( 'sortmenu')
+var drawer_open = 0;
+
+
+
+this.toggleDrawer=function(){
+    //var y_vert = Math.round( Math.random() * 200 )
+    //y_vert-= Math.round( Math.random() * 200 )
+    if( drawer_open){
+        drawer_open=0;
+        TweenMax.to(drawer, 2, {top:-580 , ease:Expo.easeOut} );
+        TweenMax.to(drawer2, 2, {bottom:-580 , ease:Expo.easeOut} );
+        TweenMax.to(sortmenu, 2, {right:-580 , ease:Expo.easeOut} );
+        //TweenMax.to('.holder', 1, { ease:Expo.easeOut, top: -86+'px'});
+    }else{
+        drawer_open=1;
+        TweenMax.to(drawer, 2, {top:0 ,ease:Expo.easeOut});
+        TweenMax.to(drawer2, 2, {bottom:0 ,ease:Expo.easeOut});
+        TweenMax.to(sortmenu, 2, {right:0 , ease:Expo.easeOut} );
+    }
+}
+

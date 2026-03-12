@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <title>HTTPOnly Cookie Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <script type="text/javascript">
+            function testcookie(cookiename) {
+                document.cookie = cookiename + '=new_value; expires=Thu, 31 May 2007 20:47:11 UTC; path=/';
+                if(document.cookie.indexOf(cookiename +'=') == -1) {
+                    document.getElementById('displayer').innerHTML = 'Found a hidden (httpOnly) cookie called "hidden"';
+                } else {
+                    document.getElementById('displayer').innerHTML = 'Didntowkr<p>This works because when setting a cookie under Internet Explorer (which supports httpOnly) with the same name as an httpOnly cookie the set operation fails and therefore a simple comparison of the cookie state after the set reveals this, which can be assumed to be an httpOnly cookie. Obviously this requires the attacker to be able to guess the name of the httpOnly cookie in advance but may actually be of most use (at present) as a browser detection agent.</p>t find a hidden (httpOnly) cookie called hidden';
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="javascript:testcookie('hidden')">
+        <span id="displayer" />
+    </body>
+
+</html>

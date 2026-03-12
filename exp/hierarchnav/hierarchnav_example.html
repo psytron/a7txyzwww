@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Hierarch Nav Runner</title>
+		<base href="" target="_blank">
+        <meta charset="utf-8">
+        <style>
+            body{
+            	background-color:#111133;
+            	color:white;
+            }
+        </style>
+    </head>
+
+    <body> 
+		<div>Hierarch Nav
+			<div id='level0'></div>
+			<div id='level1'></div>
+			<div id='level2'></div>
+			
+		</div>
+        <script type="module">
+			
+			import { Hierarchnav } from './hierarchnav.js';
+
+			var hnav = new Hierarchnav( { model:this , nod:33 , yo:32 } )
+
+		</script>
+
+	</body>
+	
+</html>
+

@@ -1,0 +1,1 @@
+browserify -e js/index.js -o dist/js/bundlex88.js

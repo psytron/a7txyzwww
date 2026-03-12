@@ -1,0 +1,79 @@
+{
+    "nodes": {
+        "9942gsc": {
+            "label": "Alias",
+            "name": "Monglio",
+            "uuid": "9942gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "8568gc": {
+            "label": "isocube",
+            "name": "wouio",
+            "uuid": "8568gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }
+    },
+    "links": {
+        "611a6c5a-1d2e-4015-b435-dd35283e596f": {
+            "a": "9942gc",
+            "b": "8568gc",
+            "label": "CONNECTS",
+            "uuid": "611a6c5a-1d2e-4015-b435-dd35283e596f",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "611a6c5a-1d2e-4015-b435-dd35283e596f",
+                "id": "611a6c5a-1d2e-4015-b435-dd35283e596f"
+            }
+        }
+    },
+    "meta": {
+        "layout": 0,
+        "layouts": [
+            {
+                "9942gc": {
+                    "x": 0.33600581563830767,
+                    "y": 0,
+                    "z": 0.8507803961225449
+                },
+                "8568gc": {
+                    "x": 15.230890326263847,
+                    "y": 0,
+                    "z": -11.687065332475534
+                }
+            }
+        ],
+        "name": "woop"
+    },
+    "action": "savemap"
+}

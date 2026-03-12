@@ -1,0 +1,58 @@
+
+
+<script>
+    var requestURL = "/data/comodhashes.json";
+    document.addEventListener('DOMContentLoaded', function(e){
+        fetch(requestURL, {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', '<ticker-tape id="tickertape2"></ticker-tape>');
+            tickertape2.onDataUpdate(data);
+
+            tickertape.onDataUpdate(data);
+            gridpanel.onDataUpdate(data);
+            newsfeed.onDataUpdate({nodes:[
+                {symbol:'NEWS ITEM DYNAMIC 1'},
+                {symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                {symbol:'NEWS ITEM DYN44 TO THE RESCUE'},
+                {symbol:'ETHER BTC BRIDGE PUMPING JAMMING EXCITEMENT'},
+                {symbol:'FANTASTIC MOTTO M$ ROBOTO BTC UPROADING'},
+                {symbol:'NASDAQ GIANT DIP HAPPENING NOW BIGGEST DIP EVER'},
+                {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}
+            ]});
+            l = 33;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }, false);
+
+    document.addEventListener('DOMContentLoaded', function(e){
+        fetch("/data/timehashes.json", {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            newsfeed.onDataUpdate({nodes:[
+                {symbol:'XVAL XFAJ XEWE XQWE'},
+                {symbol:'NEWS ITEM DYNAMIC 1'},
+                {symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                {symbol:'NEWS ITEM DYN %%$44'},
+                {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}
+            ]});
+            l = 33;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }, false);
+</script>		
+<div style="position:absolute; top:0px;">
+    
+    <ticker-tape id='tickertape'></ticker-tape>
+    <news-feed id='newsfeed'></news-feed>
+</div>

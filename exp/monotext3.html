@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monaco Editor Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c3e50; /* Deep dark grayish blue background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #editor-container {
+            width: 100%; /* Full width of the screen */
+            height: 70vh;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .file-links {
+            margin-bottom: 10px;
+        }
+        .file-link {
+            margin: 0 10px;
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.js"></script>
+    <script>
+        require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs' }});
+        window.MonacoEnvironment = { getWorkerUrl: function(workerId, label) { return `data:text/javascript;charset=utf-8,${encodeURIComponent(`importScripts('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/base/worker/workerMain.js');`)}`; }};
+        
+        let editor;
+        const files = {
+            'file1.js': [
+                'function helloWorld() {',
+                '\tconsole.log("Hello, world!");',
+                '}',
+                '',
+                'helloWorld();'
+            ].join('\n'),
+            'file2.js': [
+                'function greet(name) {',
+                '\tconsole.log("Hello, " + name + "!");',
+                '}',
+                '',
+                'greet("Monaco");'
+            ].join('\n'),
+            'file2.rtf': [
+                '{\\rtf1\\ansi\\deff0',
+                '{\\fonttbl{\\f0\\fswiss Helvetica;}}',
+                '{\\colortbl ;\\red255\\green0\\blue0;}',
+                '\\f0\\fs24 This is some \\b bigger \\b0 text.',
+                '\\par',
+                '\\fs16 This is some \\i smaller \\i0 text.',
+                '}'
+            ].join('\n')
+        };
+
+        function loadFile(fileName) {
+            if (editor) {
+                editor.setValue(files[fileName]);
+            }
+        }
+
+        require(['vs/editor/editor.main'], function() {
+            monaco.editor.defineTheme('custom-dark', {
+                base: 'vs-dark',
+                inherit: true,
+                rules: [
+                    { token: '', foreground: 'ffffff' }, // White foreground
+                    { token: 'delimiter.parenthesis', foreground: 'ffff00' }, // Yellow parentheses
+                    { token: 'parameter', foreground: '0000ff' }, // Blue parameters
+                    { token: 'type', foreground: '0000ff' } // Blue types
+                ],
+                colors: {
+                    'editor.background': '#000000' // Black background
+                }
+            });
+
+            editor = monaco.editor.create(document.getElementById('editor-container'), {
+                value: files['file1.js'],
+                language: 'javascript',
+                theme: 'custom-dark'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="file-links">
+        <span class="file-link" onclick="loadFile('file1.js')">File 1</span>
+        <span class="file-link" onclick="loadFile('file2.rtf')">File 2 (RTF)</span>
+    </div>
+    <div id="editor-container"></div>
+</body>
+</html>

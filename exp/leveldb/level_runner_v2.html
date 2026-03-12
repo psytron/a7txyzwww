@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+
+
+    <script type="module">
+            
+        import level from './web_modules/level.js'
+
+        
+        var db = level('my-db')
+
+        db.get('name', function (err, value) {
+            if (err) return console.log('Ooops!', err) // likely the key was not found
+            console.log('name=' + value)
+        })        
+        
+        
+        var tobj = { key1:303030 , key2:"f4i5j5e6f0e6f" }
+        var stobj = JSON.stringify( tobj )
+
+        // 2) Put a key & value
+        db.put('name2', stobj , function (err) {
+            if (err) return console.log('Ooops!', err) // some kind of I/O error
+
+            // 3) Fetch by key
+            db.get('name2', function (err, value) {
+                if (err) return console.log('Ooops!', err) // likely the key was not found
+                // Ta da!
+                console.log( 'name=' , value , value['key'] )
+                var tobj_retrieved = JSON.parse( value )
+            })
+        })
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

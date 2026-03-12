@@ -1,0 +1,77 @@
+<body style="background-color:#010101;">
+
+    <div class="listitem">
+        <style>
+            .gridpanelcontainer {
+                background-color: #000;
+                font-size: 13px;
+                position: relative;
+                font-family: 'Roboto Condensed', sans-serif;
+                overflow: hidden;
+                display:flex;
+            }
+            .gridcolumn{
+                width:32%;
+                min-width:300px; 
+                border: solid blue 1px;
+            }
+            .griditemcolumn{
+                width:33.1%; 
+            }            
+            .griditem{
+                color:#FFFFFF;
+                position:relative; 
+                overflow:hidden;
+                display:flex;
+                justify-content:space-between;
+                align-items: center;
+                vertical-align: middle;
+                border-bottom: solid gray 1px;
+                font-size: 12px;
+                padding: 4px;
+            }
+            .redarrow{
+                position:absolute;
+                top:50%;
+                width:12px;
+                right:0px;
+                transform: translate(-50%,-50%);
+            }
+            .greenarrow{
+                position:absolute;
+                top:50%;
+                width:12px;
+                right:14px;
+                transform: translate(-50%,-50%);
+            }             
+        </style>
+        <div class="griditem">
+            <div class="griditemcolumn">
+                ${obj.name}
+            </div>
+            <div  class="griditemcolumn" style="position:relative;">
+                <img src="/img/icons/angle-down-solid.svg" class="redarrow" style=" vertical-align:middle;"/>
+            </div>                    
+            
+            <div  class="griditemcolumn">
+                ${obj.price}
+            </div>
+        </div>
+
+
+        <style>
+            .mode_button{
+                border-radius:2px;
+                
+                color:#FFFFFF;
+                font-size:10px;
+                width:24%;
+                font-family: sans-serif;
+                
+            }
+            
+        </style>
+    </div>
+ 
+</body>
+<link rel="stylesheet" href="/css/bootstrap.min.css">

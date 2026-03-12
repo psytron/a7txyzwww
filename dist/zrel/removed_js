@@ -1,0 +1,18 @@
+
+
+            // maybe_not_cause_button_action_complexities 
+//             var all_forms_programatic = {
+
+//                 sign_up_web:[
+//                     { type:"field" , name:"code" , display:"Activation Code" },
+//                     { type:"field" , name:"code" , display:"Activation Code" },
+//                     { type:"field" , name:"code" , display:"Activation Code" }                                
+//                 ], 
+//                 new_local:[
+//                     { type:"field" , name:"domain" , display:"Domain" },
+//                     { type:"field" , name:"code" , display:"Activation Code" },
+//                     { type:"field" , name:"code" , display:"Activation Code" }                                
+//                 ]                
+
+//             }
+

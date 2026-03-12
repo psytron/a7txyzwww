@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+        <script src="airtable.browser.js"></script>
+    </head>
+    <body>
+        <h1>Artists</h1>
+        <div id="artists"></div>
+
+        <hr/>
+        <button id='create'>Create</button>
+        <div id="created"></div>
+    </body>
+
+
+    <script>
+var Airtable = require('airtable');
+// Get a base ID for an instance of art gallery example
+var base = new Airtable({ apiKey: 'patQNGpM0GAYJm3pi.aebb60bfae22c13f4063cc446257dbb3e7ed6ed3874e6e4cb8c9ee9d99bfbb1b' }).base('appS3sAlqo9U2DKWb');
+
+ 
+
+var loadArtists = function() {
+    $('#artists').empty();
+
+    base('endorsements').select({
+        sort: [
+            {field: 'name', direction: 'asc'}
+        ]
+    }).eachPage(function page(records, fetchNextPage) {
+        records.forEach(function(record) {
+            
+            console.log('RECORD: ' );
+            console.log('Retrieved: ', record.get('name'));
+            console.log('Retrieved: ', record.get('url'));
+            console.log('Retrieved: ', record.get('image') );
+
+        });
+
+        fetchNextPage();
+    }, function done(error) {
+        console.log(error);
+    });
+};
+
+
+ 
+
+loadArtists();
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>MAP SM XProtoV.3.35</title><base href="" target="_blank">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    </head>
+    <body>
+        <!--
+        <script type="module">
+            var l = 3;
+            imdport QRCode from '/web_modules/easyqrdsdcodejzsd.js';
+            var options = {
+                text: "odeJS",
+				width: 512,
+				height: 512,
+				colorDark : "#000000",
+				colorLight : "#ffffff"                
+            }
+            // Create new QRCode Object
+            var ek=new QRCode( document.body , options);
+        </script>-->
+
+
+        <script type="module">
+            import VanillaQR from "/web_modules/vanillaqr.js"
+
+            var qr = new VanillaQR({
+                url: "001",
+                size: 80,
+                colorLight: "#00000000",
+                colorDark: "#00FFFF",
+                toTable: false,//output to table or canvas
+                ecclevel: 1,//Ecc correction level 1-4
+                noBorder:true,//Use a border or not
+                borderSize: 4//Border size to output at
+            });
+
+            //Canvas or table is stored in domElement property
+            document.body.appendChild(qr.domElement);
+
+        </script>        
+	</body>
+</html>

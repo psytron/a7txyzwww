@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>libp2p Peer-to-Peer Communication in Browser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #log {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 150px;
+      overflow-y: scroll;
+      margin-top: 10px;
+    }
+    #messages {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    #messages p {
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>libp2p Peer-to-Peer Communication in Browser</h1>
+  <button id="startButton">Start Peer</button>
+  <button id="sendMessageButton" disabled>Send Message</button>
+  <div id="log"></div>
+  <div id="messages"></div>
+
+  <!-- Pre-bundled libp2p library for the browser -->
+  <script src="https://cdn.jsdelivr.net/npm/libp2p@0.45.0/dist/libp2p.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libp2p-websockets@0.17.0/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libp2p-webrtc-star@0.17.0/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libp2p-noise@0.15.0/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libp2p-mplex@0.15.0/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libp2p-mdns@0.15.0/dist/index.min.js"></script>
+
+  <script>
+    let node;
+    let peerId;
+    let remotePeerId;
+    const log = document.getElementById('log');
+    const sendMessageButton = document.getElementById('sendMessageButton');
+    const messagesDiv = document.getElementById('messages');
+    
+    // Function to log messages to the page
+    function logMessage(message) {
+      log.innerHTML += `<p>${message}</p>`;
+      log.scrollTop = log.scrollHeight;
+    }
+
+    // Function to create a new libp2p node
+    async function createLibp2pNode() {
+      peerId = await Libp2p.createPeerId();
+      node = await Libp2p.create({
+        peerId,
+        transports: [
+          new Libp2pWebsockets(),
+          new Libp2pWebrtcStar()
+        ],
+        connectionEncryption: [new Libp2pNoise()],
+        streamMuxers: [new Libp2pMplex()],
+        peerDiscovery: [new Libp2pMdns()]
+      });
+
+      node.on('peer:discovered', (peerId) => {
+        logMessage(`Discovered Peer: ${peerId}`);
+        remotePeerId = peerId.toB58String();
+      });
+
+      node.on('peer:connect', (peerId) => {
+        logMessage(`Connected to Peer: ${peerId}`);
+      });
+
+      node.on('peer:disconnect', (peerId) => {
+        logMessage(`Disconnected from Peer: ${peerId}`);
+      });
+
+      await node.start();
+      logMessage(`Node started with ID: ${peerId.toB58String()}`);
+    }
+
+    // Function to send a message to the connected peer
+    function sendMessage(message) {
+      if (remotePeerId) {
+        const connection = node.connect(remotePeerId);
+        connection.then((conn) => {
+          const stream = conn.newStream();
+          stream.write(message);
+          logMessage(`Sent Message: ${message}`);
+        }).catch(err => {
+          logMessage(`Error sending message: ${err}`);
+        });
+      } else {
+        logMessage('No peer to connect to.');
+      }
+    }
+
+    // Handle the "Start Peer" button click to initialize the libp2p node
+    document.getElementById('startButton').addEventListener('click', () => {
+      createLibp2pNode().then(() => {
+        logMessage('libp2p node created and listening for peers...');
+        sendMessageButton.disabled = false; // Enable Send Message button once the peer is ready
+      });
+    });
+
+    // Handle the "Send Message" button click to send a test message
+    sendMessageButton.addEventListener('click', () => {
+      const message = 'Hello from peer!';
+      sendMessage(message);
+      const newMessageElement = document.createElement('p');
+      newMessageElement.textContent = `You: ${message}`;
+      messagesDiv.appendChild(newMessageElement);
+    });
+
+    // Automatically show received messages in the "messages" section
+    node.on('stream', (stream) => {
+      stream.on('data', (data) => {
+        const message = data.toString();
+        const messageElement = document.createElement('p');
+        messageElement.textContent = `Peer: ${message}`;
+        messagesDiv.appendChild(messageElement);
+      });
+    });
+
+  </script>
+</body>
+</html>

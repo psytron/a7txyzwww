@@ -1,0 +1,209 @@
+{
+    "nodes": {
+        "3714gc": {
+            "label": "Tag",
+            "name": "LosAngeles",
+            "x":"powerplant",
+            "y":"nuclear",
+            "z":"300",
+            "lat": "34.05223",
+            "lng": "-118.24368",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7254gc": {
+            "label": "Tag",
+            "name": "NewYork",
+            "country": "US",
+            "lat": "40.71427",
+            "lng": "-74.00597",            
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7254gftftfc": {
+            "label": "Tag",
+            "name": "Honolulu",
+            "country": "US",
+            "lat": "21.30694",
+            "lng": "-157.85833",        
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7254gftftfcjijiji": {
+            "label": "Tag",
+            "name": "Honolulu",
+            "country": "US",
+            "lat": "21.30694",
+            "lng": "-157.85833",        
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "7254gftfthhvvcjijiji": {
+            "label": "Tag",
+            "country": "GB",
+            "name": "London",
+            "lat": 51.50853,
+            "lng": -0.12574,   
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "tokyoeosis": {
+            "label": "Tag",
+            "country": "JP",
+            "name": "Tokyo",
+            "lat": 35.6895,
+            "lng": 139.69171,  
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "dubi": {
+            "label": "Tag",
+            "country": "UAE",
+            "name": "Dubai",
+            "lat": 25.2048, 
+            "lng": 55.2708,  
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }     ,
+        "listolist": {
+            "label": "List",
+            "country": "UAE",
+            "name": "List",
+            "lat": 35.2048, 
+            "lng": 55.2708,  
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }                       
+    },
+    "links": {},
+    "meta": {
+        "layout": 0,
+        "layouts": [
+            {
+                "3714gc": {
+                    "x": -45.993472931881016,
+                    "y": 0.5309,
+                    "z": 13.4122646140533
+                },
+                "7254gc": {
+                    "x": 43.73750223667527,
+                    "y": 0.4166,
+                    "z": 12.044941299260799
+                }
+            }
+        ],
+        "name": "global"
+    }
+}

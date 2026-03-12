@@ -1,0 +1,28 @@
+{
+  "imports": {
+    "@walletconnect/client": "./@walletconnect/client.js",
+    "@walletconnect/qrcode-modal": "./@walletconnect/qrcode-modal.js",
+    "buffer": "./buffer.js",
+    "ccxt": "./ccxt.js",
+    "ethers": "./ethers.js",
+    "gsap": "./gsap.js",
+    "idb": "./idb.js",
+    "idb-keyval": "./idb-keyval.js",
+    "jquery": "./jquery.js",
+    "lightweight-charts": "./lightweight-charts.js",
+    "ngraph.forcelayout": "./ngraph.forcelayout.js",
+    "ngraph.graph": "./ngraph.graph.js",
+    "ngraph.kruskal": "./ngraph.kruskal.js",
+    "ngraph.merge": "./ngraph.merge.js",
+    "ngraph.path": "./ngraph.path.js",
+    "ngraph.physics.simulator": "./ngraph.physics.simulator.js",
+    "ngraph.quadtreebh": "./ngraph.quadtreebh.js",
+    "stats-js": "./stats-js.js",
+    "three": "./three.js",
+    "three.interactive": "./three.interactive.js",
+    "three/addons": "./three/addons.js",
+    "topojson-client": "./topojson-client.js",
+    "vanillaqr": "./vanillaqr.js",
+    "yaml": "./yaml.js"
+  }
+}

@@ -1,0 +1,38 @@
+
+<body>
+    <div>
+        <form style="">
+            <style>
+               .minibtns{
+                    font-size:12px;   
+                }
+            </style>
+
+
+            <div class="form-group" style="margin-top:60px;">
+                <label class='frmlabel' for="username">EMAIL / KEY</label>
+                <input type="text" class="form-control" id="username" placeholder="email"  style="text-align:start;     display: block;">
+            </div>
+            
+            <div class="form-group">
+                <label class='frmlabel' for="password">PASSPHRASE</label>
+                <input type="password" class="form-control" id="password" placeholder="Password"  style="text-align:start;     display: block; ">
+                <div id="logerrout" class='frmlabel logerout'></div>
+            </div>
+            
+            <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+            </div>
+                            
+            <div style="text-align:center; margin-top:18px;">
+                <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                <span id="newaccount"  fn="show_reset"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Reset</span>
+                <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Sign Up </span>
+                <button id="authbtn" fn="login"  type="button" class="btn btn-primary minibtns" >Login</button>
+                <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+            </div>
+        </form>    
+    </div>
+</body>
+
+

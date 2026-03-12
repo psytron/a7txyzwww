@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Data Grid V2</title>
+  <style>
+    body {
+      background: #181818;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .grid-container {
+      margin-top: 40px;
+      background: #23272f;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px #0008;
+      overflow-x: auto;
+      padding: 24px 24px 12px 24px;
+      min-width: 340px;
+      max-width: 90vw;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px;
+    }
+    th, td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #333;
+      text-align: left;
+      font-size: 1rem;
+    }
+    th {
+      background: #2d323c;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      transition: background 0.2s;
+    }
+    th:hover {
+      background: #3a4050;
+    }
+    th .sort-arrow {
+      font-size: 0.9em;
+      margin-left: 6px;
+      opacity: 0.7;
+    }
+    tr {
+      transition: background 0.15s;
+    }
+    tr:hover {
+      background: #232b3a;
+    }
+    td.editing {
+      background: #2a3a4a;
+      padding: 0;
+    }
+    td input {
+      width: 100%;
+      background: #2a3a4a;
+      color: #f0f0f0;
+      border: none;
+      font-size: 1rem;
+      padding: 10px 16px;
+      outline: none;
+      box-sizing: border-box;
+    }
+    @media (max-width: 700px) {
+      .grid-container {
+        padding: 8px;
+      }
+      th, td {
+        padding: 7px 8px;
+        font-size: 0.95rem;
+      }
+      table {
+        min-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <table id="dataGrid"></table>
+  </div>
+  <script>
+    // Inline data array (JSON-like)
+    const data = [
+      { id: 1, name: "Nikola Tesla",    vx: 12, gender: "male",   color: "red",   dob: "1856-07-10" },
+      { id: 2, name: "Thomas Edison",   vx: 21, gender: "male",   color: "blue",  dob: "1847-02-11" },
+      { id: 3, name: "Marie Curie",     vx: 33, gender: "female", color: "green", dob: "1867-11-07" },
+      { id: 4, name: "Ada Lovelace",    vx: 44, gender: "female", color: "purple",dob: "1815-12-10" },
+      { id: 5, name: "Alan Turing",     vx: 55, gender: "male",   color: "gray",  dob: "1912-06-23" },
+      { id: 6, name: "Grace Hopper",    vx: 66, gender: "female", color: "navy",  dob: "1906-12-09" },
+      { id: 7, name: "Katherine Johnson", vx: 77, gender: "female", color: "teal", dob: "1918-08-26" },
+      { id: 8, name: "Tim Berners-Lee", vx: 88, gender: "male",   color: "orange",dob: "1955-06-08" },
+      { id: 9, name: "Hedy Lamarr",     vx: 99, gender: "female", color: "pink",  dob: "1914-11-09" },
+      { id: 10, name: "Steve Wozniak",  vx: 100, gender: "male",  color: "lime",  dob: "1950-08-11" }
+    ];
+
+    // Column definitions (order matters)
+    const columns = [
+      { key: "id",    label: "ID" },
+      { key: "name",  label: "Name" },
+      { key: "vx",    label: "Density" },
+      { key: "gender",label: "Gender" },
+      { key: "color", label: "Color" },
+      { key: "dob",   label: "Birth Date" }
+    ];
+
+    let sortKey = null;
+    let sortDir = 1; // 1 = asc, -1 = desc
+
+    function renderGrid() {
+      const table = document.getElementById('dataGrid');
+      // Header
+      let thead = '<thead><tr>';
+      columns.forEach(col => {
+        let arrow = '';
+        if (sortKey === col.key) {
+          arrow = `<span class="sort-arrow">${sortDir === 1 ? '▲' : '▼'}</span>`;
+        }
+        thead += `<th data-key="${col.key}">${col.label}${arrow}</th>`;
+      });
+      thead += '</tr></thead>';
+      // Body
+      let tbody = '<tbody>';
+      data.forEach((row, rowIdx) => {
+        tbody += `<tr>`;
+        columns.forEach((col, colIdx) => {
+          tbody += `<td data-row="${rowIdx}" data-col="${col.key}">${escapeHTML(row[col.key])}</td>`;
+        });
+        tbody += `</tr>`;
+      });
+      tbody += '</tbody>';
+      table.innerHTML = thead + tbody;
+    }
+
+    // Escape HTML for safe rendering
+    function escapeHTML(str) {
+      if (str === undefined || str === null) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'})[m];
+      });
+    }
+
+    // Sorting
+    function sortData(key) {
+      if (sortKey === key) {
+        sortDir *= -1;
+      } else {
+        sortKey = key;
+        sortDir = 1;
+      }
+      data.sort((a, b) => {
+        if (a[key] === b[key]) return 0;
+        if (a[key] === undefined) return 1;
+        if (b[key] === undefined) return -1;
+        if (typeof a[key] === 'number' && typeof b[key] === 'number') {
+          return (a[key] - b[key]) * sortDir;
+        }
+        return (String(a[key]).localeCompare(String(b[key]), undefined, {numeric:true})) * sortDir;
+      });
+      renderGrid();
+    }
+
+    // Editing
+    function enableEditing() {
+      const table = document.getElementById('dataGrid');
+      table.addEventListener('click', function(e) {
+        const td = e.target.closest('td');
+        if (!td || td.classList.contains('editing')) return;
+        const rowIdx = +td.getAttribute('data-row');
+        const colKey = td.getAttribute('data-col');
+        if (colKey === 'id') return; // Don't allow editing ID
+        td.classList.add('editing');
+        const oldValue = data[rowIdx][colKey];
+        td.innerHTML = `<input type="text" value="${escapeHTML(oldValue)}" />`;
+        const input = td.querySelector('input');
+        input.focus();
+        input.setSelectionRange(0, input.value.length);
+        function saveEdit() {
+          data[rowIdx][colKey] = input.value;
+          td.classList.remove('editing');
+          td.innerHTML = escapeHTML(input.value);
+        }
+        input.addEventListener('blur', saveEdit);
+        input.addEventListener('keydown', function(ev) {
+          if (ev.key === 'Enter') {
+            input.blur();
+          } else if (ev.key === 'Escape') {
+            td.classList.remove('editing');
+            td.innerHTML = escapeHTML(oldValue);
+          }
+        });
+      });
+    }
+
+    // Header click for sorting
+    function enableSorting() {
+      const table = document.getElementById('dataGrid');
+      table.addEventListener('click', function(e) {
+        const th = e.target.closest('th');
+        if (!th) return;
+        const key = th.getAttribute('data-key');
+        if (!key) return;
+        sortData(key);
+      });
+    }
+
+    // Initial render
+    renderGrid();
+    enableEditing();
+    enableSorting();
+  </script>
+</body>
+</html> 

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>SM CF PROTO V 0.28</title><meta charset="utf-8">
+        <base href="" target="_blank"><!--<base href="/xframe/" target="_blank">--><!--IF serve APP Host route/ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style> body { background-color:#000000; padding:0; margin:0; overflow:hidden; } </style>
+    </head>
+    <body>
+        <script src="js/ext/socket.io.js"></script>
+        <script src='js/ext/TweenMax.min.js'></script>
+        <script src="js/ext/jquery-3.2.1.min.js"></script>
+        <script src="js/slimeball.js"></script>
+        <script type="module">
+            import './js/components/nav-menu.js';    // navMenu
+            import './js/components/search-mod.js';  // searchMod  
+            import './js/components/clear-frame.js'; // hyperFrame  import './js/clear-frame.js' // self clearing iFrame 
+            import './js/components/log-term.js';    // logTerm 
+            import StateModel from './js/statemodel.js'
+            
+            
+            function ready() {
+                class BlankModel{
+                    constructor() {
+                        console.log(' running BlankModel constructor. ')
+                    }
+                    ping( p ){
+                        console.log(' P:',p)
+                    }
+                }
+                var b = new BlankModel()
+                b.ping('wowfromparameter')
+
+                var c = new StateModel()
+
+                searchmod.addEventListener('navEvent', clearframe.onNavEvent , true );
+                searchmod.addEventListener('navEvent', navmenu.onNavEvent , true );
+                document.addEventListener('logEvent', logterm.onLogEvent , true );
+                document.addEventListener('authEvent', function(e){ console.log('BSE:',e,e.detail) }, true)
+            }
+            document.addEventListener( "DOMContentLoaded", ready );
+        </script>
+        <clear-frame id="clearframe"></clear-frame>
+        <log-term id="logterm"></log-term>
+        <search-mod id="searchmod"></search-mod>
+        <nav-menu id="navmenu"></nav-menu>
+    </body>
+</html>

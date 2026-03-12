@@ -1,0 +1,94 @@
+{
+    "meta": {
+        "layout": 0,
+        "layouts": [
+            {
+                "278766ee-c26b-4c0c-9ca3-4ad8a37d30b5": {
+                    "x": 0.03729535488975255,
+                    "y": 0,
+                    "z": -1.0241961425207649
+                },
+                "46559068-f23f-44b0-b2ac-77da1ec9651b": {
+                    "x": 13.703216212126753,
+                    "y": 0,
+                    "z": 7.335397188481796
+                },
+                "315f5a3a-8dee-4956-a9f9-5abdf16495f3": {
+                    "x": 5.794988178722596,
+                    "y": 0,
+                    "z": 13.863304096476263
+                }
+            }
+        ],
+        "name": "shibb_demo"
+    },
+    "nodes": {
+        "278766ee-c26b-4c0c-9ca3-4ad8a37d30b5": {
+            "uuid": "278766ee-c26b-4c0c-9ca3-4ad8a37d30b5",
+            "label": "Dtoken",
+            "brand": "ethereum",
+            "symbol": "SHIB",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "46559068-f23f-44b0-b2ac-77da1ec9651b": {
+            "uuid": "46559068-f23f-44b0-b2ac-77da1ec9651b",
+            "label": "Dtoken",
+            "brand": "ethereum",
+            "symbol": "WBTC",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "315f5a3a-8dee-4956-a9f9-5abdf16495f3": {
+            "uuid": "315f5a3a-8dee-4956-a9f9-5abdf16495f3",
+            "label": "Ctoken",
+            "brand": "coinbasepro",
+            "symbol": "BTC/USD",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }
+    },
+    "links": {}
+}

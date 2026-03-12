@@ -1,0 +1,4 @@
+.DS_Store
+.mdb
+.parcel-cache
+node_modules

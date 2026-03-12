@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <script src="./v_modules/web3.min.js" type="text/javascript"></script>
+    <script src="./v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script>
+    <script src="./v_modules/ccxt.browser.js" type="text/javascript"> </script>
+    <script src="./v_modules/refs.js" type="text/javascript"> </script>
+    <script src="./v_modules/blockstate.js" type="text/javascript"> </script>
+
+    
+    <div>
+        <button class="pay-button">TEST</button>
+        <div id="status"></div>
+    </div>
+    <script type="module">
+        
+        // DEPS 
+        import { Alias } from './v_modules/alias.js';
+        import { Vehicle } from './v_modules/vehicle.js';
+        var ref = window.ref;
+        var ccxt = window.ccxt;
+
+        var cb = new ccxt.coinbasepro()
+        var bn = new ccxt.binance()
+
+
+        
+        cb.fetchTicker('BTC/USD').then( (o) =>{
+             console.log(' wo: ',o ) 
+        })
+        bn.fetchTicker('BTC/USDT').then( (o) =>{
+             console.log(' wo: ',o ) 
+        })        
+        
+        var a1 = new Alias( { driver:'metamask' } )  //var a1 = new Alias( { driver:'aes' , identifier:'miccco' })
+        var shell = new Vehicle( { address: ref.contracts.kovan.shell_usd })
+    
+        var ref = ref; // 
+        var block_state = new BlockState() 
+        //block_state.startContext( ref.contracts.kovan.shell_usd ).then(  onStart )
+
+        block_state.startContext( { contract:ref.contracts.kovan.shell_usd , network:'kovan' } ).then(  onStart )
+        
+        function onStart( state ){
+            console.log(  state.account  );
+            console.log(  state.web3 )
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

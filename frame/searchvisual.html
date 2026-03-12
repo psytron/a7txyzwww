@@ -1,0 +1,127 @@
+<div>
+    <style>
+        .spin{
+            width:42px;
+            position:absolute;
+            right:0px;
+            top:50%;
+            transform: translateY(-50%);
+        }      
+        .resu{
+            position:relative;
+            border-top: solid rgba(0, 85, 240, 0.24);
+            border-width:thin;
+            border-radius:0px;
+            margin-bottom:0px;
+            overflow:hidden;
+            font-size:12px;
+            cursor: pointer;
+            cursor: hand;
+            color:#AAAAAA;
+            margin-right:6px;
+            margin-left:6px;
+            background-color: rgba(15,15,15,0.7); }
+        .res_icon{
+            width:25px;
+        }
+        .resutok{ background-color:white; border:solid #CCCCCC 1px; border-radius:10px; margin-bottom:4px; overflow:hidden; font-size:23px; text-align:center; padding:20px; }
+        .colu{ display: inline-block;padding:9px;}
+        .field1{ }
+        .field2{/* width:25px; */
+            width:70px;
+            font-size:10px;
+            padding:8px;
+            margin-top:5px;
+        }
+        .field3{ }
+        .colulast{
+            display: inline-block;
+            position:absolute;
+            right:3px;
+            margin: 11px;
+            top:1px;
+        }
+        .playi{ width:20px;  display: block; margin: 0 auto; }
+        .active{ display:none; }
+        .startsurv{
+            font-size:20px;
+            width:20px;
+            margin-left:18px;
+            text-align: right;}
+        .light{ color:#CCCCCC; }
+        
+        .searchholder{
+            
+            /* Remove margin:auto and margin-top, set to hug top */
+            margin: 0;
+            padding: 0;
+            display:table;
+            position: absolute;
+            z-index: 10;
+        }
+        .form-group{margin-bottom: 10px;}
+        .searchlogo{ position:absolute; left:8px; bottom:0px; vertical-align:bottom; font-size:13px; color:#9999BB; }
+        #searchbox{ 
+            background-color:#060606;  
+            border: solid #444480 1px; 
+            color:#DDDDDD;
+            border-radius:0.55rem;}
+        .octlogo{  width:44px; position:absolute; right:5px; margin-bottom:4px; }
+        .survmessage{ font-size:10px; color:#888888; text-align:center; }
+        .function_option_0{
+            text-align: center;
+            border: 0px;
+            background-color: #050531;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .function_option_1{
+            text-align: center;
+            border: -3px;
+            background-color: #011901;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 2px;
+            padding-right: 14px;
+            padding-left: 14px;
+        }
+
+        .Center-Container {
+            position: absolute;
+            height:100%;
+            width:100%;
+        }
+        .Absolute-Center {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        input:focus::-webkit-textfield-decoration-container {
+            visibility: hidden;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+        }                  
+    </style>
+
+    <!--oooXXXooo-->
+    <div class="searchholder">
+        <div class="brand" style="margin-top:18px;">
+        </div>
+        <div class="form-groupXL" style="position:relative;" incomponent="true">
+            <input id='searchbox' type="text" class="form-control input-lg"  autocomplete="off" spellcheck="false" incomponent="true">
+            <img class="spin" src="/img/spinoff.png"/>
+            <img class="spin active" src="/img/spinner.gif" incomponent="true"/>
+        </div>
+        
+        <div id="search_results">
+        </div>
+        <div class="searchcontainer">
+        </div>
+    </div>
+    <!--oooXXXooo-->
+</div>

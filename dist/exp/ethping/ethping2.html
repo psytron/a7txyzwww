@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <button class="enableEthereumButton btn">Enable Ethereum</button>
+        <button class="sendEthButton btn">Send Eth</button>
+        <div id="status"></div>
+    </div>
+    <script type="module">
+
+        /*
+        import BN from './web_modules/bn.js';
+
+        var a = new BN('dead', 16);
+        var b = new BN('101010', 2);
+
+        var res = a.add(b);
+        console.log(res.toString(10));  // 57047  */
+        
+
+        const ethereumButton = document.querySelector('.enableEthereumButton');
+        const sendEthButton = document.querySelector('.sendEthButton');
+
+        let accounts = [];
+
+        //Sending Ethereum to an address
+        sendEthButton.addEventListener('click', () => {
+            ethereum
+                .request({
+                method: 'eth_sendTransaction',
+                params: [
+                    {
+                    from: accounts[0],
+                    to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+                    value: '0x29a2241af62c0000',
+                    gasPrice: '0x09184e72a000',
+                    gas: '0x2710',
+                    },
+                ],
+                })
+                .then((txHash) => console.log(txHash))
+                .catch((error) => console.error);
+            });
+
+            ethereumButton.addEventListener('click', () => {
+            getAccount();
+        });
+
+        async function getAccount() {
+            accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+        }
+
+    </script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    
+    <script type="module">
+        //var web3  = window.web3;
+        /*
+        console.log( Web3.utils.toHex('ether') ); 
+
+        import Web3 from "./x_modules/web3.js";
+        import Web3Modal from "./x_modules/web3modal.js";
+
+        const providerOptions = {
+         See Provider Options Section 
+        };
+
+        const web3Modal = new Web3Modal({
+        network: "mainnet", // optional
+        cacheProvider: true, // optional
+        providerOptions // required
+        }); */
+
+        console.log(' runnining  async ')
+
+        import Web3 from "./web_modules/web3.js";
+        import Web3Modal from "./web_modules/web3modal.js";
+
+        async function myFetch() {
+            
+            const Web3Modal = window.Web3Modal.default;
+            const providerOptions = {
+            /* See Provider Options Section */
+            };
+
+            const web3Modal = new Web3Modal({
+                network: "mainnet", // optional
+                cacheProvider: true, // optional
+                providerOptions // required
+            });
+
+            const provider = await web3Modal.connect();   
+        }
+
+        myFetch().then( e => {  
+            console.log('return') 
+        }).catch(e => {
+            console.log('There has been a problem with your fetch operation: ' + e.message);
+        });
+
+
+
+
+        
+    </script>
+
+
+</body>
+
+</html>

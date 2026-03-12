@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>DYN LOGO</title><base href="" target="_blank">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+	<!--
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101282159);</script>
+	<script async src="//static.getclicky.com/js"></script>
+    -->
+        
+    </head>
+    <body>
+ 
+        <style>
+            body {
+                color: #9999CC;
+                background-color: #2a2f5c;
+            }            
+            .page_icon{
+            	filter: contrast(50%);
+            }
+            .tile{
+            	width:102px;
+            	height:102px;
+            	margin-bottom:6px;
+            }
+            .option_tile{
+            	border:solid #44447a 1px;
+            	padding:4px;
+            	border-radius:8px;
+            	width:126px;
+            	margin: 6px;
+            	background-color: #343c72;
+            	align-items: center;
+            	text-align: center;
+            }
+            .op_title{
+            	 color: #c9c9ff;
+            	 font-size:24px;
+            	 font-weight:bold;
+            }
+            .op_subtitle{
+                font-size:19px;
+            }
+            .op_subtitle::before{
+				background-image: url('./img/ethlogo_purp_small.png');
+				background-size: 10px 20px;
+				display: inline-block;                
+                width:44px;
+                height:auto;
+                border:solid green 1px;
+                background-repeat: no-repeat;
+            }
+            .op_subtitle2{
+                font-size:16px;
+            }            
+            .op_subsub{
+                font-size:12px;
+            }
+            .minibtns{
+
+            }
+            /*Filter styles*/
+            .saturate { filter: saturate(3); }
+            .grayscale { filter: grayscale(100%); }
+            .contrast { filter: contrast(50%); }
+            .brightness { filter: brightness(0.25); }
+            .blur { filter: blur(3px); }
+            .invert { filter: invert(100%); }
+            .sepia { filter: sepia(100%); }
+            .huerotate { filter: hue-rotate(180deg); }
+            .rss.opacity { filter: opacity(50%); }
+        </style>
+                
+        <!--main-->
+        <div style="">
+
+			<div id='tapeholder' style="
+			         display:flex; 
+			         flex-wrap:wrap; "></div>
+            <div id='macrostats' style=" 
+                    display: flex;
+                    justify-content:center;
+                        
+                    flex-wrap:wrap;              
+  
+                    margin-right: auto;
+
+                    margin-left: auto;"></div>
+            
+				<!--
+				<div id="main_banner" style="display:flex; justify-content:center; padding:0px; background:#3c3c78; margin-top:5px; margin-bottom:2px; height:2px;">
+					<div id="logo">
+						<img class="page_icon" src="./img/individual_lic.png"></img>
+					</div>
+					<div style="padding:15px;  padding-right:0px;">
+
+						<div style="color:white; font-size:18px; ">
+							Personal Automation Platform
+						</div>
+						<p>
+							V 0.1.1 Alpha
+						</p>
+
+					</div>
+				</div>
+
+				<div id='logo' class="tile" style="display:flex; justify-content:center; flex-direction: column; margin-top:80px;  ">
+				</div>-->
+
+                <div class="" style="display:flex; justify-content:center;  ">
+                    
+                    <div class="option_tile" >
+						<img class="page_icon" src="./img/individual_lic.png"></img>
+                        <div class="op_title">Single</div>
+                        <div class="op_subsub">HyperCluster-1X</div>
+						<div class="op_subtitle" id="eth_price_1">0.031 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_1">( $99 )</div>                        
+                        <button id="select_1" fn="activate"  type="button" class="btn btn-primary minibtns" >Activate</button>
+					</div>
+					<div class="option_tile"  >
+                        <img class="page_icon" src="./img/enterprise_lic.png"></img>
+						<div class="op_title">Cluster</div>
+                        <div class="op_subsub">HyperCluster-8X</div>
+						<div class="op_subtitle" id="eth_price_2">0.319 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_2">( $999 )</div>  
+                        <button id="select_2"  fn="activate"  type="button" class="btn btn-primary minibtns" >Activate</button>                      
+					</div>
+					<div class="option_tile"  >
+                        <img class="page_icon" src="./img/enterprise_lic.png"></img>
+						<div class="op_title">Cluster</div>
+                        <div class="op_subsub">HyperCluster-8X</div>
+						<div class="op_subtitle" id="eth_price_2">0.319 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_2">( $999 )</div>  
+                        <button id="select_2"  fn="activate"  type="button" class="btn btn-primary minibtns" >Activate</button>                      
+					</div>
+					<div class="option_tile"  >
+                        <img class="page_icon" src="./img/enterprise_lic.png"></img>
+						<div class="op_title">Cluster</div>
+                        <div class="op_subsub">HyperCluster-8X</div>
+						<div class="op_subtitle" id="eth_price_2">0.319 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_2">( $999 )</div>  
+                        <button id="select_2"  fn="activate"  type="button" class="btn btn-primary minibtns" >Activate</button>                      
+					</div>					
+                </div>                
+
+
+
+
+            <style>
+                svg { 
+                    cursor: pointer; 
+                } /* whole rectangle */
+ 
+				svg:hover {
+				    fill: red;
+				}
+
+                .intro{
+                    text-align: center;
+                    align-items: center;			
+                }
+                .install_holder{
+                    /* padding-left:20px; */
+                    /* padding-right:20px; */
+                    display: flex;
+                    justify-content: center;
+                    margin-right: auto;
+                    margin-left: auto;
+                    min-width: 330px;
+                }
+                .install_item{
+                    text-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin: 14px;
+                }
+                .install_icon{
+                    width:63px;
+                    color:white;
+                    fill:orange;
+
+                }
+                .install_icon svg path {
+                    fill: blue;
+                }
+                .install_text{
+                    align-items: center;
+                    font-weight:bold;
+                    font-size:17px;
+                }
+                .install_link{
+                    align-items: center;
+                    font-size:14px;
+                }		
+                .warning_span{
+                    color:red;
+                }
+                .warnings{
+                    font-size:12px;
+                }
+            </style>
+
+			<!-- INSTALL VERSIONS BAR -->
+			<div class="install_holder">
+				<div class="install_item">
+					<object class="install_icon page_icon" data="img/os/apple.svg" type="image/svg+xml"  fill="white">></object>
+					<div class="install_text">Mac OS</div>
+					<!--<a class="install_link"  href="#">alias.v0.2.1.dmg</a>-->
+				</div>
+				<div class="install_item"  href="http://signalmesh.io/download.zip">
+					<object class="install_icon page_icon" data="img/os/windows.svg" type="image/svg+xml"></object>
+					<div class="install_text">Windows</div>
+					<!--<a class="install_link"  href="http://signalmesh.io/download.zip">alias.v0.2.1.zip</a>-->
+				</div>
+				<div class="install_item"  href="http://signalmesh.io/download.zip">
+					<object class="install_icon page_icon" data="img/os/linux.svg" type="image/svg+xml"></object>
+					<div class="install_text">Linux</div>
+					<!--<a class="install_link"  href="http://signalmesh.io/download.zip">alias.v0.2.1.tar</a>-->
+				</div>
+			</div>
+			<!-- INSTALL VERSIONS BAR -->
+
+            <style>
+                .terms_holder{
+                    text-align:center;
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-width:280px; 
+                }
+            </style>
+            <div class="terms_holder">
+                <div class="termsd_text" style="font-size:9px;">By using this site, you acknowledge that you have read the <a href="./terms.html">terms of service</a> and <a href="./terms.html"> privacy policy</a> </div>
+                <div class="mb-1" style="font-size:11px; margin-top:6px;">V0.17<span style="font-size:13px;">©</span> 2022 Experimental</div>
+            </div>
+        
+
+        </div>
+
+        <script src="v_modules/ccxt.browser.js" type="text/javascript"> </script>
+        <script type="module" >
+
+            import { platform } from "../x_modules/util/platform.js"
+            //import VanillaQR from "./web_modules/vanillaqr.js"
+            import { TickerTape } from '../x_modules/apps/tickertape/tickertape.js'
+            import { factory2d } from '../../../factory/factory2d.js'
+            import gluemapper from '../../../x_modules/util/gluemapper.js'
+
+            //document.body.querySelector("#logo").innerHTML='<img src="/img/'+platform.domain()+'.png" style="width:85px;"></img>'
+
+            var unit_price_1 = parseFloat( document.body.querySelector("#eth_price_1").innerHTML );
+            var unit_price_2 = parseFloat( document.body.querySelector("#eth_price_2").innerHTML );
+            var unit_price_3 = parseFloat( document.body.querySelector("#eth_price_2").innerHTML );
+
+
+
+            var cb = new ccxt.coinbase();
+            var cb = new ccxt.binanceus();
+
+
+            cb.fetchTickers().then( function( obj ){
+                
+                var close = obj['ETH/USD'].close;    
+                document.body.querySelector("#eth_price_1").innerHTML = ( 99 / close ).toFixed( 3 ) + ' ETH';
+                document.body.querySelector("#eth_price_2").innerHTML = ( 999 / close ).toFixed( 3 ) + ' ETH';
+                //document.body.querySelector("#eth_price_3").innerHTML = ( 1999 / close ).toFixed( 3 ) + ' ETH';
+                var markets_arr = Object.keys(obj).map( (key) => key ); // All 
+
+                var lxo = ['1INCH/USD','AAVE/USD','ATOM/USD','BAT/USD','BCH/USD','BTC/USD',
+                        'BTC/USDT', 'BTC/USDT','ETH/BTC', 'ETH/USD','COMP/USD','MKR/USD','ADA/USD',
+                        'LTC/USD',  'UNI/USD', 'YFI/USD', '1INCH/USD','MATIC/USD','DOGE/USDT']
+
+                var mrks = {}
+                for( var i in obj ){
+                    if( lxo.includes(i) ){
+                        mrks[i]=obj[i];
+                    } 
+                }
+                var inlist={ nodes:mrks }
+
+                var tt = new TickerTape( { target:document.querySelector('#tapeholder') } );
+                tt.buildTicker( inlist );     
+
+            });
+            console.log(' er ', ccxt )
+
+			
+			var x = 9;
+            var tmpl = `   
+				<div id="tmpl">
+					<div class="wut">${x}</div>
+
+				</div>`;
+
+
+			await factory2d.loadAll( ['./opanels.html']).then( ( libx )=>{  
+				console.log('library loaded') 
+			});  
+
+			//var vnod  = factory2d.renderNodeSync('tickeritem_green',{});
+			//var vnod2 = factory2d.renderNodeSync('tickeritem',{ close:999 });
+			//vnod2.querySelector('.tickeritemholder').classList.add('green');
+			//var vnod3 = factory2d.renderNodeSync('tickeritem',{});
+			//vnod3.querySelector('.tickeritemholder').classList.add('red');
+			//document.body.append( vnod );
+			//document.body.append( vnod2 );
+			//document.body.append( vnod3 );
+			//var xcontainer = this.shadowRoot.querySelector('.tickertapecontainer')
+			//var xcontainer = document.querySelector('ticker-tape').shadow
+
+            function buildItems( out ){
+                var xcontainer = document.querySelector('#macrostats')
+				xcontainer.innerHTML='';
+
+				var asset_list=out
+				var ndx = 0;
+				for ( var a in asset_list ){
+					var obj = asset_list[a]
+					var vnode = factory2d.renderNodeSync('macroitem',obj)
+					
+
+                    gluemapper.push( obj , vnode );
+
+
+					xcontainer.append( vnode )
+
+					if( ndx >8 ){ break; };
+					ndx++
+				}    
+            }
+       
+
+            fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd")
+            .then(res => res.json())
+            .then(out => {
+                console.log('Checkout this JSON! ', out)	
+                buildItems( out )
+                 
+            })
+            .catch(err => { 
+				fetch("/data/geckmarv.json")
+				.then(res => res.json())
+				.then(out => {
+					console.log('Checkout this JSON! ', out)	
+					buildItems( out )
+
+				})
+				.catch(err => { 
+
+					throw err 
+				 } );
+                //throw err 
+             } );
+
+        </script>
+
+
+
+
+
+
+        <script>
+            // FIX WALLET CONNECT MISSING GLOBALS:  
+            if (global === undefined){ var global = window; }    
+        </script>
+        <script type="module">
+            
+            // FIX WALLET CONNECT MISSING BUFFERS
+            import { Buffer } from "./../web_modules/buffer.js";
+            window.Buffer = Buffer;        
+            import QRCodeModal from "./../web_modules/@walletconnect/qrcode-modal.js";
+            import WalletConnect from "./../web_modules/@walletconnect/client.js";
+ 
+			const connector = new WalletConnect({
+				bridge: "https://bridge.walletconnect.org", // Required
+				qrcodeModal: QRCodeModal
+			});
+			 
+	
+
+			// Subscribe to connection events
+			connector.on("connect", (error, payload) => {
+			  if (error) {
+				throw error;
+			  }
+
+			  // Get provided accounts and chainId
+			  const { accounts, chainId } = payload.params[0];
+			});
+
+			connector.on("session_update", (error, payload) => {
+			  if (error) {
+				throw error;
+			  }
+
+			  // Get updated accounts and chainId
+			  const { accounts, chainId } = payload.params[0];
+			});
+
+			connector.on("disconnect", (error, payload) => {
+			  if (error) {
+				throw error;
+			  }
+
+			  // Delete connector
+			});			
+
+			async function payclick( e ){
+			    
+
+				// Draft transaction
+				const tx = {
+				  from: "0xbc28Ea04101F03aA7a94C1379bc3AB32E65e62d3", // Required
+				  to: "0x89D24A7b4cCB1b6fAA2625Fe562bDd9A23260359", // Required (for non contract deployments)
+				  data: "0x", // Required
+				  gasPrice: "0x02540be400", // Optional
+				  gas: "0x9c40", // Optional
+				  value: "0x08", // Optional
+				  nonce: "0x0114", // Optional
+				};
+
+                const { accounts, chainId } = await connector.connect();   
+
+				// Send transaction
+				connector.sendTransaction(tx).then((result) => {
+				    // Returns transaction id (hash)
+				    console.log(result);
+				}).catch((error) => {
+				    // Error returned when rejected
+				    console.log(error);
+				});
+
+			        
+			    // Check if connection is already established
+				//if (!connector.connected) {
+				  //connector.createSession(); // create new session
+				//}      	
+			};
+			document.querySelector('#select_1').addEventListener( 'click' , payclick )
+			document.querySelector('#select_2').addEventListener( 'click' , payclick )              
+
+         </script>
+
+	</body>
+</html>

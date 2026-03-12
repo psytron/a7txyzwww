@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Masonry example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="../masonry.pkgd.min.js">
+
+
+
+
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .linkicon{
+            width:30px;
+            margin-right:4px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <script type="module">
+        var i = 23; 
+
+        
+    </script>
+    
+    <script type="module">
+
+        import { factory2d } from './../../x_modules/factory/factory2d.js'
+        import gluemapper from './../../x_modules/util/gluemapper.js'
+
+        
+        var example_items = [
+            {
+                title: 'Ocean Support',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../woods.jpg',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'Vigo Irregular',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../vacation.jpg',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'Eiop Dipo',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../ocean.jpeg',
+                stats: '52 members'
+            },
+            {
+                title: 'Grigo Montage',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../ocean.png',
+                stats: '52 members'
+            },
+            {
+                title: 'Grigo Montage',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../round.jpg',
+                stats: '52 members'
+            }            
+        ]        
+
+
+
+        var cont = document.querySelector('#maincont');
+        var hucont = document.querySelector('#hucont');
+        factory2d.storeStaticTemplate( cont.children[0] )  // prepares template for injections 
+        factory2d.storeStaticTemplate( document.querySelector('#facePanel') )
+        
+        cont.innerHTML =''
+        // insert collection
+        var iMap = { 
+            '.card-title':'title' 
+        }
+        
+        //factory2d.populateContainerMapData( cont, items, iMap ) 
+
+
+        var items = example_items;
+        for (var i in items) {
+            let obj = items[i];
+
+            var fnode = factory2d.renderNodeSync( 'facePanel', {}  )            
+            //var vnode = factory2d.renderNodeSync( 'masonPanel', {}  )           
+            var vnode = factory2d.renderNodeSync( 'massPanel', {}  )             
+   
+            gluemapper.pushx( obj , vnode );
+            gluemapper.pushx( obj , fnode );
+            cont.appendChild( vnode )
+            hucont.appendChild( fnode )
+        } 
+
+        
+    </script>
+
+
+
+
+        <div id="facePanel" class="elx" style="display:flex; width:200px;flex-direction:column; justify-content:left; align-items:center; margin:4px;">
+            <style>
+                .linkiconb{
+                    width:20px;
+                    margin-right:2px;
+                }            
+            </style>            
+            <img id="img" src="./../img/bobrichmond.jpg" style="border-radius:50%; width:60px; height:60px;">     
+            <div id="title" style="font-size:15px;">Bob Richmond Ph.D</div>
+            <div id="subtitle" style="font-size:11px; margin-top:-5px;">University of Hawaii</div>
+            <div class="buttongroup">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>            
+        </div>    
+    
+    <style>
+        /* basic styling */
+        .container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .masonry-item > img {
+            width: 100%;
+            height: auto;
+            border-radius:5px;
+        }
+
+        /* masonry styles */
+        .container {
+            --masonry-columns: 2;
+            --masonry-gap: 1rem;
+        }
+        @media (min-width: 768px) {
+            .container {
+                --masonry-columns: 3;
+                --masonry-gap: 1rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                --masonry-columns: 4;
+                --masonry-gap: 1rem;
+            }
+        }
+
+        /* load only if grid-template-rows: masonry is supported by the browser else use the fallback */
+        @supports (grid-template-rows: masonry) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(var(--masonry-columns), 1fr);
+                grid-gap: var(--masonry-gap);
+                grid-template-rows: masonry;
+            }
+
+            .container > * {
+                margin-bottom: 0;
+            }
+        }
+
+        /* fallback */
+        .container {
+            column-count: var(--masonry-columns);
+            column-gap: var(--masonry-gap);
+        }
+        .container > * {
+            margin-bottom: var(--masonry-gap);
+            break-inside: avoid;
+        }
+
+    </style>
+            
+    <div id="hucont" style="display:flex;"><div id="facePanel" class="elx" style="display:flex; width:200px;flex-direction:column; justify-content:left; align-items:center; margin:4px;">
+            <style>
+                .linkiconb{
+                    width:20px;
+                    margin-right:2px;
+                }            
+            </style>            
+            <img id="img" src="img/bobrichmond.jpg" style="border-radius:50%; width:60px; height:60px;">     
+            <div id="title" style="font-size:15px;">Bob Richmond Ph.D</div>
+            <div id="subtitle" style="font-size:11px; margin-top:-5px;">University of Hawaii</div>
+            <div class="buttongroup">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>            
+        </div><div id="facePanel" class="elx" style="display:flex; width:200px;flex-direction:column; justify-content:left; align-items:center; margin:4px;">
+            <style>
+                .linkiconb{
+                    width:20px;
+                    margin-right:2px;
+                }            
+            </style>            
+            <img id="img" src="./../img/bobrichmond.jpg" style="border-radius:50%; width:60px; height:60px;">     
+            <div id="title" style="font-size:15px;">Bob Richmond Ph.D</div>
+            <div id="subtitle" style="font-size:11px; margin-top:-5px;">University of Hawaii</div>
+            <div class="buttongroup">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>            
+        </div><div id="facePanel" class="elx" style="display:flex; width:200px;flex-direction:column; justify-content:left; align-items:center; margin:4px;">
+            <style>
+                .linkiconb{
+                    width:20px;
+                    margin-right:2px;
+                }            
+            </style>            
+            <img id="img" src="img/1647332083893.jpg" style="border-radius:50%; width:60px; height:60px;">     
+            <div id="title" style="font-size:15px;">Bob Richmond Ph.D</div>
+            <div id="subtitle" style="font-size:11px; margin-top:-5px;">University of Hawaii</div>
+            <div class="buttongroup">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>            
+        </div></div>
+    
+    <div id="maincont" class="container">
+        
+        <div id="massPanel" class="masonry-item">
+            <img id="img" src="https://images.unsplash.com/photo-1641081526673-bbadf060f59e?w=640" width="640" height="853">
+            <div id="title" style="font-size:15px;">Oblivon</div>
+            <div id="body" style="font-size:10px;">Editorial, Nature, Wallpapers</div>
+            <div class="buttongroup" style="padding-right:4px;">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>     
+        </div>
+
+    <div id="massPanel" class="masonry-item">
+            <img id="img" src="img/bobrichmond.jpg" width="640" height="853">
+            <div id="title" style="font-size:15px;">Oblivon</div>
+            <div id="body" style="font-size:10px;">Editorial, Nature, Wallpapers</div>
+            <div class="buttongroup" style="padding-right:4px;">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>     
+        </div><div id="massPanel" class="masonry-item">
+            <img id="img" src="https://images.unsplash.com/photo-1641081526673-bbadf060f59e?w=640" width="640" height="853">
+            <div id="title" style="font-size:15px;">Oblivon</div>
+            <div id="body" style="font-size:10px;">Editorial, Nature, Wallpapers</div>
+            <div class="buttongroup" style="padding-right:4px;">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>     
+        </div><div id="massPanel" class="masonry-item">
+            <img id="img" src="img/1647332083893.jpg" width="640" height="853">
+            <div id="title" style="font-size:15px;">Oblivon</div>
+            <div id="body" style="font-size:10px;">Editorial, Nature, Wallpapers</div>
+            <div class="buttongroup" style="padding-right:4px;">
+                <a href="https://linkedin.com"><img src="./../img/linkedin_icon.png" class="linkiconb"></a>
+                <a href="https://twitter.com"><img src="./../img/twitter_icon.png" class="linkiconb"></a>
+            </div>     
+        </div></div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script async src="../masonry.pkgd.min.js"></script>-->
+    
+    
+    <!-- smooth retile -->
+    
+
+
+</body></html>

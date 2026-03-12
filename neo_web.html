@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> NEOWEB </title>
+    <script src="https://unpkg.com/neo4j-driver-lite"></script>
+</head>
+
+<body>
+
+    <script>
+        console.log(' NEO WEB s');
+
+        // NEO4J in webbrowser /// https://neo4j.com/docs/api/javascript-driver/current/
+        //var driver = neo4j.driver('neo4j://142.93.31.42', neo4j.auth.basic('neo4j', 'ZONE_ONE_ZERO') );
+        var driver = neo4j.driver('bolt://142.93.31.42', neo4j.auth.basic('neo4j', 'ZONE_ONE_ZERO') );
+
+        console.log(' driver: ', driver );
+        var session = driver.session()
+        // Run a Cypher statement, reading the result in a streaming manner as records arrive:
+        session
+        .run(' MERGE (alice:Person {name : $nameParam, x:$x }) RETURN alice.name AS name' ,  { nameParam: 'Alice' , x:'route' })
+        .subscribe({ 
+            onKeys: keys => {
+                console.log(' callback onKeys: ', keys );
+                console.log(keys)
+            },
+            onNext: ( record ) => {
+                console.log(' callback onNext: ', record );
+                console.log(record.get('name'))
+            },  
+            onCompleted: () => {
+                console.log(' callback  onCompleted: ' );
+                session.close() // returns a Promise
+            },
+            onError: error => {
+                console.log(" callback neo error ");
+                console.log(error)
+            }
+        })
+
+    </script>
+
+
+</body>
+
+</html>

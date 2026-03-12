@@ -1,0 +1,178 @@
+<body style="background-color:#010101;">
+    <div id="timeseries" style="width:66%; min-width:300px; ">
+        <style>
+            .gridcolumn {
+                width: 100%;
+                min-width: 300px;
+            }
+
+            .griditem {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                vertical-align: middle;
+                border-bottom: solid gray 1px;
+                font-size: 12px;
+                padding: 4px;
+            }
+
+            .coltitle {
+                font-size: 10px;
+                margin-bottom: 3px;
+                color: #81d400;
+            }
+
+            .anglezone {
+                color: white;
+                background: repeating-linear-gradient(-45deg,
+                        rgba(30, 30, 30, 0.1),
+                        rgba(30, 30, 30, 0.1) 10px,
+                        #222 10px,
+                        #222 20px);
+            }
+
+            .anglezonebg {
+                color: white;
+                background: repeating-linear-gradient(-45deg,
+                        rgba(30, 30, 30, 0.1),
+                        rgba(30, 30, 30, 0.1) 10px,
+                        #222 10px,
+                        #222 20px);
+            }
+
+            /*SLIDESWITCH*/
+            .onoffswitch {
+                position: relative;
+                width: 90px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+
+            .onoffswitch-checkbox {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .onoffswitch-label {
+                display: block;
+                overflow: hidden;
+                cursor: pointer;
+                border: 2px solid #999999;
+                border-radius: 20px;
+            }
+
+            .onoffswitch-inner {
+                display: block;
+                width: 200%;
+                margin-left: -100%;
+                transition: margin 0.3s ease-in 0s;
+            }
+
+            .onoffswitch-inner:before,
+            .onoffswitch-inner:after {
+                display: block;
+                float: left;
+                width: 50%;
+                height: 30px;
+                padding: 0;
+                line-height: 30px;
+                font-size: 14px;
+                color: white;
+                font-family: Trebuchet, Arial, sans-serif;
+                font-weight: bold;
+                box-sizing: border-box;
+            }
+
+            .onoffswitch-inner:before {
+                content: "ON";
+                padding-left: 10px;
+                background-color: #77b300;
+                color: #FFFFFF;
+            }
+
+            .onoffswitch-inner:after {
+                content: "OFF";
+                padding-right: 10px;
+                background-color: #EEEEEE;
+                color: #000000;
+                text-align: right;
+            }
+
+            .onoffswitch-switch {
+                display: block;
+                width: 18px;
+                margin: 6px;
+                background: #FFFFFF;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 56px;
+                border: 2px solid #999999;
+                border-radius: 20px;
+                transition: all 0.3s ease-in 0s;
+            }
+
+            .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+                margin-left: 0;
+            }
+
+            .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+                right: 0px;
+            }
+
+            /*SLIDESWITCH*/
+            .techcircle {
+                background: #385a94;
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+                position: relative;
+                box-shadow: 0 0 0 30px #222222;
+                margin: 60px;
+                border: solid 1px #555555;
+            }
+        </style>
+        <div>
+            <style>
+                .timeseries_button{
+                    border-radius:2px;
+                    color:#FFFFFF;
+                    font-size:10px;
+                    width:24%;
+                    font-family: sans-serif;
+                    border-left: solid grey 1px;
+                    border-right: solid grey 1px;
+                }
+            </style>
+            <div class="gridcolumn panel3">
+                <div class='coltitle'>BALANCE LIST</div>
+                <div id="balanceListHolder"></div>
+                <div style="width:100%; border-top:solid white 1px;">.</div>
+                <div class='coltitle'>CONNECTED FUNCTIONS</div>
+                <div style="width:100%; border-top:solid white 1px;">.</div>
+            </div>
+            <div>
+                <div>Balance</div>
+                <div>CONVERT</div>
+                <div>TRANSFER Route</div>
+            </div>
+            <div id="mode_toggle" style="display:flex; justify-content:space-between;">
+                <div class="timeseries_button" style="background-color:#11111111;">MAX RANGE</div>
+                <div class="timeseries_button" style="background-color:#11111111;">00:00</div>
+                <div class="timeseries_button" style="background-color:#11111111;">00:00</div>
+                <div class="timeseries_button" style="background-color:#11111111;">00:00</div>
+            </div>            
+            <div id="linechart" style=" width:100%;"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>

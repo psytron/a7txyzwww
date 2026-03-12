@@ -1,0 +1,761 @@
+
+    <body style="background-color:#010101;">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        
+        <meta name="robots" content="noindex, nofollow"> 
+        <meta charset="utf-8">    
+        <style>
+            body{
+                    background-color: #000000;
+                    padding:0;
+                    margin:0;
+                    
+                    }
+            .xnavicon {
+                font-size:30px;
+                position: absolute;
+                font-family: 'Roboto Condensed', sans-serif;
+                cursor: pointer;
+                top:0;
+                right:0;
+                padding:15px;
+                margin-top:-3px;
+                -webkit-user-select: none; /* Safari */        
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* IE10+/Edge */
+                user-select: none; /* Standard */
+                color: #EEEEEE;
+            }
+            .xnavitem{
+                margin:10px;
+                color:white;
+                font-weight:bold;
+                font-family: 'Roboto Condensed', sans-serif;
+                cursor:pointer;
+            }   
+            .frmlabel{
+                color:#FFFFFF;
+                font-size:11px;
+            } 
+            .logerout{
+                
+                text-align:center; 
+                margin-bottom:5px;
+                font-size:11px;
+            }
+            #slide_drawer2{
+                position:absolute; 
+                top:0px; width:300px; height:100%; right:-400px; 
+
+                pointer-events: auto;
+            }
+            .slide_container{
+                width:300px; 
+                height:400px; 
+                position:fixed; 
+                top:0px; 
+                right:0px; 
+                overlay:hidden; 
+                pointer-events: none;
+            }
+        </style>
+
+
+        <div id="landingPanel" class="elx">
+            <form>
+                <style>
+                .minibtns{
+                        font-size:12px;   
+                    }
+                </style>
+
+                <div id="app_tray" class="form-group" style="">
+                </div>
+
+                <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                </div>
+                                
+                <div style="text-align:center; margin-top:18px;">
+                </div>
+            </form>    
+        </div>
+
+
+
+
+        <div id="appItem" class="elx" style="display:flex;">
+            <div fn="launchVault" style="align:center; width:60px; margin-left:16px; margin-right:16px; cursor:pointer;">
+                <style>
+                        .minibtns{font-size:12px;   }
+                </style>
+                
+                <img src='/img/vault_item.png' style='width:60px;'></img>
+                
+                <div id="vaultname" style="text-align:center; color:white; font-size:11px;">
+                        Domain.com
+                </div>
+            </div>                                 
+        </div>
+
+
+
+        <div id="vaultItem" class="elx" style="display:flex;">
+                <style>
+                        .minibtns{font-size:12px;   }
+                        .itemButtonBg *{  pointer-events: none; }
+                </style>
+            <div fn="show_unlock" class="itemButtonBg" style="display:flex; width:100%; border:solid grey 1px;  background:#DDDDFFBB; border-radius:6px; cursor:pointer; margin-bottom:5px;">
+
+                
+                <img src='/img/vaulticon.png' style='width:50px; margin:6px;'></img>
+                
+                <div>
+                        <div id="domain" style="color:black; margin-top:11px; font-size:13px;">
+                                Domain.cm
+                        </div>
+                        <div id="stamp" style="color:white; margin-top:-2px; font-size:11px;">
+                                LOCAL VAULT
+                        </div>
+                </div>
+            </div>                                 
+        </div>
+
+        <div id="vaultItemNew" class="elx" style="display:flex;">
+        
+            <div fn="show_create" class="itemButtonBg" style="display:flex; width:100%; border:solid grey 1px;  background:#CCFFCCBB; border-radius:6px; cursor:pointer; margin-bottom:5px;">
+                <style>
+                        .minibtns{font-size:12px;   }
+                        .itemButtonBg *{  pointer-events: none; }
+                </style>    
+                <img src='/img/vaulticon.png' style='width:50px; margin:6px;'></img>
+                
+                <div>
+                        <div id="vaultname" style="color:darkgreen; margin-top:11px; font-size:13px;">
+                                Create New Vault
+                        </div>
+                        <div id="stamp" style="color:white; margin-top:-2px; font-size:11px;">
+                                LOCAL VAULT
+                        </div>
+                </div>
+            </div>                                 
+        </div>
+
+
+
+
+        <div id="credItem" class="elx" style="display:flex;">
+                <style>
+                        .minibtns{font-size:12px;   }
+                        .itemtitleline *{  pointer-events: none; }
+                        .itemtext{ color:white; font-size:11px; text-align:left; width:42%; }
+                        .labelsholder{ display:flex; justify-content: space-between; align-items: center;  width:100%; }
+                </style>
+            <div class="itemButtonBg" style="width:100%; border:solid #55555555 1px; border-top:0px;  background:#33333355;  cursor:pointer; ">
+                <div  class="itemtitleline" fn="show_cred"  style="width:100%; display:flex; ">
+                        <img id="ftyp" src='/img/key.png' style='width:20px; margin:3px; margin-left:6px; margin-right:7px;'></img>                
+                        <div  class="labelsholder">
+                                <div id="f1" class="itemtext">
+                                     DOMAIN_TITLE
+                                </div>
+                                <div id="f2"  class="itemtext">
+                                </div>
+                                <div id="f3"  class="itemtext" style="width:16%; overflow:hidden;">
+                                     EXCH
+                                </div>                        
+                        </div>
+                </div>
+                <div id="holder" style="">
+                </div>
+            </div>                                 
+        </div>
+
+
+        <div id="credOptions" class="elx" style="display:flex;">
+            <style>
+                .option_icon{ width:30px; }
+                .minibtns{font-size:12px;   }
+                .mode_button{ background-color:#22adFF22; }
+                .mode_button *{ pointer-events:none; }
+                .itemtitleline *{  pointer-events: none; }
+                .itemtext{ color:white; font-size:11px; text-align:left; width:42%; }
+                .labelsholder{ display:flex; justify-content: space-between; align-items: center;  width:100%; }
+            </style>
+            <div class="optsBg" style="width:100%; border-top:0px;  background:#33333355;  cursor:pointer; ">
+                 <div id="nav_tray" style="display:flex; color:white; font-size:12px;">
+                        <div class="mode_button" fn="cred_launch" style="background-color:#22adFF22; width:33%;">
+                                
+                                <img src="/img/add_arrow.png" class='option_icon' style="margin-left:5px;"></img>
+                                MAP
+                        </div>
+                        <div class="mode_button" fn="showcol_map" style="background-color:#22adAA11;  width:34%;">
+                        </div>
+                        <div class="mode_button" fn="cred_del" style="background-color:#22adFF22; width:33%; display:flex; align-items: center; flex-flow: row-reverse wrap-reverse;  align-content:right;">
+                                <img src="/img/close_red.png" class='option_icon'></img>
+                                DEL
+                        </div>                        
+                </div>          
+                <div id="holder" style="">
+                </div>
+            </div>                                 
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="collectionsPanel" class="elx">
+            <form>
+                <style>
+                    .minibtns{
+
+                    }
+                    .mode_button{
+                            cursor:pointer;
+                        font-size:10px;   
+                        font-weight:bold;                            
+                    }
+                </style>
+                <div id="nav_tray" class="form-group" style="display:flex; color:white; font-size:12px;">
+                        <div class="mode_button" fn="showcol_key" style="background-color:#22adFF55; width:32%;">KEYS</div>
+                        <div class="mode_button" fn="showcol_map" style="background-color:#45ad0055; width:32%;">MAPS</div>
+                        <div class="mode_button" fn="showcol_vault" style="background-color:#0000FF88; width:32%;">VAULTS</div>                        
+                        <div class="mode_button" fn="showcol_device" style="background-color:#45adFF55; width:32%;">DEVICES</div>
+                        <div class="mode_button" fn="showcol_object" style="background-color:#CC773366; width:32%;">OBJECTS</div>                        
+                </div>                
+                <div id="app_tray" class="form-group" style="overflow-y:auto;">
+                </div>
+
+
+                <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                </div>
+                                
+                <div style="text-align:center; margin-top:18px;">
+                    <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">New Alias</span>
+                    <button id="authbtn" fn="add_object"  type="button" class="btn btn-primary minibtns" >Add Object</button>
+                    <button id="authbtn" fn="show_add"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkgreen;">&#x2B ADD</button>                                        
+                </div>
+            </form>    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="createPanel" class="elx">
+            <form>
+                <style>
+                    .minibtns{
+                        font-size:12px;   
+                    }
+                </style>
+
+                <div id="app_tray" class="form-group" style="">
+                </div>
+
+                <div class="form-group" style="">
+                    <label class='frmlabel' for="username">VAULT NAMEx</label>
+                    <input type="text" class="form-control" id="domain" placeholder="domain or alias"  style="text-align:start;     display: block;"/>
+
+                </div>
+
+                <div class="form-group">
+                        <label class='frmlabel' for="password">PASSPHRASE</label>
+                        <input type="password" class="form-control" id="passphrase1" placeholder="Passphrase"  style="text-align:start;     display: block; ">
+                        <div id="logerrout" class='frmlabel logerout'></div>
+                        <input type="password" class="form-control" id="passphrase2" placeholder="Passphrase"  style="text-align:start;     display: block; ">
+                        <div id="logerrout" class='frmlabel logerout'></div>                        
+                </div>
+
+                <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                </div>
+                                
+                <div style="text-align:center; margin-top:18px;">
+                    <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Create Cloud</span>
+                    <button id="authbtn" fn="create_vault"  type="button" class="btn btn-primary minibtns" >Create Local</button>
+                </div>
+            </form>    
+        </div>
+
+        
+
+
+        
+        <div id="registerPanel" class="elx">
+            <form style="">
+                <style>
+                   .minibtns{
+                        font-size:12px;   
+                    }
+                </style>
+                <div class="form-group"  style="margin-top:60px;">
+                    <label class='frmlabel' for="password">ACTIVATION CODE</label>
+                    <input type="password" class="form-control" id="password" placeholder="CODE"  style="text-align:start;     display: block; ">
+                    <div id="logerrout" class='frmlabel logerout'></div>
+                </div>    
+                <div class="form-group" >
+                    <label class='frmlabel' for="username">EMAIL / KEY</label>
+                    <input type="text" class="form-control" id="username" placeholder="Email"  style="text-align:start;     display: block;">
+                </div>
+                <div id="sessionfeedback" class="form-group" style="color:#FF6666; font-size:12px; text-align:center;">
+                </div>
+            
+                
+                <div style="text-align:center; margin-top:18px;">
+                    <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                    <span id="newaccount"  fn="show_login"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Login</span>
+                    <button id="authbtn" fn="register"  type="button" class="btn btn-primary minibtns" >Sign Up</button>
+                    <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                    <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                </div>
+            </form>            
+        </div>
+
+
+
+
+
+
+        <div id="settingsPanel" class="elx">
+            <form style="">
+                <style>
+                   .minibtns{
+                        font-size:12px;   
+                    }
+                </style>
+                    <style>
+                        .minilinkg{
+                            cursor:pointer;
+                            font-size:9px;
+                        }
+                        .minilogg{
+                            font-size:10px;   
+                            color:#CCCCCC;
+                        }
+                        .dselect{
+                            background-color:#282270; color:white; border-radius:5px; margin-left:4px;
+                        }
+                    </style>
+                    <div>
+                        <div class='minilogg' style='color:gray;'>Session Alias:</div>
+                        <div id='ip' class='minilogg'>USERNOM</div>
+                    </div>
+                    
+                    <div id='lastlogin' class='minilogg'>LOGINSTATUS</div>                    
+                    <div id='ip' class='minilogg'>Vault Host</div>
+                    <select name="storageselect" id="storageselect" class="dselect">
+                        <option class="dropdown-item" value="aes">internal (private)</option>
+                        <option class="dropdown-item" value="aes">localhost (private)</option>
+                        <option class="dropdown-item" value="ipfs">IPFS</option>
+                        <option class="dropdown-item" value="mercedes">leveldb internal</option>
+                        <option class="dropdown-item" value="audi">3BOX</option>
+                    </select>
+
+                    <div id='ip' class='minilogg'>Cipher</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">AES-GCM</option>
+                        <option value="ves">ECDSA</option>
+                    </select>      
+
+                    <div id='ip' class='minilogg'>Initilization Vectors</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Intrinsic</option>
+                        <option value="ves">Manual</option>
+                    </select>     
+
+                    <div id='ip' class='minilogg'>KeyWrap</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">1X</option>
+                        <option value="ves">2X(slower)</option>
+                    </select>      
+
+                    <div id='ip' class='minilogg'>Storage scheme</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Subtle Core</option>
+                        <option value="ves">Cython IPC</option>
+                    </select>      
+
+                    <div id='ip' class='minilogg'>Internalize Seed</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Off</option>
+                        <option value="ves">On</option>
+                    </select>     
+
+                    <div id='ip' class='minilogg'>Hardware Integrity Check</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Off</option>
+                        <option value="ves">On</option>
+                    </select>                             
+
+                    <div id='ip' class='minilogg'>Bind Device</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Off</option>
+                        <option value="og">Genesis</option>
+                        <option value="ves">Last Signer</option>
+                    </select>                         
+
+                    <div id='ip' class='minilogg'>Auto Enter Vaults</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Off</option>
+                        <option value="ves">Always</option>
+                    </select>                          
+
+                    <div id='ip' class='minilogg'>2FA</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">Off</option>
+                        <option value="ves">Always</option>
+                    </select>                         
+                    <div id='qr' class='miniqr' style="margin-left:10px;"></div>  
+
+                <div id="sessionfeedback" class="form-group" style="color:#FF6666; font-size:12px; text-align:center;">
+                </div>
+           
+            </form>            
+        </div>
+
+
+
+        <div style="height:40px; background-color:#444444; font-size:"> HELP PANEL </div>
+
+
+
+
+        <div id="helpPanel" class="elx">
+                <form>
+                        <style>
+                        .minibtns{
+                            font-size:12px;   
+                        }
+                        </style>
+
+                        <div class="form-group" style="margin-top:60px;">
+                            <label class='frmlabel' for="username">Apdex (Alpha)</label>
+                            <div style="color:white; font-size:9px;">Private key management for tactical crypto. Metamap is an experimental tool which simplifies many kinds of financial automation and presonal asset tracking. It stores your data on a totally private encrypted vault file on your local computer. </div>
+                        </div>
+                        <div class="form-group" style="margin-top:60px;">
+                            <label class='frmlabel' for="username">XYZST</label>
+                            <div style="color:white; font-size:9px;">( X, Y, Z ) / ( Scalar * Time ) Globally distributed generalized sparse vector address space for real-time multi-domain machine learning. </div>
+                        </div>
+
+
+                        <div id="sessionfeedback" class="form-group" style="color:#FF6666; font-size:12px; text-align:center;">
+                        </div>
+
+                        <div style="text-align:center; margin-top:18px;">
+                            <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                            <span id="newaccount"  fn="show_login"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">EXIT</span>
+                            <button id="resetbtn" fn="reset"  type="button" class="btn btn-primary minibtns" >HOME</button>
+                            <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                            <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                        </div>
+                </form>   
+         </div>
+
+
+
+
+        <div id="resetPanel" class="elx">
+                <form>
+                        <style>
+                        .minibtns{
+                                font-size:12px;   
+                            }
+                        </style>
+
+                        <div class="form-group" style="margin-top:60px;">
+                            <label class='frmlabel' for="username">EMAIL / KEY</label>
+                            <input type="text" class="form-control" id="username" placeholder="email"  style="text-align:start;     display: block;">
+                        </div>
+
+
+                        <div id="sessionfeedback" class="form-group" style="color:#FF6666; font-size:12px; text-align:center;">
+                        </div>
+
+                        <div style="text-align:center; margin-top:18px;">
+                            <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                            <span id="newaccount"  fn="show_login"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Login</span>
+                            <button id="resetbtn" fn="reset"  type="button" class="btn btn-primary minibtns" >Reset</button>
+                            <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                            <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                        </div>
+                </form>   
+         </div>
+
+
+
+
+        <div id="addPanel" class="elx">
+                <form>
+                    <div class="form-group" style="margin-top:60px;">
+                        <label class='frmlabel' for="username">Add API Key </label>
+                        <div style="color:white; font-size:9px;">Cut and Paste API Keys from your wallets or exchanges. </div>
+                    </div>     
+                    
+                    <div id='ip' class='minilogg'>TYPE</div>
+                    <select name="ty" id="ty" class="dselect">
+                        <option value="key">Key</option>
+                        <option value="map">Map</option>
+                        <option value="vault">Vault</option>
+                    </select> 
+                    <div class="form-group" style="">
+                        <label class='frmlabel' for="username">DOMAIN</label>
+                        <input type="text" class="form-control" id="dom" placeholder="domain"  style="text-align:start;     display: block;">
+                    </div>
+                    <div class="form-group" style="">
+                        <label class='frmlabel' for="username">KEY</label>
+                        <input type="text" class="form-control" id="ke" placeholder="key"  style="text-align:start;     display: block;">
+                    </div>
+                    <div class="form-group">
+                        <label class='frmlabel' for="password">SECRET</label>
+                        <input type="password" class="form-control" id="se" placeholder="secret"  style="text-align:start;     display: block; ">
+                        <div id="logerrout" class='frmlabel logerout'></div>
+                    </div>
+                    
+                    <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                    </div>
+                                    
+                    <div style="text-align:center; margin-top:18px;">
+                        <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Back </span>
+                        <button id="authbtn" fn="appendObject"  type="button" class="btn btn-primary minibtns" >Add</button>
+                        <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                        <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                    </div>
+                </form>   
+        </div>
+
+        <div id="importPanel" class="elx">
+                <form>
+                    <div class="form-group" style="margin-top:60px;">
+                        <label class='frmlabel' for="username">IMPORT Keyfile </label>
+                        <div style="color:white; font-size:9px;">Cut and Paste API Keys from your wallets or exchanges. </div>
+                    </div>                
+                    <div id='ip' class='minilogg'>Key File</div>
+                    <input id="xfile" style="color:white;" type="file">
+
+                    
+                    <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                    </div>
+                                    
+                    <div style="text-align:center; margin-top:18px;">
+                        <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Back</span>
+                        <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                        <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                    </div>
+                </form>   
+        </div>
+
+
+
+
+
+        <div id="loginPanel" class="elx">
+
+                <form>
+                    <style>
+                    .minibtns{
+                            font-size:12px;   
+                        }
+                    </style>
+                    <div class="form-group" style="margin-top:60px;">
+                        <label class='frmlabel' for="username">EMAIL / KEY</label>
+                        <input type="text" class="form-control" id="username" placeholder="email"  style="text-align:start;     display: block;">
+                    </div>
+                    <div class="form-group">
+                        <label class='frmlabel' for="password">PASSPHRASE</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password"  style="text-align:start;     display: block; ">
+                        <div id="logerrout" class='frmlabel logerout'></div>
+                    </div>
+                    
+                    <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                    </div>
+                                    
+                    <div style="text-align:center; margin-top:18px;">
+                        <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                        <span id="newaccount"  fn="show_reset"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Reset</span>
+                        <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Sign Up </span>
+                        <button id="authbtn" fn="login"  type="button" class="btn btn-primary minibtns" >Login</button>
+                        <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                        <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                    </div>
+                </form>   
+
+        </div>
+
+
+
+
+
+
+        <div id="unlockPanel" class="elx">
+
+                <form>
+                    <style>
+                    .minibtns{
+                            font-size:12px;   
+                        }
+    
+                    </style>
+
+                    <div class="form-group" style="margin-bottom:0px;">
+                        <label class='frmlabel'  style="margin-top:60px;" for="password">SELECTED VAULT</label>
+                    </div>
+                    <div class="form-group" id="app_tray">
+                    
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class='frmlabel' for="password">PASSPHRASE</label>
+                        <input type="text" class="form-control" id="password" placeholder="Passphrase"  style="text-align:start;     display: block; ">
+                        <div id="logerrout" class='frmlabel logerout'></div>
+                    </div>
+                    
+                    <div id="sessionfeedback" class="form-group" style="color:#FF5555; font-size:12px; text-align:center;">
+                    </div>
+                                    
+                    <div style=" margin-top:18px;">
+                        <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                        <span id="newaccount"  fn="show_reset"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Reset</span>
+                        <span id="newaccount"  fn="show_reg"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Sign Up </span>
+                        <button id="authbtn" fn="login_vault"  type="button" class="btn btn-primary minibtns" >Login</button>
+                        <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                        <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                    </div>
+                </form>   
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="newBlobPanel" class="elx">
+            <form style="">
+                <style>
+                    .minibtns{
+                        font-size:12px;   
+                    }
+                </style>
+
+
+                <div class="form-group" style="margin-top:60px;">
+                    <label class='frmlabel' for="username">DOMAIN / PUB KEY</label>
+                    <input type="text" class="form-control" id="blobname" placeholder="blob name"  style="text-align:start;     display: block;">
+                </div>
+
+
+                <div id="sessionfeedback" class="form-group" style="color:#FF6666; font-size:12px; text-align:center;">
+                </div>
+            
+                
+                <div style="text-align:center; margin-top:18px;">
+                    <!--<button id="newbtn" fn="new" type="button" class="btn btn-primary minibtns" onclick="register()">Newx</button>-->
+                    <span id="newaccount"  fn="show_login"  style="font-size:11px; color:#EEEEEE; margin-right:14px; cursor:pointer;">Login</span>
+                    <button id="resetbtn" fn="reset"  type="button" class="btn btn-primary minibtns" >Create</button>
+                    <!--<button id="statusbtn" fn="status"  type="button" class="btn btn-primary minibtns" onclick="test()">Status</button>-->
+                    <!--<button type="button" class="btn btn-primary" onclick="fillx()" style="background-color:none; ">Demo</button>-->
+                </div>
+
+
+                    <div id='ip' class='minilogg'>Export Objects</div>
+                    <div id='ip' class='minilogg'>Link</div>
+                    
+                        <button style="" class="btn btn-primary" id="connectmeta" fn="connectmeta">ACTIVATE</button>                     
+                        <button id="logoutbtn" fn="connectmeta"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkblue;">WALLET</button>
+                        <button style="" class="btn btn-primary" id="save_kernel" fn="save_kernel">SAVE</button>    
+                        <div id='ip' class='minilogg'>2FA </div>
+                        <div id='qr' class='miniqr' style="margin-left:10px;"></div>  
+
+                    
+                    <div id='ethstatus' style="font-size:12px; color:white; margin-top:10px;"></div>
+                    <div fn='nav' fun='clearframe' class='minilinkg'>.</div>
+
+        
+                    <div id="collections_container">
+                    </div>                
+            </form>
+        </div>
+
+
+
+        <div id="statusPanel" class="elx">
+                <div class="form-group" style="">
+                    <style>
+                        .minilinkg{
+                            cursor:pointer;
+                            font-size:9px;
+                        }
+                        .minilogg{
+                            font-size:10px;   
+                            color:#CCCCCC;
+                        }
+                        .dselect{
+                            background-color:#282270; color:white; border-radius:5px; margin-left:4px;
+                        }
+                    </style>
+                    <div>
+                        <div class='minilogg' style='color:gray;'>Session Alias:</div>
+                        <div id='ip' class='minilogg'>USERNOM</div>
+                    </div>
+
+                    
+                    <div id='lastlogin' class='minilogg'>LOGINSTATUS</div>
+
+
+                    <div class="form-group" style="margin-top:20px;"> 
+                       
+                    </div>
+                     <div  class='minilogg'>MANAGE</div>
+                    <button id="logoutbtn" fn="exit_vault"  type="button" class="btn btn-primary minilogg" style="color:white; background:#333333;">EXIT VAULT</button>                             
+                    <button id="logoutbtn" fn="show_settings"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkblue;">&#x2699 SETTINGS</button>                 
+                    <button id="logoutbtn" fn="help"    type="button" class="btn btn-primary minilogg" style="color:white; background:black;">?</button>                        
+     
+                    <div id='' class='minilogg'>IMPORT</div>
+                    <button id="logoutbtn" fn="show_add"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkgreen;">&#x2B API KEY</button>                    
+                    <button id="logoutbtn" fn="show_import"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkgreen;">&#x2B WALLET FILE</button>
+                    <div id='' class='minilogg'>VIEW</div>
+                    <button id="logoutbtn" fn="showcol_object"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkblue;">COLLECTIONS</button>
+                    <button id="logoutbtn" fn="save_items"  type="button" class="btn btn-primary minilogg" style="color:white; background:darkblue;">SAVE</button>
+                   
+                    <!--
+                    <div id='ip' class='minilogg'>Connection</div>
+                    <select name="hashs" id="hashs" class="dselect">
+                        <option value="sop">TLS</option>
+                        <option value="ves">WSS</option>
+                    </select>-->
+
+
+
+                    <!--
+                    <style>
+                        .mode_button {
+                            border-radius:2px;
+                            color:#FFFFFF;
+                            font-size:10px;
+                            width:24%;
+                            font-family: sans-serif;
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div id="mode_toggle" style="display:flex; margin-left:17px; justify-content:space-between;">
+                        <div class="mode_button" style="background-color:#0000FF88; width:32%;">CONNECTION</div>
+                        <div class="mode_button" style="background-color:#45118855; width:32%;">OBJECTS</div>
+                        <div class="mode_button" style="background-color:#45ad0055; width:32%;">SETTINGS</div>
+                    </div>  
+                    -->      
+                </div>
+        </div>
+    </body>

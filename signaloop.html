@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Microphone Visualizer</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+
+    <script type="module">
+        import * as THREE from '/web_modules/three.js';
+
+        // Set up Three.js scene
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create bars for visualization
+        const bars = [];
+        const barCount = 64; // Number of bars (matches FFT size)
+        const barWidth = 0.5;
+        const barSpacing = 1.2;
+        const geometry = new THREE.BoxGeometry(barWidth, 1, barWidth);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+
+        for (let i = 0; i < barCount; i++) {
+            const bar = new THREE.Mesh(geometry, material);
+            bar.position.x = i * barSpacing - (barCount * barSpacing) / 2;
+            bar.position.y = 0.5; // Center bars vertically
+            scene.add(bar);
+            bars.push(bar);
+        }
+
+        camera.position.z = 50;
+
+        // Set up Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const analyser = audioContext.createAnalyser();
+        analyser.fftSize = 256; // Adjust FFT size for performance
+        const bufferLength = analyser.frequencyBinCount;
+        const dataArray = new Uint8Array(bufferLength);
+
+        // Request microphone access
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(stream => {
+                const source = audioContext.createMediaStreamSource(stream);
+                source.connect(analyser);
+            })
+            .catch(err => console.error('Microphone access denied:', err));
+
+        // Function to get audio data
+        const getAudioData = () => {
+            analyser.getByteFrequencyData(dataArray); // Get frequency data
+            return dataArray;
+        };
+
+        // Animation loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+
+            const audioData = getAudioData();
+
+            // Update bar heights based on audio data
+            bars.forEach((bar, i) => {
+                const height = audioData[i] / 255 * 10; // Scale bars based on frequency data
+                bar.scale.y = height;
+                bar.position.y = height / 2; // Adjust position to keep bars grounded
+            });
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+    "nodes": {
+        "431gc": {
+            "label": "alias",
+            "name": "King Fischer",
+            "uuid": "431gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "6997gc": {
+            "label": "darkearth",
+            "name": "darkearth",
+            "uuid": "6997gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }
+    },
+    "links": {},
+    "meta": {
+        "layouts": [
+            {
+                "431gc": {
+                    "x": -16.250943268812293,
+                    "y": 0,
+                    "z": -11.930518165851424
+                },
+                "6997gc": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ],
+        "name": "wow",
+        "layout": 0
+    }
+}

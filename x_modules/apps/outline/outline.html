@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lithium: Scientific Outline</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="outline" class="elx">
+            <style>
+                body {
+                    margin: 0;
+                    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+                    background: #000;
+                    color: #fff;
+                    line-height: 1.6;
+                }
+                .outline-container {
+                    display: flex;
+                    flex-direction: row;
+                    background: #18181b;
+                    box-shadow: 0 2px 13px 0 rgba(0,0,0,0.08);
+                    overflow: hidden;
+                }
+                .summary-column {
+                    flex: 1 1 0;
+                    min-width: 280px;
+                    max-width: 400px;
+                    background: #23232a;
+                    padding: 2rem 1.5rem;
+                    border-right: 1px solid #333646;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .summary-title {
+                    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #7dd3fc;
+                    margin-bottom: 0.5rem;
+                }
+                .summary-section {
+                    margin-bottom: 1.25rem;
+                }
+                .summary-label {
+                    font-weight: 600;
+                    color: #bae6fd;
+                    font-size: 1.05rem;
+                    margin-bottom: 0.25rem;
+                    display: block;
+                }
+                .summary-value {
+                    font-size: 1.1rem;
+                    color: #e0e7ef;
+                }
+                .facts-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 0.5rem;
+                }
+                .facts-table td {
+                    padding: 0.25rem 0.5rem;
+                    font-size: 1rem;
+                    color: #e0e7ef;
+                }
+                .facts-table td:first-child {
+                    font-weight: 600;
+                    color: #7dd3fc;
+                    width: 50%;
+                }
+                .essay-column {
+                    flex: 2 1 0;
+                    padding: 2.5rem 2rem;
+                    background: #101014;
+                }
+                .essay-title {
+                    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #7dd3fc;
+                    margin-bottom: 1.25rem;
+                }
+                .essay-section-title {
+                    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: #38bdf8;
+                    margin-top: 1.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                a, a:visited {
+                    color: #38bdf8;
+                }
+                @media (max-width: 900px) {
+                    .outline-container {
+                        flex-direction: column;
+                    }
+                    .summary-column, .essay-column {
+                        max-width: 100%;
+                        border-right: none;
+                        border-bottom: 1px solid #333646;
+                    }
+                    .essay-column {
+                        border-bottom: none;
+                    }
+                }
+            </style>
+            <div class="outline-container">
+                <!-- Summary Column (1/3 width) -->
+                <aside class="summary-column">
+                    <div id="summary_column">
+                        <div id="mainname" class="summary-title">Lithium</div>
+
+                    </div>
+                    <div>
+                        <div class="summary-label" style="margin-bottom:0.5rem;">Chemical & Atomic Facts</div>
+                        <table class="facts-table">
+                            <tr>
+                                <td>Element Category</td>
+                                <td>Alkali Metal</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Atomic Weight</td>
+                                <td>6.94</td>
+                            </tr>
+                            <tr>
+                                <td>Electron Configuration</td>
+                                <td>1s<sup>2</sup> 2s<sup>1</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Oxidation State</td>
+                                <td>+1</td>
+                            </tr>
+                            <tr>
+                                <td>Melting Point</td>
+                                <td>180.5&nbsp;°C</td>
+                            </tr>
+                            <tr>
+                                <td>Boiling Point</td>
+                                <td>1342&nbsp;°C</td>
+                            </tr>
+                            <tr>
+                                <td>Density</td>
+                                <td>0.534&nbsp;g/cm³</td>
+                            </tr>
+                            <tr>
+                                <td>Common Medicinal Form</td>
+                                <td>Lithium carbonate (Li<sub>2</sub>CO<sub>3</sub>), Lithium citrate</td>
+                            </tr>
+                        </table>
+                    </div>
+                </aside>
+                <!-- Essay Column (2/3 width) -->
+                <section class="essay-column">
+                    <div class="essay-title">Lithium as a Medicinal Substance: Scientific Overview</div>
+                    <div>
+                        <div class="essay-section-title">Introduction</div>
+                        <p>
+                            Lithium, with the chemical symbol Li and atomic number 3, is the lightest metal and a member of the alkali metal group. While it is widely recognized for its industrial applications, lithium's most profound impact on human health is as a psychiatric medication, particularly in the management of mood disorders.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Historical Context</div>
+                        <p>
+                            The medicinal use of lithium dates back to the mid-19th century, but its modern psychiatric application began in the late 1940s when Australian psychiatrist John Cade discovered its mood-stabilizing effects. Since then, lithium has become a cornerstone in the treatment of bipolar disorder and remains one of the few medications with proven efficacy in reducing suicide risk.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Pharmacology and Mechanism of Action</div>
+                        <p>
+                            Lithium is typically administered as lithium carbonate or lithium citrate. Its precise mechanism of action is not fully understood, but it is known to modulate neurotransmitter activity, influence second messenger systems (such as inositol monophosphate), and affect ion transport in neurons. These actions contribute to its ability to stabilize mood and reduce the frequency and severity of manic and depressive episodes.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Clinical Uses</div>
+                        <ul>
+                            <li><strong>Bipolar Disorder:</strong> Lithium is the gold standard for long-term maintenance therapy, effective in both mania and depression prevention.</li>
+                            <li><strong>Major Depressive Disorder (Adjunct):</strong> Sometimes used to augment antidepressant therapy in treatment-resistant cases.</li>
+                            <li><strong>Schizoaffective Disorder:</strong> May be used as part of a broader pharmacological regimen.</li>
+                            <li><strong>Cluster Headaches:</strong> Occasionally prescribed off-label for prophylaxis.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Pharmacokinetics</div>
+                        <p>
+                            Lithium is rapidly absorbed from the gastrointestinal tract and is not metabolized, being excreted unchanged by the kidneys. Its narrow therapeutic window necessitates regular blood monitoring to avoid toxicity. Factors such as renal function, sodium intake, and drug interactions can significantly affect lithium levels.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Adverse Effects and Toxicity</div>
+                        <p>
+                            Common side effects include tremor, increased thirst and urination (polyuria), weight gain, and gastrointestinal discomfort. Chronic use can lead to hypothyroidism, renal impairment, and, rarely, cardiac arrhythmias. Lithium toxicity is a medical emergency, presenting with confusion, ataxia, and potentially life-threatening complications.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="essay-section-title">Conclusion</div>
+                        <p>
+                            Lithium remains a unique and essential tool in psychiatric medicine, with unmatched efficacy in mood stabilization and suicide prevention. Its use requires careful monitoring and patient education, but when managed appropriately, it can dramatically improve quality of life for individuals with mood disorders.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

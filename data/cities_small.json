@@ -1,0 +1,48 @@
+[
+    {
+        "country": "US",
+        "name": "Los Angeles",
+        "x":"powerplant",
+        "y":"nuclear",
+        "z":"300",
+        "lat": "34.05223",
+        "lng": "-118.24368"
+    },
+    {
+        "country": "US",
+        "name": "New York City",
+        "lat": "40.71427",
+        "lng": "-74.00597"
+    },
+    {
+        "country": "GB",
+        "name": "London",
+        "lat": "51.50853",
+        "lng": "-0.12574"
+    },
+    {
+        "country": "HK",
+        "name": "Hong Kong",
+        "lat": "22.27832",
+        "lng": "114.17469"
+    },
+    {
+        "country": "CN",
+        "name": "Shanghai",
+        "lat": "31.22222",
+        "lng": "121.45806"
+    },    
+    {
+        "country": "JP",
+        "name": "Tokyo",
+        "lat": "35.6895",
+        "lng": "139.69171"
+    }, 
+    {
+        "country": "US",
+        "name": "Honolulu",
+        "lat": "21.30694",
+        "lng": "-157.85833"
+    }
+
+]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <title>Channel messaging MAIN</title>
+        <link rel="stylesheet" href="">
+        <style>
+            body{ background-color:black; color: white; }
+        </style>
+
+    </head>
+
+    <body>
+        <iframe src="./message_channel_inner.html" width='380' height='120' style='margin-top:250px;'></iframe>
+        <p class="output">Output Field</p>
+    </body>
+    <script>
+        var channel = new MessageChannel();
+        var output = document.querySelector('.output');
+        var iframe = document.querySelector('iframe');
+
+        // Wait for the iframe to load
+        iframe.addEventListener("load", onLoad);
+
+        function onLoad() {
+            // Listen for messages on port1
+            channel.port1.onmessage = onMessage;
+            // Transfer port2 to the iframe
+            iframe.contentWindow.postMessage('Data:#!@$-Dat-from_main', '*', [channel.port2]);
+        }
+
+        // Handle messages received on port1
+        function onMessage(e) {
+            output.innerHTML = 'Received in MAIN: '+e.data;
+        }
+    </script>
+
+</html>

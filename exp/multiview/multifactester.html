@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>X-FRAME (PROTO_V_0.38)</title>
+        <base href="" target="_blank"><!--<base href="/xframe/" target="_blank">--><!--IF serve APP Host route/ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="robots" content="noindex, nofollow"> 
+        <meta charset="utf-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    </head>
+    <body>
+        
+        <script type="module">
+            import $ from '/web_modules/jquery.js';
+            import { MultiFlatFactory } from '/x_modules/multiflatfactory.js'
+            import { FlatFactory } from '/x_modules/flatfactory.js'
+            //let m = MultiFlatFactory();  // ( .notice no 'new()' being used cause returns ob lit  )
+            
+
+            let f = new FlatFactory();
+            f.load( 'libx.html' ).then( ( libx  ) =>{ 
+                
+                console.log('libloaded')
+                var rs = f.render('qr',{'label':'RENDEROYOYOS '})
+                document.body.insertAdjacentHTML( 'beforeend' , rs );    
+
+
+            }); 
+
+            f.renderAsync('qr', {'label':'RENDEROYOYOS '} ).then( ( rs )=>{
+
+                document.body.insertAdjacentHTML( 'beforeend' , rs );    
+            })
+            //m.getTemplate('xfer').then((template) => {
+            //    document.body.insertAdjacentHTML( 'beforeend' , template );
+            //});
+            
+
+            //Element X 
+            //EL-X
+            //var nav = new Elx( { domain='url' , data='wha'} .)
+            // from there these Element X objects can nest inside each other , totally vanish the dom, 
+            // manage their own shadows , shadow nesting, dom nesting
+            // and bubbling events . ElX takes anything as constructor e.g. Elx( bigsite.com )
+
+
+
+            /*
+            m.getTemplate('qr').then((template) => {
+                $('body').append( $(template) );
+            });            
+            
+            f.getTemplate('qr').then( (template)=>{
+                $('body').append( $(template) );
+            }) */
+            /*
+            */            
+
+            /*()
+
+            var obj={yes:'wow'}
+            m.render('qr',obj).then((res)=>{
+
+
+            }) */
+
+        </script>
+    
+    </body>
+</html>

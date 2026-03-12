@@ -1,0 +1,99 @@
+{
+    "nodes": {
+        "cex_uuid": {
+            "label": "cex",
+            "brand":"coinbase",
+            "uuid": "cex_uuid"
+        },    
+        "ctoken_uuid": {
+            "label": "ctoken",
+            "symbol":"ETH/USD",
+            "uuid": "ctoken_uuid"
+        },                  
+        "alias_uuid": {
+            "label": "Alias",
+            "name": "Alias Name",
+            "uuid": "alias_uuid"
+        },
+        "module_uuid": {
+            "label": "Module",
+            "name": "Module Name",
+            "uuid": "module_uuid"
+        },
+        "token_uuid": {
+            "label": "Token",
+            "domain":"eth",
+            "symbol":"ETH/USD",
+            "name": "Token Name",
+            "uuid": "token_uuid"
+        },
+        "org_uuid": {
+            "label": "Org",
+            "domain":"eth",
+            "brand":"eth",
+            "name": "OrgName 500",
+            "uuid": "org_uuid"
+        },
+        "sim_uuid": {
+            "label": "Simglob",
+            "domain":"eth",
+            "name": "parimutName",
+            "uuid": "sim_uuid"
+        },
+        "finorg_uuid": {
+            "label": "finorg",
+            "domain":"eth",
+            "name": "Fin ORg 2000",
+            "uuid": "finorg_uuid"
+        }      
+    },
+    "links": {},
+    "meta": {
+        "layouts": [
+            {
+                "cex_uuid":{
+                    "x": -10,
+                    "y": 0,
+                    "z": 20                    
+                },
+                "ctoken_uuid":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 22                    
+                },
+                "alias_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 10
+                },
+                "module_uuid": {
+                    "x": -10,
+                    "y": 0,
+                    "z": 10
+                },
+                "token_uuid": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                },
+                "org_uuid": {
+                    "x": 10,
+                    "y": 0,
+                    "z": 10
+                },
+                "finorg_uuid": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 10
+                },
+                "plain_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 0
+                }                                
+            }
+        ],
+        "name": "mega_demo",
+        "layout": 0
+    }
+}

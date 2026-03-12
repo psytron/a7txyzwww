@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>SM Proto</title> <base href="" target="_blank">
+        <link  rel="stylesheet" href="css/bootstrap.min.css">
+        <link  rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+    </head>
+    <body>
+        <div id="result"></div>
+        <!-- TEST LIBX PROMISE LOAD -->
+        <script src="js/ext/jquery-3.3.1.min.js"></script>
+        <!--<script src="js/flatfactory.js"></script> -->
+        <script>
+            
+            /*
+            var factory2d=new FlatFactory()
+            factory2d.load( 'libx.html' ).then( ( libx  ) => { 
+                document.body.insertAdjacentHTML( 'beforeend', factory2d.render('anglezone' , {a:22 , b:44, c:55, d:99 }) )
+            });*/
+
+            /*
+            $.get("libx.html", function( my_var ) {
+                console.log( my_var )
+
+                var tm = $(my_var).find('#anblezone')
+                var l=4;
+                // my_var contains whatever that request returned
+			}, 'html');*/
+            var elem = document.querySelector('#result')
+            elem.style.display = 'none';
+            var shadow = elem.attachShadow({mode: 'closed'});
+           
+            $( shadow ).load('libx.html',function( rx){
+
+				var data_in= { a:2343 , b:234, c:3423 }
+				
+				var sa =$( shadow ).find('#anglezone')
+				var templatestring = '`'+sa.html()+'`'
+				//var templatestring='`'+this.con.querySelector('#'+tmp_id).innerHTML+'`'
+				var wholefunc = '( obj ) =>{ return '+templatestring+' }  ';
+				var outcome = eval( wholefunc )( data_in )
+				//console.log( outcome )
+				document.body.insertAdjacentHTML( 'beforeend', outcome );
+                //return outcome;
+            	console.log('wo ')
+            })
+            
+
+
+            /* // WORKS WED NIGHT 
+            $( "#result" ).load( "libx.html", function( rx ) {
+				var data_in= { a:2343 , b:234, c:3423 }
+				var sa = $('#result').find('#anglezone')
+				var templatestring = '`'+sa.html()+'`'
+				//var templatestring='`'+this.con.querySelector('#'+tmp_id).innerHTML+'`'
+				var wholefunc = '( obj ) =>{ return '+templatestring+' }  ';
+				var outcome = eval( wholefunc )( data_in )
+				//console.log( outcome )
+				document.body.insertAdjacentHTML( 'beforeend', outcome );
+                //return outcome;
+            });*/
+
+            /*
+			var movies = [
+			    { Name: "The Red Violin", ReleaseYear: "1998", Director: "François Girard" },
+			    { Name: "Eyes Wide Shut", ReleaseYear: "1999", Director: "Stanley Kubrick" },
+			    { Name: "The Inheritance", ReleaseYear: "1976", Director: "Mauro Bolognini" }
+			];
+
+			$.get("libx.html", function(data, textStatus, XMLHttpRequest){
+			    var markup = data; //"<tr><td colspan='2'>${Name}</td><td>Released: ${ReleaseYear}</td><td>Director: ${Director}</td></tr>"
+    
+			    // Compile markup string as a named template
+			    $.template( "anglezone", markup );
+
+			    // Render the named template 
+			    $.tmpl( "anglezone", movies ).appendTo( "body" );
+			});*/
+
+        </script>
+        
+	</body>
+</html>

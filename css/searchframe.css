@@ -1,0 +1,104 @@
+body {
+    background-color:#000000;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+.resu{
+    position:relative;
+    border-radius:0px;
+    margin-bottom:0px;
+    overflow:hidden;
+    font-size:12px;
+    cursor: pointer;
+    cursor: hand;
+    color:#AAAAAA;
+    margin-right:4px;
+    margin-left:4px;
+    background-color: rgba(15,15,15,0.7);
+}
+.resutok{ background-color:white; border:solid #CCCCCC 1px; border-radius:10px; margin-bottom:4px; overflow:hidden; font-size:23px; text-align:center; padding:20px; }
+.colu{display: inline-block;padding:9px;}
+.field1{ width:45px;}
+.field2{/* width:25px; */
+    width:70px;
+    font-size:10px;
+    padding:8px;
+    margin-top:5px;
+}
+.field3{ }
+.colulast{
+    display: inline-block;
+    position:absolute;
+    right:3px;
+    margin: 11px;
+    top:1px;
+}
+.playi{ width:20px;  display: block; margin: 0 auto; }
+.spin{width:46px;position:absolute;right: 0px;bottom:0px;}
+.active{ display:none; }
+.startsurv{
+    width:20px;
+    margin-left:18px;
+    text-align: right;}
+.light{ color:#CCCCCC; }
+.brand{position:relative;margin-top:31px;}
+.searchholder{
+    width:100%;
+    max-width:360px;
+    padding-left:5px;
+    padding-right:5px;
+    margin:auto;
+    position:absolute;
+    display:table;
+    left:0;
+    right:0;
+    }
+.form-group{margin-bottom: 10px;}
+.searchlogo{ position:absolute; left:4px; bottom:0px; vertical-align:bottom; font-size:13px; color:#9999BB; }
+#searchbox{ background-color:#0c0c0c;  border: solid #464682 1px; color:#DDDDDD;}
+.octlogo{  width:44px; position:absolute; right:5px; margin-bottom:4px; }
+.survmessage{ font-size:10px; color:#888888; text-align:center; }
+
+
+.function_option_0{
+    text-align: center;
+    border: 0px;
+    background-color: #050531;
+    border-radius: 5px;
+    padding: 2px;
+    padding-right: 14px;
+    padding-left: 14px;
+
+}
+.function_option_1{
+    text-align: center;
+    border: -3px;
+    background-color: #011901;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 2px;
+    padding-right: 14px;
+    padding-left: 14px;
+
+}
+.loggert{
+    width:100%; font-size:8px; color:grey;
+}
+b.loggert{ color:green; }
+
+.Center-Container {
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+.Absolute-Center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

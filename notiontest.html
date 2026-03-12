@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Notion </title>
+
+    <script src='/web_modules/@notionhq/client.js' type='module'></script>
+
+    <style>
+        body{
+            border:0px;
+            margin:0px;
+            padding:0px;
+        }
+    </style> 
+</head>
+
+<body>
+
+    <script type="module">
+
+        // var datparam = new Date( new Date().getTime() - (3100*1000) );        
+        // var a = Math.floor( ( datparam ) / 1000 );
+        
+        // import { Client } from "/web_modules/@notionhq/client.js";
+
+        // const notion = new Client({
+        //     auth: 'secret_T5hQw3GsftoMKvFsQOUcBwxXqgidCV8wO7OhuSpScLl'
+        // })     
+
+        // console.log( 'notion ' , notion )
+
+        // ;(async () => {
+        //     const listUsersResponse = await notion.users.list({})
+        // })()
+
+         const databaseId = 'a0a0dcffa66f4364936685a2e8a5047e';
+        //const databaseId = 'abf00e2f01fb4b20bd73a19a96e71b30';
+
+        
+        const apiKey = 'secret_T5hQw3GsftoMKvFsQOUcBwxXqgidCV8wO7OhuSpScLl';
+        
+        fetch(`http://localhost:8080/https://api.notion.com/v1/databases/${databaseId}/query`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Notion-Version': '2021-05-13',
+            'Authorization': `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+            sorts: [{
+              property: 'Name',
+              direction: 'ascending'
+            }]
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.results);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+        
+
+        
+        // fetch('http://localhost:8080/https://api.notion.com/v1/users', {
+        //     headers: {Authentication: 'Bearer secret_T5hQw3GsftoMKvFsQOUcBwxXqgidCV8wO7OhuSpScLl'}
+        // })
+        //    .then(resp => resp.json())
+        // .then(json => console.log(JSON.stringify(json)))
+
+
+    </script>
+
+    <div id='map' style='width: 100%; height:350px; margin:0px;'></div>
+    <script>
+
+        
+        console.log(' work yo')
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame</title>
+    <script type="module" src="./arrow.js"></script>
+</head>
+<body>
+    <h1>iFrame Window</h1>
+
+    <script type="module">
+        import { Table } from "https://cdn.jsdelivr.net/npm/apache-arrow@12/Arrow.es2015.min.js";
+
+        window.addEventListener('message', (event) => {
+            const table = Table.from(event.data);
+            console.log('Received in iframe:', table.toString());
+
+            // Modify data and send it back
+            const modifiedData = table.toArray().map(row => ({ ...row, column2: row.column2 * 10 }));
+            const modifiedTable = Table.from(modifiedData);
+
+            event.source.postMessage(modifiedTable.serialize(), '*');
+        });
+    </script>
+</body>
+</html>

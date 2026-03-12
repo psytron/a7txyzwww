@@ -1,0 +1,1093 @@
+{
+  "meta": {
+    "layout": 0,
+    "layouts": [
+      {
+        "69899c34-7c70-4a31-93e8-6f56652c25da": {
+          "x": 40.43931176896373,
+          "y": 60,
+          "z": 42.75975435930887
+        },
+        "5055de0e-13c7-4fcb-8b5a-d6fa062391f1": {
+          "x": 64.07650903525096,
+          "y": 20,
+          "z": 43.634277364280294
+        },
+        "a4d68594-87f9-4e90-83dd-1eae5c07e6c6": {
+          "x": 53.26841704206476,
+          "y": 0,
+          "z": 24.57596589175694
+        },
+        "fc225355-1709-48c3-a9bc-b429dc2e5e59": {
+          "x": 39.73765705504673,
+          "y": 0,
+          "z": 18.53157772099048
+        },
+        "c1d5671f-0177-463b-9d24-76f874c8728c": {
+          "x": 70.70853981865781,
+          "y": 0,
+          "z": 49.74204646374372
+        },
+        "7d8f3b2e-74bd-48fc-9615-31585511af57": {
+          "x": 45.53513136463316,
+          "y": 20,
+          "z": 32.220880259644375
+        },
+        "cbf5affd-fc98-45fe-9305-d7c2be85f85f": {
+          "x": 30.702116015813143,
+          "y": 20,
+          "z": 21.286045876364227
+        },
+        "a7715d65-a69f-42ce-a6c8-fe5db9422823": {
+          "x": 35.102809365104,
+          "y": 0,
+          "z": 32.20581819954484
+        },
+        "eeec6aca-3818-42de-931f-56e5cb94de0f": {
+          "x": 27.618181522633147,
+          "y": 0,
+          "z": 11.676876749852196
+        },
+        "7a9decae-42cf-4d97-a7e2-472112949234": {
+          "x": 18.37092030088354,
+          "y": 20,
+          "z": 51.510726316347096
+        },
+        "4078a768-5ffc-4374-b4ea-72fed927366f": {
+          "x": 12.081613224321972,
+          "y": 0,
+          "z": 42.412191052266024
+        },
+        "8bfbddc9-1288-4b7e-ac87-dcfd219e165c": {
+          "x": 5.024500988762631,
+          "y": 0,
+          "z": 55.85219308745204
+        },
+        "1ebc4cdb-098e-420a-ab93-645f1c705670": {
+          "x": 10.925774288495651,
+          "y": 0,
+          "z": 60.44686595627632
+        },
+        "6a8781c8-3df5-49c8-9f57-0518f91b7a88": {
+          "x": 55.526321664387005,
+          "y": 0,
+          "z": 32.057360911507566
+        },
+        "7cefefcb-6b36-4c1e-96a2-616f36beefc5": {
+          "x": 53.938657647177145,
+          "y": 0,
+          "z": 45.64312454927686
+        },
+        "a5153e59-58ca-46a3-ba0d-40640978abea": {
+          "x": 23.6244361575036,
+          "y": 0,
+          "z": 61.05614406181478
+        },
+        "84cfdcd8-2769-488d-8a99-a9097dc77f46": {
+          "x": 26.90124461230498,
+          "y": 0,
+          "z": 54.28581017241552
+        },
+        "65679abb-9b04-4a98-a749-ae6d6f9ab71a": {
+          "x": 17.692836415204276,
+          "y": 0,
+          "z": 55.90497631504977
+        },
+        "7452111d-5f3d-4391-9b95-4cf8652f263c": {
+          "x": 22.878661566414685,
+          "y": 0,
+          "z": 23.08915460657364
+        },
+        "8df0102b-6149-4d67-bb74-710ba0c6e723": {
+          "x": 21.77139005903979,
+          "y": 0,
+          "z": 15.798345461126527
+        },
+        "53eb302b-1c85-491d-bf8a-56a650d414ad": {
+          "x": 34.58132195470007,
+          "y": 0,
+          "z": 12.22972470426315
+        },
+        "8bd1d883-47a1-4cb4-9b74-80596cc1324c": {
+          "x": 49.82894014549303,
+          "y": 0,
+          "z": 63.37676322331569
+        },
+        "2efdec67-a4cc-4773-9898-40cc78107fcb": {
+          "x": 42.54310073350523,
+          "y": 20,
+          "z": 64.71147231632813
+        },
+        "eb66a556-e7b7-4c0d-a551-a6d384441f9b": {
+          "x": 47.28656934278787,
+          "y": 0,
+          "z": 36.356572019542746
+        },
+        "41fc8313-7159-4058-9bff-17f043eb4297": {
+          "x": 43.47679420703566,
+          "y": 0,
+          "z": 74.98258556012946
+        },
+        "8c525af1-63cc-4d57-b022-d8700c9c0555": {
+          "x": 50.186155184131756,
+          "y": 0,
+          "z": 71.3513444667037
+        },
+        "5fe6c7a1-c3b1-438f-975a-bb732893058d": {
+          "x": 16.903723186676313,
+          "y": 0,
+          "z": 63.55089205231214
+        },
+        "2fca0cb5-75ca-4bb3-968b-75f10103a1e5": {
+          "x": 11.545376669251807,
+          "y": 0,
+          "z": 51.34165603784104
+        },
+        "e828b851-cbff-44ea-9696-ebb97db8c856": {
+          "x": 20.81779066912124,
+          "y": 0,
+          "z": -3.7635578109212258
+        },
+        "c1804049-3d9e-4a39-84a9-5d1a68dd33a3": {
+          "x": 37.08370382006433,
+          "y": 0,
+          "z": 70.86670452484195
+        },
+        "a82b21db-927a-4091-b3c9-59be2a0ec0aa": {
+          "x": 18.737348109815084,
+          "y": 0,
+          "z": 42.4612195039959
+        },
+        "68acc4ba-0b92-4c06-8b42-2a8f0a82df11": {
+          "x": 45.86016480362281,
+          "y": 0,
+          "z": 24.229180249648447
+        },
+        "ba32ed44-4bea-4aab-bad1-4f0707ef1787": {
+          "x": 72.68895200409783,
+          "y": 0,
+          "z": 40.93468109350516
+        },
+        "d7121d95-ab10-41a0-a30b-7cbc06709085": {
+          "x": 6.903092669000868,
+          "y": 0,
+          "z": 46.93730800204917
+        },
+        "5809c624-51eb-465d-bd0b-749f06acec18": {
+          "x": 24.568448643912713,
+          "y": 0,
+          "z": 47.03247380713212
+        },
+        "internal_84366c95-d36c-4de3-9b00-7c21e5eaffca": {
+          "x": 50.906617646022795,
+          "y": 20,
+          "z": 23.83395024949326
+        },
+        "internal_4283fffe-e8d3-4438-bd65-e4b2972a210f": {
+          "x": 64.22152618585804,
+          "y": 20,
+          "z": 20.278592416570298
+        },
+        "internal_59267fd8-396a-47fb-8f7a-3b4883b50651": {
+          "x": -1.2692483384789175,
+          "y": 20,
+          "z": 59.04996330136659
+        },
+        "internal_bffda109-00b4-4da5-8019-591c99f3c142": {
+          "x": 42.07914056417749,
+          "y": 20,
+          "z": 42.497531018667885
+        }
+      }
+    ],
+    "name": "ocean5",
+    "elements": [],
+    "encoder": "array",
+    "encoder_version": "0.1",
+    "origin": "int",
+    "foreign_id": "uuid",
+    "foreign_a": "a",
+    "foreign_b": "b"
+  },
+  "nodes": [
+    {
+      "origin": "neo",
+      "slot": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "payload": {
+        "identity": 256,
+        "labels": [
+          "dex"
+        ],
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:256",
+        "name": "ocea",
+        "brand": "ocean",
+        "uuid": "9160e133-a107-46c9-944c-0f163f5100d6",
+        "level": "3"
+      }
+    },
+    {
+      "origin": "neo",
+      "slot": "5055de0e-13c7-4fcb-8b5a-d6fa062391f1",
+      "payload": {
+        "identity": 257,
+        "labels": [
+          "cex"
+        ],
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:257",
+        "name": "g",
+        "brand": "gov",
+        "uuid": "635c36a6-8393-4bbc-93ae-93cc75b97cb3",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "a4d68594-87f9-4e90-83dd-1eae5c07e6c6",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Michelle Bender",
+        "uuid": "0d3b0bfd-98f4-4c17-9174-75ce6c4e58d0",
+        "identity": 260,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:260"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "fc225355-1709-48c3-a9bc-b429dc2e5e59",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Anna Von Rebay",
+        "uuid": "9d197345-2d2a-4c9c-a50e-32f64bedbf08",
+        "identity": 259,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:259"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "c1d5671f-0177-463b-9d24-76f874c8728c",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Anna Lisa Lukes",
+        "uuid": "f130e710-6435-476c-b29a-c1e0e8513f7b",
+        "identity": 261,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:261"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "payload": {
+        "labels": [
+          "dex"
+        ],
+        "brand": "law",
+        "uuid": "7124f113-7014-4d65-b045-85522b0480db",
+        "identity": 258,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:258",
+        "name": "Legal Team",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "science",
+        "uuid": "c830dcf1-4771-427f-9a66-4150f121fb6a",
+        "identity": 262,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:262",
+        "name": "g",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "a7715d65-a69f-42ce-a6c8-fe5db9422823",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Bob Richmond",
+        "uuid": "f3f45a11-7075-414e-b28c-948705f45c9a",
+        "identity": 264,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:264"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "eeec6aca-3818-42de-931f-56e5cb94de0f",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Arjun Makhijani",
+        "uuid": "d61e4c94-4137-4c9a-9cd5-0eea2c26e1be",
+        "identity": 263,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:263"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "media",
+        "uuid": "bb89806e-21a8-4624-ba6c-1305b556b416",
+        "identity": 265,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:265",
+        "name": "Media",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "4078a768-5ffc-4374-b4ea-72fed927366f",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Dezire McGil",
+        "uuid": "ae263055-8ee5-45e2-ae7f-8d2bcbf2febe",
+        "identity": 267,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:267"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "8bfbddc9-1288-4b7e-ac87-dcfd219e165c",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Eva Fry",
+        "uuid": "59931088-e6ae-426c-84b9-48c81100cae7",
+        "identity": 268,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:268"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "1ebc4cdb-098e-420a-ab93-645f1c705670",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Matheu Sale",
+        "uuid": "94fac58b-dc55-446c-81a2-1b190d334a61",
+        "identity": 266,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:266"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "6a8781c8-3df5-49c8-9f57-0518f91b7a88",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Joe Sandri",
+        "uuid": "5a617c73-927e-4429-b683-914f5cdb51bc",
+        "identity": 269,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:269"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "7cefefcb-6b36-4c1e-96a2-616f36beefc5",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Jay Lukes",
+        "uuid": "eb018938-2acc-44da-82db-65de97f51038",
+        "identity": 270,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:270"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "a5153e59-58ca-46a3-ba0d-40640978abea",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Patrick Hanlon",
+        "uuid": "f5a32c76-3e8b-4539-a3e6-479f1903a188",
+        "identity": 271,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:271"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "84cfdcd8-2769-488d-8a99-a9097dc77f46",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "John Doyle",
+        "uuid": "ebdd0e46-8218-4a7d-9412-27ea83ed112e",
+        "identity": 272,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:272"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "65679abb-9b04-4a98-a749-ae6d6f9ab71a",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Dylan Tull",
+        "uuid": "a099b2a6-8c02-4d11-8afb-5f40f69f826d"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "7452111d-5f3d-4391-9b95-4cf8652f263c",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Ken Bussler",
+        "uuid": "c22c5cd1-6e7f-4e74-a1e2-014db1722d3c"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "8df0102b-6149-4d67-bb74-710ba0c6e723",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "David McGuire",
+        "uuid": "97c4261e-11ec-4718-8308-8bc0e7b679a8"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "53eb302b-1c85-491d-bf8a-56a650d414ad",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Ferenc Delnoki Veres",
+        "uuid": "b4035db8-4bf7-439b-9b6d-9f9c98c8f5d2"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "8bd1d883-47a1-4cb4-9b74-80596cc1324c",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Dana Ngo",
+        "uuid": "e566f2e8-b823-4ed0-8a30-144b1503bab1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "payload": {
+        "labels": [
+          "dex"
+        ],
+        "brand": "community",
+        "uuid": "4d64d1b6-1e1f-4d1e-b344-4fc2a2dab751",
+        "identity": 273,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:273",
+        "name": "community",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "eb66a556-e7b7-4c0d-a551-a6d384441f9b",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Mico Malecki",
+        "uuid": "6205bc64-d444-4f99-b55d-9e231ccfca7d"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "41fc8313-7159-4058-9bff-17f043eb4297",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Tiffany McFerrin",
+        "uuid": "8ecfe0cd-7b07-4681-a234-4a2e8621ddc2"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "8c525af1-63cc-4d57-b022-d8700c9c0555",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "George Orbelian",
+        "uuid": "4e698df0-b33f-4f0e-bb47-7e2b3f88e41a"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "5fe6c7a1-c3b1-438f-975a-bb732893058d",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "David Puu",
+        "uuid": "81399c01-d32c-477c-b657-21672287d802"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "2fca0cb5-75ca-4bb3-968b-75f10103a1e5",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Leo Richards",
+        "uuid": "ce435aa0-5beb-40e5-a7b8-ce3d9eb371f5",
+        "identity": 274,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:274"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "e828b851-cbff-44ea-9696-ebb97db8c856",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Brian Von Herzen",
+        "uuid": "bde98d32-efd6-4829-a8fd-5673027753e0",
+        "identity": 275,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:275"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "c1804049-3d9e-4a39-84a9-5d1a68dd33a3",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Paul Quaiser",
+        "uuid": "c172e508-aa97-4491-afa2-7adb611c6365",
+        "identity": 276,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:276"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "a82b21db-927a-4091-b3c9-59be2a0ec0aa",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Phillipe Carillo",
+        "uuid": "465633e0-951a-4f20-a00d-e8a3aa3e1f3a",
+        "identity": 277,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:277"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "68acc4ba-0b92-4c06-8b42-2a8f0a82df11",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Tamara Abdelwahed",
+        "uuid": "ffb26c59-0cdf-4f98-a2a6-6d413b6e1285"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "ba32ed44-4bea-4aab-bad1-4f0707ef1787",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Tomohiro Michuhata",
+        "uuid": "8d3ebbb7-1a35-4247-b628-b804ab422b46"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "d7121d95-ab10-41a0-a30b-7cbc06709085",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Alisha Chauhan",
+        "uuid": "7c2ff185-5de2-46b0-9d44-10087e5cfd8a",
+        "identity": 278,
+        "elementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:278"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "5809c624-51eb-465d-bd0b-749f06acec18",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "Javier Fernandez",
+        "uuid": "e6798750-4496-4fcd-815f-063ab7aa784e"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "internal_84366c95-d36c-4de3-9b00-7c21e5eaffca",
+      "payload": {
+        "labels": [
+          "stock"
+        ],
+        "brand": "GOOG PREZ",
+        "name": "Corpname",
+        "uuid": "84366c95-d36c-4de3-9b00-7c21e5eaffca",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "internal_4283fffe-e8d3-4438-bd65-e4b2972a210f",
+      "payload": {
+        "labels": [
+          "stock"
+        ],
+        "brand": "UN HCR 2023",
+        "name": "Corpname",
+        "uuid": "4283fffe-e8d3-4438-bd65-e4b2972a210f",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "internal_59267fd8-396a-47fb-8f7a-3b4883b50651",
+      "payload": {
+        "labels": [
+          "stock"
+        ],
+        "brand": "UC BERK PRESS RELEASE",
+        "name": "Corpname",
+        "uuid": "59267fd8-396a-47fb-8f7a-3b4883b50651",
+        "level": "1"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "internal_bffda109-00b4-4da5-8019-591c99f3c142",
+      "payload": {
+        "labels": [
+          "stock"
+        ],
+        "brand": "TWITTR FLASH",
+        "name": "Corpname",
+        "uuid": "bffda109-00b4-4da5-8019-591c99f3c142",
+        "level": "1"
+      }
+    }
+  ],
+  "links": [
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "5055de0e-13c7-4fcb-8b5a-d6fa062391f1",
+      "payload": {
+        "identity": 293,
+        "start": 256,
+        "end": 257,
+        "type": "CONNECTS",
+        "properties": {
+          "weight": 0,
+          "uuid": "80fbbd8f-ad47-4910-bfdd-ad75a9116dd9"
+        },
+        "elementId": "5:4f968e5a-fb91-456b-8a18-18c1cf301f88:293",
+        "startNodeElementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:256",
+        "endNodeElementId": "4:4f968e5a-fb91-456b-8a18-18c1cf301f88:257"
+      }
+    },
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "payload": {
+        "weight": 0,
+        "uuid": "c7bf9627-a051-49bf-b6b6-158aab32874c"
+      }
+    },
+    {
+      "slota": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "slotb": "fc225355-1709-48c3-a9bc-b429dc2e5e59",
+      "payload": {
+        "weight": 0,
+        "uuid": "c1a22266-ea07-433d-8a9f-1d9459be4802"
+      }
+    },
+    {
+      "slota": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "slotb": "a4d68594-87f9-4e90-83dd-1eae5c07e6c6",
+      "payload": {
+        "weight": 0,
+        "uuid": "1fcc05a8-338c-4a82-8d84-2d6354273ceb"
+      }
+    },
+    {
+      "slota": "5055de0e-13c7-4fcb-8b5a-d6fa062391f1",
+      "slotb": "c1d5671f-0177-463b-9d24-76f874c8728c",
+      "payload": {
+        "weight": 0,
+        "uuid": "204329e8-10b9-48e6-b16b-af990d276357"
+      }
+    },
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "payload": {
+        "weight": 0,
+        "uuid": "2b9a92da-178b-4d38-b1c6-b5c6bb286a40"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "a7715d65-a69f-42ce-a6c8-fe5db9422823",
+      "payload": {
+        "weight": 0,
+        "uuid": "d30cfba2-069c-4138-88d6-49a488fffb3b"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "eeec6aca-3818-42de-931f-56e5cb94de0f",
+      "payload": {
+        "weight": 0,
+        "uuid": "0a36b895-e294-4fb0-8e2f-3c52b60d1084"
+      }
+    },
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "payload": {
+        "weight": 0,
+        "uuid": "ec1c7b79-3593-4767-aed9-4c4e5bec427b"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "1ebc4cdb-098e-420a-ab93-645f1c705670",
+      "payload": {
+        "weight": 0,
+        "uuid": "52deccaf-4dd2-4842-b7fd-a43cdae8e476"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "4078a768-5ffc-4374-b4ea-72fed927366f",
+      "payload": {
+        "weight": 0,
+        "uuid": "2b55134d-de53-4913-80f0-5856036b1e28"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "8bfbddc9-1288-4b7e-ac87-dcfd219e165c",
+      "payload": {
+        "weight": 0,
+        "uuid": "918a859c-1815-428f-aeac-6984e9d6a1f6"
+      }
+    },
+    {
+      "slota": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "slotb": "6a8781c8-3df5-49c8-9f57-0518f91b7a88",
+      "payload": {
+        "weight": 0,
+        "uuid": "4f2a1dc3-054f-4b3f-9b9e-e0b07339fc18"
+      }
+    },
+    {
+      "slota": "5055de0e-13c7-4fcb-8b5a-d6fa062391f1",
+      "slotb": "7cefefcb-6b36-4c1e-96a2-616f36beefc5",
+      "payload": {
+        "weight": 0,
+        "uuid": "85e5c813-f564-4e11-bae2-82f78baef495"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "a5153e59-58ca-46a3-ba0d-40640978abea",
+      "payload": {
+        "weight": 0,
+        "uuid": "19f3c6bd-d5f6-4d2c-a4cc-32843883b8c7"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "84cfdcd8-2769-488d-8a99-a9097dc77f46",
+      "payload": {
+        "weight": 0,
+        "uuid": "1ede375c-dadc-4a2b-8719-f7fe69dfa0c2"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "65679abb-9b04-4a98-a749-ae6d6f9ab71a",
+      "payload": {
+        "weight": 0,
+        "uuid": "3ab522d8-6ff2-4aa2-9789-d2cb30f8d99b"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "7452111d-5f3d-4391-9b95-4cf8652f263c",
+      "payload": {
+        "weight": 0,
+        "uuid": "42451343-91fc-4831-a937-7fed2f52a2bc"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "8df0102b-6149-4d67-bb74-710ba0c6e723",
+      "payload": {
+        "weight": 0,
+        "uuid": "1d658d6b-f43c-47c2-b387-3d614fa6f890"
+      }
+    },
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "payload": {
+        "weight": 0,
+        "uuid": "8b8ad64a-9ec8-4052-9c0d-6ad69c40063a"
+      }
+    },
+    {
+      "slota": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "slotb": "8bd1d883-47a1-4cb4-9b74-80596cc1324c",
+      "payload": {
+        "weight": 0,
+        "uuid": "fa26bc0a-8e78-48ae-916b-9b406fe3acf0"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "2fca0cb5-75ca-4bb3-968b-75f10103a1e5",
+      "payload": {
+        "weight": 0,
+        "uuid": "3eeadf29-849c-4d6f-be12-bb209b424c42"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "5fe6c7a1-c3b1-438f-975a-bb732893058d",
+      "payload": {
+        "weight": 0,
+        "uuid": "b14f067f-0b61-4636-bda3-af564f7ff123"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "53eb302b-1c85-491d-bf8a-56a650d414ad",
+      "payload": {
+        "weight": 0,
+        "uuid": "45c3aa60-897f-4382-8d52-925503862f32"
+      }
+    },
+    {
+      "slota": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "slotb": "41fc8313-7159-4058-9bff-17f043eb4297",
+      "payload": {
+        "weight": 0,
+        "uuid": "bc0a9757-93a4-40fb-b8db-317fad2594fd"
+      }
+    },
+    {
+      "slota": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "slotb": "8c525af1-63cc-4d57-b022-d8700c9c0555",
+      "payload": {
+        "weight": 0,
+        "uuid": "660b881f-0316-4ca3-a673-706fc024ea28"
+      }
+    },
+    {
+      "slota": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "slotb": "eb66a556-e7b7-4c0d-a551-a6d384441f9b",
+      "payload": {
+        "weight": 0,
+        "uuid": "05009c48-99c5-4317-b579-ec4752ab16b7"
+      }
+    },
+    {
+      "slota": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "slotb": "e828b851-cbff-44ea-9696-ebb97db8c856",
+      "payload": {
+        "weight": 0,
+        "uuid": "8fca88d4-a6e6-4357-9fc8-c127d07958eb"
+      }
+    },
+    {
+      "slota": "2efdec67-a4cc-4773-9898-40cc78107fcb",
+      "slotb": "c1804049-3d9e-4a39-84a9-5d1a68dd33a3",
+      "payload": {
+        "weight": 0,
+        "uuid": "9704cbeb-fb6a-44d4-bd0f-9c361872e7f8"
+      }
+    },
+    {
+      "slota": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "slotb": "68acc4ba-0b92-4c06-8b42-2a8f0a82df11",
+      "payload": {
+        "weight": 0,
+        "uuid": "b7b385ad-5bba-4e0b-b6f6-0a0dca3f711b"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "d7121d95-ab10-41a0-a30b-7cbc06709085",
+      "payload": {
+        "weight": 0,
+        "uuid": "98a469e6-7b69-4dad-8488-535ac7d426c2"
+      }
+    },
+    {
+      "slota": "5055de0e-13c7-4fcb-8b5a-d6fa062391f1",
+      "slotb": "ba32ed44-4bea-4aab-bad1-4f0707ef1787",
+      "payload": {
+        "weight": 0,
+        "uuid": "e1a20986-2dca-47ca-8974-0c9fd118acf0"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "5809c624-51eb-465d-bd0b-749f06acec18",
+      "payload": {
+        "weight": 0,
+        "uuid": "df61311e-0b9f-41db-8570-757aa8e61963"
+      }
+    },
+    {
+      "slota": "a82b21db-927a-4091-b3c9-59be2a0ec0aa",
+      "slotb": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "payload": {
+        "weight": 0,
+        "uuid": "0ea6c7db-2e47-482b-86b3-1ef6025bc528"
+      }
+    },
+    {
+      "slota": "internal_84366c95-d36c-4de3-9b00-7c21e5eaffca",
+      "slotb": "cbf5affd-fc98-45fe-9305-d7c2be85f85f",
+      "payload": {
+        "weight": 0,
+        "uuid": "2ea15160-7cbb-4ffe-b7a9-5fcd7fdadb1e"
+      }
+    },
+    {
+      "slota": "eb66a556-e7b7-4c0d-a551-a6d384441f9b",
+      "slotb": "internal_84366c95-d36c-4de3-9b00-7c21e5eaffca",
+      "payload": {
+        "weight": 0,
+        "uuid": "1819a778-24e2-4c4d-9144-68572dd8556f"
+      }
+    },
+    {
+      "slota": "7d8f3b2e-74bd-48fc-9615-31585511af57",
+      "slotb": "internal_4283fffe-e8d3-4438-bd65-e4b2972a210f",
+      "payload": {
+        "weight": 0,
+        "uuid": "788ba315-7dc4-4288-b431-3b5d32218680"
+      }
+    },
+    {
+      "slota": "8bfbddc9-1288-4b7e-ac87-dcfd219e165c",
+      "slotb": "internal_59267fd8-396a-47fb-8f7a-3b4883b50651",
+      "payload": {
+        "weight": 0,
+        "uuid": "e4bbc6e6-351b-4875-bc09-cde6aa257021"
+      }
+    },
+    {
+      "slota": "7a9decae-42cf-4d97-a7e2-472112949234",
+      "slotb": "internal_59267fd8-396a-47fb-8f7a-3b4883b50651",
+      "payload": {
+        "weight": 0,
+        "uuid": "27b64dbf-f4e6-44d1-b40e-b037747bdc09"
+      }
+    },
+    {
+      "slota": "eb66a556-e7b7-4c0d-a551-a6d384441f9b",
+      "slotb": "internal_bffda109-00b4-4da5-8019-591c99f3c142",
+      "payload": {
+        "weight": 0,
+        "uuid": "c25f11fb-a3da-44a1-8c50-63c37c022571"
+      }
+    },
+    {
+      "slota": "7cefefcb-6b36-4c1e-96a2-616f36beefc5",
+      "slotb": "internal_bffda109-00b4-4da5-8019-591c99f3c142",
+      "payload": {
+        "weight": 0,
+        "uuid": "172c808b-7561-4d45-b141-928744d13412"
+      }
+    },
+    {
+      "slota": "a7715d65-a69f-42ce-a6c8-fe5db9422823",
+      "slotb": "internal_bffda109-00b4-4da5-8019-591c99f3c142",
+      "payload": {
+        "weight": 0,
+        "uuid": "a60d7b82-4a0a-4972-9473-21d1b2d5398d"
+      }
+    },
+    {
+      "slota": "69899c34-7c70-4a31-93e8-6f56652c25da",
+      "slotb": "internal_bffda109-00b4-4da5-8019-591c99f3c142",
+      "payload": {
+        "weight": 0,
+        "uuid": "45fd66ba-0155-443f-8f53-e9e7aa936695"
+      }
+    }
+  ]
+}

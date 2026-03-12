@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ocean Health Cooperative">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Open Letter to Honerable Leaders</title>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .linkicon{
+            width:30px;
+            margin-right:4px;
+        }
+        .dimicon{
+
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    
+    <script type="module">
+
+        import { factory2d } from './../../factory/factory2d.js'
+        import gluemapper from './../../util/gluemapper.js'
+
+        var logo_items = [
+            {
+                title: 'Greenpeace',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/greenpeaceangle.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },            
+            {
+                title: 'Ocean Support',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../img/orgs/mcn.jpg',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/uofh.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'Ocean Support',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../img/orgs/ncg.png',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/sierra_club.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'Farmers Footprint',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../img/orgs/farmersfootprint.png',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/foe.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/sef.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/uhm.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'Ocean Support',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../img/orgs/ncg.png',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/sierra_club.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'Farmers Footprint',
+                body: 'Dr. Bob Richmond Ph.D',
+                img: '../img/orgs/farmersfootprint.png',
+                stats: '44 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/foe.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },
+            {
+                title: 'University of Hawaii',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/sef.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            },   
+            {
+                title: 'Fairewinds Energy',
+                body: 'another good word getting tiledmover works good and will have a cool long paragraph to tet it out the and is the alayas ginsing always ign',
+                img: '../img/orgs/fairewinds.png',
+                stats: '52 members',
+                links:[
+                    'https://twitter.com',
+                    'https://twitter.com'                    
+                ]                
+            }                     
+        ]
+
+        var cont = document.querySelector('#maincont');
+        factory2d.storeStaticTemplate( cont.children[0] )
+        
+        cont.innerHTML =''
+        var iMap = { 
+            '.card-title':'title' 
+        }
+
+        var items = logo_items;
+        for (var i in items) {
+            let obj = items[i];
+            var vnode = factory2d.renderNodeSync( 'orgPanel', {}  )             
+            //gluemapper.pushx( obj , vnode );
+            cont.appendChild( vnode )
+        } 
+    </script>
+
+
+
+
+    
+    <style>
+        /* basic styling */
+        .container_q {
+            max-width: 1050px;
+            margin: auto;
+            flex-wrap: wrap;
+            border: solid green 3px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;            
+        }
+        .container2 {
+            max-width: 1050px;
+            margin: auto;
+            padding: 1rem;
+        }   
+        .org-item{
+            width:130px;
+            background:#fff;
+            border:solid blue;
+            margin:4px;
+            display:flex;
+            flex-direction:column;
+            
+        }
+        .org-item img {
+            width: 130px;
+            height: 130px;
+            /*object-fit: contain;   
+            mix-blend-mode: multiply;    */ 
+        }
+    </style>
+
+    
+    <div class="container2" style="font-size:23px; font-family:serif;">
+        <p style="margin-top:80px;">To Honerable Leaders, </p>
+        <p>Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  Template text insertion here.  
+            As linked below,
+        </p>
+        <p style="padding-left:50px;"> </p>
+    </div>
+    <div style="  ">
+    </div>
+    
+    <div id="maincont" class="container_q">
+        
+        <div id="orgPanel" class="org-item">
+            <a href="#">
+                <img id='img' src="../img/genericlogo.png" style='  padding:2px;' /> 
+            </a>
+            <div style="text-align: center;  font-size:11px; ">
+                Orgname Int.
+            </div>
+            <div style=" display:flex; justify-content: space-around; font-size:9px; ">
+                <a href="#">Statement</a>
+                <a href="#">Website</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script async src="../masonry.pkgd.min.js"></script>-->
+
+    
+</body>
+
+</html>

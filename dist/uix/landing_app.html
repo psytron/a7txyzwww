@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>DYN LOGO</title><base href="" target="_blank">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+        <!--
+        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101282159);</script>
+        <script async src="//static.getclicky.com/js"></script>
+    -->
+        
+    </head>
+    <body style="background-color:#FFFFFF;">
+ 
+        <style>
+            .page_icon{
+            	filter: contrast(50%);
+            }
+            body {
+                color: #555555;
+            }
+            .tile{
+            	width:102px;
+            	height:102px;
+            	margin-bottom:6px;
+            }
+            .option_tile{
+            	border:solid #DDDDDD 1px;
+            	padding:24px;
+            	border-radius:8px;
+            	width:196px;
+            	margin:8px;
+            	
+            }
+            .op_title{
+                font-size:24px;
+                font-weight:bold;
+            }
+            .op_subtitle{
+                font-size:19px;
+            }
+            .op_subtitle::before{
+				background-image: url('/img/ethlogo_purp_small.png');
+				background-size: 10px 20px;
+				display: inline-block;                
+                width:44px;
+                height:auto;
+                border:solid green 1px;
+                background-repeat: no-repeat;
+            }
+            .op_subtitle2{
+                font-size:16px;
+            }            
+            .op_subsub{
+                font-size:12px;
+            }
+            .minibtns{
+            	background-color:#665599;
+            }
+            /*Filter styles*/
+            .saturate { filter: saturate(3); }
+            .grayscale { filter: grayscale(100%); }
+            .contrast { filter: contrast(50%); }
+            .brightness { filter: brightness(0.25); }
+            .blur { filter: blur(3px); }
+            .invert { filter: invert(100%); }
+            .sepia { filter: sepia(100%); }
+            .huerotate { filter: hue-rotate(180deg); }
+            .rss.opacity { filter: opacity(50%); }
+        </style>
+                
+        <!--main-->
+        <div style="">
+
+			<div id='tapeholder' style=" "></div>
+			<div id="main_banner" style="height:0px; background:blue;"></div>
+                <!--
+				<div id='logo' class="tile" style="display:flex; justify-content:center; flex-direction: column; margin-top:80px;  ">
+				</div>-->
+
+                <div class="" style="display:flex; justify-content:center;  ">
+                    
+                    <div class="option_tile" >
+						<img class="page_icon" src="img/individual_lic.png"></img>
+                        <div class="op_title">Single</div>
+                        <div class="op_subsub">Private HSM</div>
+                        <div class="op_subsub">HyperCluster 1X</div>
+						<div class="op_subtitle" id="eth_price_1">0.031 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_1">( $99 )</div>                        
+                        <button id="select_1" fn="reset"  type="button" class="btn btn-primary minibtns" >Select</button>
+					</div>
+					<div class="option_tile"  >
+                        <img class="page_icon" src="img/enterprise_lic.png"></img>
+						<div class="op_title">Cluster</div>
+                        <div class="op_subsub">Private HSM</div>
+                        <div class="op_subsub">HyperCluster 8X</div>
+						<div class="op_subtitle" id="eth_price_2">0.319 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_2">( $999 )</div>  
+                        <button id="select_2"  fn="reset"  type="button" class="btn btn-primary minibtns" >Select</button>                      
+					</div>
+					<div class="option_tile"  >
+                        <img class="page_icon" src="img/enterprise_lic.png"></img>
+						<div class="op_title">Elastic</div>
+                        <div class="op_subsub">Private HSM</div>
+                        <div class="op_subsub">HyperCluster Unlim</div>
+						<div class="op_subtitle" id="eth_price_2">0.319 ETH</div>
+                        <div class="op_subtitle2" id="usd_price_2">( $999 )</div>  
+                        <button id="select_2"  fn="reset"  type="button" class="btn btn-primary minibtns" >Select</button>                      
+					</div>					
+
+                </div>                
+
+
+
+
+            <style>
+                svg { 
+                    cursor: pointer; 
+                } /* whole rectangle */
+ 
+				svg:hover {
+				    fill: red;
+				}
+
+                .intro{
+                    text-align: center;
+                    align-items: center;			
+                }
+                .install_holder{
+                    /* padding-left:20px; */
+                    /* padding-right:20px; */
+                    display: flex;
+                    justify-content: center;
+                    margin-right: auto;
+                    margin-left: auto;
+                    min-width: 330px;
+                }
+                .install_item{
+                    text-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin: 14px;
+                }
+                .install_icon{
+                    width:63px;
+                    color:white;
+                    fill:orange;
+
+                }
+                .install_icon svg path {
+                    fill: blue;
+                }
+                .install_text{
+                    align-items: center;
+                    font-weight:bold;
+                    font-size:17px;
+                }
+                .install_link{
+                    align-items: center;
+                    font-size:14px;
+                }		
+                .warning_span{
+                    color:red;
+                }
+                .warnings{
+                    font-size:12px;
+                }
+            </style>
+
+			<!-- INSTALL VERSIONS BAR -->
+			<div class="install_holder">
+				<div class="install_item">
+					<object class="install_icon page_icon" data="img/os/apple.svg" type="image/svg+xml"  fill="white">></object>
+					<div class="install_text">Mac OS</div>
+					<!--<a class="install_link"  href="#">alias.v0.2.1.dmg</a>-->
+				</div>
+				<div class="install_item"  href="http://signalmesh.io/download.zip">
+					<object class="install_icon page_icon" data="img/os/windows.svg" type="image/svg+xml"></object>
+					<div class="install_text">Windows</div>
+					<!--<a class="install_link"  href="http://signalmesh.io/download.zip">alias.v0.2.1.zip</a>-->
+				</div>
+				<div class="install_item"  href="http://signalmesh.io/download.zip">
+					<object class="install_icon page_icon" data="img/os/linux.svg" type="image/svg+xml"></object>
+					<div class="install_text">Linux</div>
+					<!--<a class="install_link"  href="http://signalmesh.io/download.zip">alias.v0.2.1.tar</a>-->
+				</div>
+			</div>
+			<!-- INSTALL VERSIONS BAR -->
+
+            <style>
+                .terms_holder{
+                    text-align:center;
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-width:280px; 
+                }
+            </style>
+            <div class="terms_holder">
+                <div class="termsd_text" style="font-size:9px;">By using this site, you acknowledge that you have read the <a href="./terms.html">terms of service</a> and <a href="./terms.html"> privacy policy</a> </div>
+                <div class="mb-1" style="font-size:11px; margin-top:6px;">V0.17<span style="font-size:13px;">©</span> 2022 Experimental</div>
+            </div>
+        
+
+        </div><!--main-->
+        
+        <!--
+
+              display: flex;
+  
+  justify-content: center;
+        <script type="module">
+            var l = 3;
+            imdport QRCode from '/web_modules/easyqrdsdcodejzsd.js';
+            var options = {
+                text: "odeJS",
+				width: 512,
+				height: 512,
+				colorDark : "#000000",
+				colorLight : "#ffffff"                
+            }
+            // Create new QRCode Object
+            var ek=new QRCode( document.body , options);
+        </script>-->
+
+        <script src="v_modules/ccxt.browser.js" type="text/javascript"> </script>
+        <script type="module" src="dyn_module.js"></script>
+        <script>
+            var top_level = {
+                a:true,
+                inland:1
+            }
+
+        </script>
+	</body>
+</html>

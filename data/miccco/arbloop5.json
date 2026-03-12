@@ -1,0 +1,647 @@
+{
+  "meta": {
+    "layout": 0,
+    "layouts": [
+      {
+        "9e9c0c2b-9246-4619-abf6-e3ea17b87dfe": {
+          "x": -32.1647152092915,
+          "y": 0,
+          "z": -13.363558570328983
+        },
+        "6ffca649-fee2-49be-9849-3f09118daa5a": {
+          "x": -32.221449028546296,
+          "y": 0,
+          "z": -0.6793840811338185
+        },
+        "516d1d09-9d77-4a6b-b355-a430a963f13f": {
+          "x": -16.0655009972921,
+          "y": 0,
+          "z": -12.881762287449734
+        },
+        "95ae1b87-5dbc-4a96-a887-6dfbf2ea3d7b": {
+          "x": -16.124656758367394,
+          "y": 0,
+          "z": -0.6507462892838181
+        },
+        "4e9e9ac5-c782-4ed3-bd95-91b7189c37f0": {
+          "x": -5.027432414502166,
+          "y": 0,
+          "z": -20.531084299525816
+        },
+        "b7f250be-1ac8-4761-ba62-c1a31b85c19d": {
+          "x": -5.807657917916202,
+          "y": 0,
+          "z": 9.12928784729896
+        },
+        "f8813a75-c024-4e7d-b61f-62e555d08a2e": {
+          "x": 12.234195984444263,
+          "y": 0,
+          "z": -20.202456932887053
+        },
+        "f0fa27b3-ada2-478f-affa-a28ba631e8e9": {
+          "x": 12.024470143568038,
+          "y": 0,
+          "z": 9.684334790423998
+        },
+        "71877c78-38b9-469f-b72f-c78a00eeff1e": {
+          "x": 45.68737863872432,
+          "y": 0,
+          "z": -15.527521150123341
+        },
+        "3cc96985-a282-4ce6-922a-1c4ce2a1f795": {
+          "x": 43.57381772916669,
+          "y": 0,
+          "z": 10.276672617717754
+        },
+        "1d1b08d0-7958-41bc-b718-38dd58c1c5d3": {
+          "x": 44.143514565560565,
+          "y": 0,
+          "z": 17.382007836207748
+        },
+        "97694eb4-24f2-466b-8ebc-c04ec7755086": {
+          "x": 43.97523791861657,
+          "y": 0,
+          "z": 3.5378920382018
+        },
+        "5a7842f8-5f6e-4369-9923-f7474f19ba6c": {
+          "x": 45.156732170243494,
+          "y": 0,
+          "z": -25.14682936719663
+        },
+        "9cd94833-6d65-49cd-8a8e-0e5889f8214c": {
+          "x": 26.242476571278846,
+          "y": 0,
+          "z": 3.1687594581469165
+        },
+        "0530c8e7-756e-432b-b989-55067a297c39": {
+          "x": 26.210414222683827,
+          "y": 0,
+          "z": 9.917466789671328
+        },
+        "6163172c-7ab6-42fd-9479-52682708f7f2": {
+          "x": 25.98007924799157,
+          "y": 0,
+          "z": 16.951654134654405
+        },
+        "359bb721-701a-4ec7-8eea-fea970a249bc": {
+          "x": 27.023480726099905,
+          "y": 0,
+          "z": -16.28461698752261
+        },
+        "f88a3c01-6663-441f-b492-987bffbae5a1": {
+          "x": 26.14905662098824,
+          "y": 0,
+          "z": -25.61741471904519
+        },
+        "4517602e-9e5d-4309-bddd-8d92ad9f581e": {
+          "x": 80.38859032527506,
+          "y": 0,
+          "z": -7.762701927229674
+        },
+        "2e7320c2-0b7c-413b-a2fc-3d3258c4f760": {
+          "x": 61.01639715731084,
+          "y": 0,
+          "z": -24.64463983126064
+        },
+        "d72bb42b-8d5c-48c1-a9f6-c95478ef79e4": {
+          "x": 61.82141797720643,
+          "y": 0,
+          "z": -15.479459818686752
+        },
+        "5a4210e5-386e-4323-afb7-8f3a582dccc9": {
+          "x": 62.13421987051048,
+          "y": 0,
+          "z": 3.776001613532644
+        },
+        "cca734fd-7167-405f-a3cc-c395c36c0701": {
+          "x": 62.06206592881958,
+          "y": 0,
+          "z": 10.676776727494673
+        },
+        "527bcbf4-d6b5-4cd3-affd-9fb41d2f0146": {
+          "x": 62.075926974547706,
+          "y": 0,
+          "z": 17.638771074117024
+        }
+      }
+    ],
+    "name": "merged",
+    "elements": [],
+    "encoder": "array",
+    "encoder_version": "0.1",
+    "origin": "int",
+    "foreign_id": "uuid",
+    "foreign_a": "a",
+    "foreign_b": "b",
+    "orbitControls": {
+      "target": {
+        "x": -6.916140315125162,
+        "y": -1.0336876363070185e-16,
+        "z": -7.790662415713916
+      },
+      "position": {
+        "x": -55.64180431481124,
+        "y": 26.484278443660706,
+        "z": -6.743334571343567
+      },
+      "zoom": 1.18
+    }
+  },
+  "nodes": [
+    {
+      "origin": "internal",
+      "slot": "9e9c0c2b-9246-4619-abf6-e3ea17b87dfe",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "M.M",
+        "uuid": "bb2e06b6-6faf-4857-9dce-73d7ebd39a33"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "6ffca649-fee2-49be-9849-3f09118daa5a",
+      "payload": {
+        "labels": [
+          "alias"
+        ],
+        "brand": "unknown",
+        "name": "J.West",
+        "uuid": "8193d473-11d3-4b43-ade0-9fc8103ee660"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "516d1d09-9d77-4a6b-b355-a430a963f13f",
+      "payload": {
+        "labels": [
+          "admin"
+        ],
+        "brand": "wellsfargo",
+        "symbol": "BTC/USD",
+        "uuid": "6c3ad47a-1d07-4ac1-bc45-b6388d849054",
+        "name": "Wells Fargo SF"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "95ae1b87-5dbc-4a96-a887-6dfbf2ea3d7b",
+      "payload": {
+        "labels": [
+          "admin"
+        ],
+        "brand": "chase",
+        "symbol": "BTC/USD",
+        "uuid": "8a807457-fcc1-4249-a852-abeab6bd3e01",
+        "name": "CHASE",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "4e9e9ac5-c782-4ed3-bd95-91b7189c37f0",
+      "payload": {
+        "labels": [
+          "fiat"
+        ],
+        "brand": "usd",
+        "symbol": "UKNX/USD",
+        "uuid": "1f26295f-1c5a-4486-aa18-cb29daea802f"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "b7f250be-1ac8-4761-ba62-c1a31b85c19d",
+      "payload": {
+        "labels": [
+          "fiat"
+        ],
+        "brand": "usd",
+        "symbol": "UKNX/USD",
+        "uuid": "ed559625-89e3-4503-8fca-c76da9a80dec"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "f8813a75-c024-4e7d-b61f-62e555d08a2e",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "coinbase",
+        "uuid": "513a307c-bc33-4899-991e-cc0ca40bb086"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "f0fa27b3-ada2-478f-affa-a28ba631e8e9",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "coinbase",
+        "uuid": "f6f843b9-236f-474a-a630-bf0879cf50f2"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "71877c78-38b9-469f-b72f-c78a00eeff1e",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "maker",
+        "uuid": "e04eaee2-b685-4046-9507-74fe7ffbb143"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "3cc96985-a282-4ce6-922a-1c4ce2a1f795",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "binance",
+        "uuid": "3924a0b1-e8fd-4881-9a81-bd3921b8ee28"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "1d1b08d0-7958-41bc-b718-38dd58c1c5d3",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "bitmex",
+        "uuid": "b8fe3378-7794-44a2-a448-18d56772ab28"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "97694eb4-24f2-466b-8ebc-c04ec7755086",
+      "payload": {
+        "labels": [
+          "cex"
+        ],
+        "brand": "kraken",
+        "uuid": "2307568a-8b63-437a-9457-dbe1c6723d13"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "5a7842f8-5f6e-4369-9923-f7474f19ba6c",
+      "payload": {
+        "labels": [
+          "dex"
+        ],
+        "brand": "curve",
+        "uuid": "56dddc5a-2e51-4cf8-99c1-441eb8af6a7f"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "9cd94833-6d65-49cd-8a8e-0e5889f8214c",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "ETH/USD",
+        "uuid": "403f0da9-df31-491d-bf65-8e7ea6da5e1c"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "0530c8e7-756e-432b-b989-55067a297c39",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BNB/USD",
+        "uuid": "ef0cb103-ed12-431f-ba0d-3646fd38605f"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "6163172c-7ab6-42fd-9479-52682708f7f2",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BTC/USD",
+        "uuid": "70ebf55b-d467-475c-a618-43ca1c5c8c11"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "359bb721-701a-4ec7-8eea-fea970a249bc",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "NA",
+        "symbol": "BNB/USD",
+        "uuid": "6e7afe00-d497-4117-82d3-8d9785d877bd"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "f88a3c01-6663-441f-b492-987bffbae5a1",
+      "payload": {
+        "labels": [
+          "ctoken"
+        ],
+        "brand": "NA",
+        "symbol": "USDC/USD",
+        "uuid": "0901a154-bf9c-4d34-b6dc-25a3e5a3f9bc"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "labels": [
+          "automate"
+        ],
+        "brand": "plungebot",
+        "name": "ARB & Drop",
+        "uuid": "d7f79dc8-8c1b-421a-8fa2-2e6e5ea1120e"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "2e7320c2-0b7c-413b-a2fc-3d3258c4f760",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BNB/USD",
+        "uuid": "1d29352c-8087-403d-a5b7-4e3cc9620cc4"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "d72bb42b-8d5c-48c1-a9f6-c95478ef79e4",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BNB/USD",
+        "uuid": "3596f7fd-d309-4ff5-9095-1f5ba96f2447"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "5a4210e5-386e-4323-afb7-8f3a582dccc9",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BNB/USD",
+        "uuid": "30a82fea-90b7-4806-9030-d6634619c733"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "cca734fd-7167-405f-a3cc-c395c36c0701",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "na",
+        "symbol": "BNB/USD",
+        "uuid": "ad5c4446-bd1b-4a53-baf1-d6f857c2d242"
+      }
+    },
+    {
+      "origin": "internal",
+      "slot": "527bcbf4-d6b5-4cd3-affd-9fb41d2f0146",
+      "payload": {
+        "labels": [
+          "dtoken"
+        ],
+        "brand": "oi",
+        "symbol": "BNB/USD",
+        "uuid": "801a8739-d3d8-4589-90d4-43dc334c5080"
+      }
+    }
+  ],
+  "links": [
+    {
+      "slota": "9e9c0c2b-9246-4619-abf6-e3ea17b87dfe",
+      "slotb": "516d1d09-9d77-4a6b-b355-a430a963f13f",
+      "payload": {
+        "weight": 0,
+        "uuid": "4b461cb7-7b59-44f0-9ec4-f539f4365f06"
+      }
+    },
+    {
+      "slota": "516d1d09-9d77-4a6b-b355-a430a963f13f",
+      "slotb": "4e9e9ac5-c782-4ed3-bd95-91b7189c37f0",
+      "payload": {
+        "weight": 0,
+        "uuid": "fede4989-23c3-4d03-98a5-5b47c681a0f4"
+      }
+    },
+    {
+      "slota": "6ffca649-fee2-49be-9849-3f09118daa5a",
+      "slotb": "95ae1b87-5dbc-4a96-a887-6dfbf2ea3d7b",
+      "payload": {
+        "weight": 0,
+        "uuid": "f85d3fd2-5520-401a-8b29-198087f5a38a"
+      }
+    },
+    {
+      "slota": "95ae1b87-5dbc-4a96-a887-6dfbf2ea3d7b",
+      "slotb": "b7f250be-1ac8-4761-ba62-c1a31b85c19d",
+      "payload": {
+        "weight": 0,
+        "uuid": "e4870e71-6a43-4bee-b2c6-537058af51eb"
+      }
+    },
+    {
+      "slota": "4e9e9ac5-c782-4ed3-bd95-91b7189c37f0",
+      "slotb": "f8813a75-c024-4e7d-b61f-62e555d08a2e",
+      "payload": {
+        "weight": 0,
+        "uuid": "1bf90509-f7d0-4b55-ba5d-1ae46efd86e3"
+      }
+    },
+    {
+      "slota": "b7f250be-1ac8-4761-ba62-c1a31b85c19d",
+      "slotb": "f0fa27b3-ada2-478f-affa-a28ba631e8e9",
+      "payload": {
+        "weight": 0,
+        "uuid": "da87e6e3-94d0-4c00-80c0-3899733f3628"
+      }
+    },
+    {
+      "slota": "f8813a75-c024-4e7d-b61f-62e555d08a2e",
+      "slotb": "f88a3c01-6663-441f-b492-987bffbae5a1",
+      "payload": {
+        "weight": 0,
+        "uuid": "d148e23c-620e-42ce-bcef-a24aa49a7649"
+      }
+    },
+    {
+      "slota": "f8813a75-c024-4e7d-b61f-62e555d08a2e",
+      "slotb": "359bb721-701a-4ec7-8eea-fea970a249bc",
+      "payload": {
+        "weight": 0,
+        "uuid": "a9e7cd4b-a7a6-4f7d-a43a-961b0ac81d6e"
+      }
+    },
+    {
+      "slota": "f0fa27b3-ada2-478f-affa-a28ba631e8e9",
+      "slotb": "9cd94833-6d65-49cd-8a8e-0e5889f8214c",
+      "payload": {
+        "weight": 0,
+        "uuid": "0b5d710f-e660-4224-bc82-acce6b782cf4"
+      }
+    },
+    {
+      "slota": "f0fa27b3-ada2-478f-affa-a28ba631e8e9",
+      "slotb": "0530c8e7-756e-432b-b989-55067a297c39",
+      "payload": {
+        "weight": 0,
+        "uuid": "e97e854e-0afa-40d8-a4c1-c401d9a4053f"
+      }
+    },
+    {
+      "slota": "f0fa27b3-ada2-478f-affa-a28ba631e8e9",
+      "slotb": "6163172c-7ab6-42fd-9479-52682708f7f2",
+      "payload": {
+        "weight": 0,
+        "uuid": "cd461d84-2d29-4e87-8a19-ed5a0f1d0b37"
+      }
+    },
+    {
+      "slota": "9cd94833-6d65-49cd-8a8e-0e5889f8214c",
+      "slotb": "97694eb4-24f2-466b-8ebc-c04ec7755086",
+      "payload": {
+        "weight": 0,
+        "uuid": "7a7ae9c0-7318-4b79-8481-aada036ce751"
+      }
+    },
+    {
+      "slota": "0530c8e7-756e-432b-b989-55067a297c39",
+      "slotb": "3cc96985-a282-4ce6-922a-1c4ce2a1f795",
+      "payload": {
+        "weight": 0,
+        "uuid": "7504cce6-58a7-4c57-9ab3-48dc6569883d"
+      }
+    },
+    {
+      "slota": "6163172c-7ab6-42fd-9479-52682708f7f2",
+      "slotb": "1d1b08d0-7958-41bc-b718-38dd58c1c5d3",
+      "payload": {
+        "weight": 0,
+        "uuid": "0ad86078-56c6-4919-9c9d-f579df84a136",
+        "fn": "detailEvent"
+      }
+    },
+    {
+      "slota": "359bb721-701a-4ec7-8eea-fea970a249bc",
+      "slotb": "71877c78-38b9-469f-b72f-c78a00eeff1e",
+      "payload": {
+        "weight": 0,
+        "uuid": "95b870fe-3ac5-4e96-9356-826b006c1e34"
+      }
+    },
+    {
+      "slota": "f88a3c01-6663-441f-b492-987bffbae5a1",
+      "slotb": "5a7842f8-5f6e-4369-9923-f7474f19ba6c",
+      "payload": {
+        "weight": 0,
+        "uuid": "d3948562-cc04-414f-8742-c9824a9b7451"
+      }
+    },
+    {
+      "slota": "97694eb4-24f2-466b-8ebc-c04ec7755086",
+      "slotb": "5a4210e5-386e-4323-afb7-8f3a582dccc9",
+      "payload": {
+        "weight": 0,
+        "uuid": "cd097541-112a-42de-95a5-9d73cbb666e9"
+      }
+    },
+    {
+      "slota": "3cc96985-a282-4ce6-922a-1c4ce2a1f795",
+      "slotb": "cca734fd-7167-405f-a3cc-c395c36c0701",
+      "payload": {
+        "weight": 0,
+        "uuid": "01b9a4b8-ef59-4fc2-8828-0c4039e40cef"
+      }
+    },
+    {
+      "slota": "1d1b08d0-7958-41bc-b718-38dd58c1c5d3",
+      "slotb": "527bcbf4-d6b5-4cd3-affd-9fb41d2f0146",
+      "payload": {
+        "weight": 0,
+        "uuid": "7ee3d0fd-2eeb-4dff-88cb-9970b6e2c16d"
+      }
+    },
+    {
+      "slota": "71877c78-38b9-469f-b72f-c78a00eeff1e",
+      "slotb": "d72bb42b-8d5c-48c1-a9f6-c95478ef79e4",
+      "payload": {
+        "weight": 0,
+        "uuid": "43dadc68-0835-4cde-b1be-9101dbefb27a"
+      }
+    },
+    {
+      "slota": "5a7842f8-5f6e-4369-9923-f7474f19ba6c",
+      "slotb": "2e7320c2-0b7c-413b-a2fc-3d3258c4f760",
+      "payload": {
+        "weight": 0,
+        "uuid": "38e6437e-14c8-4a02-ac4d-71560219b115"
+      }
+    },
+    {
+      "slota": "2e7320c2-0b7c-413b-a2fc-3d3258c4f760",
+      "slotb": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "weight": 0,
+        "uuid": "e83311ba-d7c5-4bed-9f27-79b1e2a5c5f0"
+      }
+    },
+    {
+      "slota": "d72bb42b-8d5c-48c1-a9f6-c95478ef79e4",
+      "slotb": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "weight": 0,
+        "uuid": "3b48ef04-ca70-4bd0-86af-44f730fa1aff"
+      }
+    },
+    {
+      "slota": "5a4210e5-386e-4323-afb7-8f3a582dccc9",
+      "slotb": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "weight": 0,
+        "uuid": "5c2ce9b7-7e89-4b49-89e3-4bf6c95ab436"
+      }
+    },
+    {
+      "slota": "cca734fd-7167-405f-a3cc-c395c36c0701",
+      "slotb": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "weight": 0,
+        "uuid": "39b1b9eb-8aa5-4fa1-9007-370fbe0cf87a"
+      }
+    },
+    {
+      "slota": "527bcbf4-d6b5-4cd3-affd-9fb41d2f0146",
+      "slotb": "4517602e-9e5d-4309-bddd-8d92ad9f581e",
+      "payload": {
+        "weight": 0,
+        "uuid": "21719846-b79d-4cfb-8fe4-bbfb7bf92a1a"
+      }
+    }
+  ]
+}

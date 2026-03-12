@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Function App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Function App</h1>
+    <p>Attempting to call /testfunction on port 7777...</p>
+    <script>
+        function callTestFunction() {
+            fetch('http://localhost:7777/testfunction')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("WORKING GREAT");
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error("no way jose , not working", error);
+                });
+        }
+
+        callTestFunction();
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> NEOWEB </title>
+    <!--<script src="https://unpkg.com/neo4j-driver-lite"></script>-->
+    <script src="https://unpkg.com/neo4j-driver"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+    <script>
+        async function main() {
+        let pyodide = await loadPyodide({
+            indexURL : "https://cdn.jsdelivr.net/pyodide/v0.20.0/full/"
+        });
+        console.log(pyodide.runPython("print('Hello, world from the browser!')"));
+        };
+        main();
+    </script>
+
+    
+</head>
+
+<body>
+
+    <script>
+        // NEO4J in webbrowser /// https://neo4j.com/docs/api/javascript-driver/current/
+        //var driver = neo4j.driver('neo4j://142.93.31.42', neo4j.auth.basic('neo4j', 'ZONE_ONE_ZERO') );
+        //var driver = neo4j.driver('bolt://142.93.31.42', neo4j.auth.basic('neo4j', 'ZONE_ONE_ZERO') );
+        //var testdb ='bolt://neo4j-383fa6ce-cdde8b01-instance.production-orch-0065.neo4j.io:7687';
+        //var testdb = 'neo4j+s://383fa6ce.databases.neo4j.io';
+        var testdb = 'bolt://178.128.129.139:7687';
+
+        var cred = {
+            ur:testdb,
+            u:'neo4j',
+            p:'iMw_8X324ErwbRbk-9qm6GO8hz-WgFkeJQ1jx2bONvs'
+        }
+
+        var objIn = { ke:'x' , se:'x'}
+        var testun = objIn.ke;
+        var testpw = objIn.se;
+        var driver = neo4j.driver(testdb, neo4j.auth.basic('neo4j', 'iMw_8X324ErwbRbk-9qm6GO8hz-WgFkeJQ1jx2bONvs') );
+        //var driver = neo4j.driver(testdb, neo4j.auth.basic('neo4j', 'iMw_8X324ErwbRbk-9qm6GO8hz-WgFkeJQ1jx2bONvs') );
+
+        var resset=[]
+        console.log(' driver: ', driver );
+        var session = driver.session()
+
+        var recs = []
+        session.run('MERGE (x) RETURN x', {nameParam: 'Nones'}).then( result => {
+            result.records.forEach(record => {
+                console.log(record)
+                var obj = record.toObject()
+                recs.push( obj )
+            })
+        })
+        .catch(error => {
+            console.log(error)
+        })
+        .then(() => { 
+            
+            session.close()
+        })        
+        
+
+        // session.run('MERGE (x:Person {name : $nameParam}) RETURN x.name AS name', {nameParam: 'Nones'})
+        //     .then(result => {
+        //         result.records.forEach(record => {
+        //             console.log(record)
+        //         })
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
+        //     .then(() => session.close())
+
+
+        
+        // Run a Cypher statement, reading the result in a streaming manner as records arrive:
+        // session
+        // .run(' MATCH (x) RETURN x' )
+        // //.run(' MERGE (alice:Enti {name : $nameParam, x:$x }) RETURN alice.name AS name' ,  { nameParam: 'Alice' , x:'route' })
+        // .subscribe({ 
+        //     onKeys: keys => {
+        //         console.log(' callback onKeys: ', keys );
+        //         console.log(keys)
+        //     },
+        //     onNext: ( record ) => {
+        //         console.log(' callback onNext: ', record );
+        //         resset.push( record )
+        //         //console.log(record.get('name'))
+        //     },  
+        //     onCompleted: () => {
+        //         console.log(' callback  onCompleted: ' );
+        //         session.close() // returns a Promise
+        //     },
+        //     onError: error => {
+        //         console.log(" callback neo error ");
+        //         console.log(error)
+        //     }
+        // })
+
+    </script>
+
+
+</body>
+
+</html>

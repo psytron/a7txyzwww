@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>LIQUID PROTO</title>
+        <base href="" target="_blank"><!--<base href="/xframe/" target="_blank">--><!--IF serve APP Host route/ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="robots" content="noindex, nofollow"> 
+        <meta charset="utf-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+        
+    </head>
+    <body>
+        <script src="web_modules/topojson-client.js"></script>
+        <!-- esinst doesnt compile this -->
+        <!--<script src="https://unpkg.com/topojson-client@3"></script>-->
+        <script src='js/ext/jquery-3.2.1.min.js'></script>
+        <script src="x_modules/frame/basesession.js"></script>
+        <script src="globe_wfv2.js" type="module"></script>
+        <clear-frame id="clearframe"></clear-frame>
+        <log-term id="logterm"></log-term>
+        <search-mod id="searchmod" style='display:none;'></search-mod>
+        <script type="module">
+            import './js/components/ticker-tape.js';
+            import './js/components/news-feed.js';
+        </script>
+        <ticker-tape id='tickertape'></ticker-tape>
+        <news-feed id='newsfeed'></news-feed>
+
+        <script>
+            var requestURL = "/data/comodhashes.json";
+            document.addEventListener('DOMContentLoaded', function(e){
+                $.ajax({
+                    url: requestURL,
+                    type: "GET",
+                    contentType: 'application/json;charset=UTF-8',
+                    data: {
+                        //'selected': document.getElementById('first_cat').value
+                        'selected':'bars'
+                    },
+                    dataType:"json",
+                    success:function ( data){
+                        document.body.insertAdjacentHTML( 'beforeend', '<ticker-tape id="tickertape2"></ticker-tape>' )
+                        tickertape2.onDataUpdate( data )
+    
+                        //this.add( {} )
+                        tickertape.onDataUpdate( data )
+                        
+                        newsfeed.onDataUpdate( 
+                        {
+                            nodes:[
+                                { symbol:'NEWS ITEM DYNAMIC X0X ZCX'},
+                                { symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                                { symbol:'NEWS ITEM DYN44 TO THE RESCUE'},
+                                { symbol:'ETHER BTC BRIDGE PUMPING JAMMING EXCITEMENT'},
+                                { symbol:'FANTASTIC MOTTO M$ ROBOTO BTC UPROADING'},
+                                { symbol:'NASDAQ GIANT DIP HAPPENING NOW BIGGEST DIP EVER'},
+                                { symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}
+                            ] 
+                        } )
+                        l = 33
+                    }.bind(this)
+                });
+            }, false);
+    
+            document.addEventListener('DOMContentLoaded', function(e){
+                $.ajax({
+                    url: "/data/timehashes.json",
+                    type: "GET",
+                    contentType: 'application/json;charset=UTF-8',
+                    data: {
+                        //'selected': document.getElementById('first_cat').value
+                        'selected':'bars'
+                    },
+                    dataType:"json",
+                    success:function ( data){
+                        newsfeed.onDataUpdate( {nodes:[{symbol:'NEWS ITEM DYNAMIC 1'},
+                                { symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                                { symbol:'NEWS ITEM DYN %%$44'},
+                                { symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}] } )
+                        l = 33
+                    }.bind(this)
+                });
+            }, false);
+
+    
+        </script>        
+    </body>
+</html>

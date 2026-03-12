@@ -1,0 +1,98 @@
+{
+    "nodes": [
+        {   
+            "slot":"cex_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "cex",
+                "brand":"coinbase",
+                "uuid": "cex_uuid",
+                "lat":49.0,
+                "lng":3.2
+            }
+            
+        },    
+        {
+            "slot":"ctoken_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "ctoken",
+                "symbol":"ETH/USD",
+                "uuid": "ctoken_uuid",
+                "lat":29.0,
+                "lng":23.3
+            }
+        },                  
+        {
+            "slot":"alias_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "Alias",
+                "name": "Alias Name",
+                "uuid": "alias_uuid",
+                "lat":21.0,
+                "lng":36.5
+            }
+        },             
+        {
+            "slot":"catas_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "coord",
+                "name": "Attention Error",
+                "uuid": "fsfwefwef",
+                "lat":121.0,
+                "lng":136.5
+            }
+        }        
+    ],
+    "links": [],
+    "meta": {
+        "layouts": [
+            {
+                "cex_uuid":{
+                    "x": -10,
+                    "y": 0,
+                    "z": 20                    
+                },
+                "ctoken_uuid":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 22                    
+                },
+                "alias_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 10
+                },
+                "module_uuid": {
+                    "x": -10,
+                    "y": 0,
+                    "z": 10
+                },
+                "token_uuid": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                },
+                "org_uuid": {
+                    "x": 10,
+                    "y": 0,
+                    "z": 10
+                },
+                "finorg_uuid": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 10
+                },
+                "plain_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 0
+                }                                
+            }],
+        "props":[],
+        "name": "mega",
+        "layout": 0
+    }
+}

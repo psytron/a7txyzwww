@@ -1,0 +1,108 @@
+{
+    "nodes": {
+        "8633gc": {
+            "label": "Tag",
+            "name": "US Passport",
+            "uuid": "8633gc"
+        },
+        "9873gc": {
+            "label": "Tag",
+            "name": "Canada Passport",
+            "uuid": "9873gc"
+        },
+        "7731gc": {
+            "label": "Tag",
+            "name": "California LLC",
+            "uuid": "7731gc"
+        },
+        "5081gc": {
+            "label": "Tag",
+            "name": "BTC Balance",
+            "uuid": "5081gc"
+        },
+        "5161gc": {
+            "label": "Alias",
+            "name": "Michal Malecki",
+            "uuid": "5161gc"
+        }
+    },
+    "links": {
+        "3e6b4254-0599-4729-9556-1e73c2b49068": {
+            "a": "5161gc",
+            "b": "9873gc",
+            "label": "CONNECTS",
+            "uuid": "3e6b4254-0599-4729-9556-1e73c2b49068",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "3e6b4254-0599-4729-9556-1e73c2b49068"
+            }
+        },
+        "5eaa139c-8fb9-455d-824e-bc3a4b84e825": {
+            "a": "5161gc",
+            "b": "8633gc",
+            "label": "CONNECTS",
+            "uuid": "5eaa139c-8fb9-455d-824e-bc3a4b84e825",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "5eaa139c-8fb9-455d-824e-bc3a4b84e825"
+            }
+        },
+        "f4685df6-896c-4f43-aad8-566308886d66": {
+            "a": "5161gc",
+            "b": "7731gc",
+            "label": "CONNECTS",
+            "uuid": "f4685df6-896c-4f43-aad8-566308886d66",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "f4685df6-896c-4f43-aad8-566308886d66"
+            }
+        },
+        "31a71000-aac6-4017-b2e1-9e3ca3630fef": {
+            "a": "5161gc",
+            "b": "5081gc",
+            "label": "CONNECTS",
+            "uuid": "31a71000-aac6-4017-b2e1-9e3ca3630fef",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "31a71000-aac6-4017-b2e1-9e3ca3630fef"
+            }
+        }
+    },
+    "meta": {
+        "layout": 0,
+        "layouts": [
+            {
+                "8633gc": {
+                    "x": -25.743662469244587,
+                    "y": 0,
+                    "z": -33.586069557695104
+                },
+                "9873gc": {
+                    "x": -7.090340642351533,
+                    "y": 0,
+                    "z": -42.93867848133607
+                },
+                "7731gc": {
+                    "x": -18.93534634175589,
+                    "y": 0,
+                    "z": -44.62203951359833
+                },
+                "5081gc": {
+                    "x": -1.8137748330990036,
+                    "y": 0,
+                    "z": -29.666442695189133
+                },
+                "5161gc": {
+                    "x": -15.43653154434852,
+                    "y": 0,
+                    "z": -22.284681898693332
+                }
+            }
+        ],
+        "name": "intent"
+    }
+}

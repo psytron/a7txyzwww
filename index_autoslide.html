@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>X-FRAME (PROTO_V_0.42)</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="robots" content="noindex, nofollow"> 
+        <meta charset="utf-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                width: 100vw;
+                overflow-x: hidden;
+            }
+            body {
+                min-height: 100vh;
+                width: 100vw;
+                position: relative;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            #afx {
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 0;
+                border: 0;
+                pointer-events: auto;
+                background: #000;
+            }
+            .content-overlay {
+                position: relative;
+                z-index: 10;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 48px 0 64px 0;
+            }
+            .example-block {
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+                margin: 48px 0;
+                padding: 32px 40px;
+                position: relative;
+                z-index: 11;
+                transition: box-shadow 0.2s;
+            }
+            .example-block:active, .example-block:focus-within {
+                box-shadow: 0 4px 32px rgba(0,0,0,0.16);
+            }
+            .spacer {
+                height: 400px;
+                /* transparent, pointer-events: all so ALL pointer events pass through */
+                pointer-events: all;
+                background: transparent;
+                user-select: none;
+            }
+            /* Make sure links and buttons are visible and interactive */
+            .example-block a, .example-block button {
+                pointer-events: auto;
+            }
+            .example-block h2 {
+                margin-top: 0;
+            }
+            /* For mobile: */
+            @media (max-width: 600px) {
+                .content-overlay {
+                    max-width: 100vw;
+                    padding: 16px 0 32px 0;
+                }
+                .example-block {
+                    padding: 18px 8px;
+                }
+                .spacer {
+                    height: 220px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script src="./frame/frame_app.js" type="module"></script>
+        <iframe id="afx" src="uix/index_blank.html" scrolling="no" allowtransparency="true"></iframe>
+        
+        <div class="content-overlay">
+            <div class="spacer"></div>
+            <div class="example-block">
+                <h2>Welcome to X-FRAME Example Content</h2>
+                <p>This is a demo block of content. You can click <a href="https://example.com" target="_blank">this link</a> or the button below.</p>
+                <button class="btn btn-primary" onclick="alert('Button clicked!')">Click Me</button>
+            </div>
+            <div class="spacer"></div>
+            <div class="example-block">
+                <h2>Another Interactive Section</h2>
+                <p>Try clicking this <a href="https://google.com" target="_blank">Google link</a> or the button below.</p>
+                <button class="btn btn-success" onclick="alert('Another button!')">Another Button</button>
+            </div>
+            <div class="spacer"></div>
+            <div class="example-block">
+                <h2>More Example Content</h2>
+                <ul>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="spacer"></div>
+            <div class="example-block">
+                <h2>Scrolling Works!</h2>
+                <p>Scroll up and down to see the 3JS app in the background. Clickable content works, and clicking the empty space between blocks will pass through to the iframe below.</p>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <script>
+        // Make all pointer events on .spacer pass through to the iframe below
+        // This ensures drag, scale, rotate, and all pointer events work for the 3JS app
+        document.querySelectorAll('.spacer').forEach(function(spacer) {
+            spacer.addEventListener('pointerdown', function(e) {
+                // Find the iframe
+                var afx = document.getElementById('afx');
+                if (afx) {
+                    // Calculate the pointer position relative to the iframe
+                    var rect = afx.getBoundingClientRect();
+                    var evt = new PointerEvent(e.type, e);
+                    // Forward the event to the iframe using postMessage
+                    // (Assumes the iframe listens for these events)
+                    afx.contentWindow && afx.contentWindow.postMessage({
+                        type: 'forward-pointer',
+                        pointerType: e.pointerType,
+                        clientX: e.clientX - rect.left,
+                        clientY: e.clientY - rect.top,
+                        button: e.button,
+                        buttons: e.buttons,
+                        ctrlKey: e.ctrlKey,
+                        shiftKey: e.shiftKey,
+                        altKey: e.altKey,
+                        metaKey: e.metaKey,
+                        pointerId: e.pointerId,
+                        eventType: e.type
+                    }, '*');
+                }
+            });
+            // Prevent default so the overlay doesn't interfere
+            spacer.addEventListener('pointerdown', function(e) { e.preventDefault(); }, {passive:false});
+        });
+        </script>
+        <!-- The .spacer divs are now much larger and allow all pointer events to pass through for 3JS interaction -->
+    </body>
+</html>

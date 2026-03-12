@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache Arrow with iFrame</title>
+    <script type="module" src="./arrow.js"></script>
+</head>
+<body>
+    <h1>Parent Window</h1>
+    <iframe id="dataFrame" src="./iframe.html" width="600" height="400"></iframe>
+
+    <button id="sendData">Send Data to iFrame</button>
+
+    <script type="module">
+        import { Table } from "https://cdn.jsdelivr.net/npm/apache-arrow@12/Arrow.es2015.min.js";
+        
+        const iframe = document.getElementById('dataFrame');
+
+        document.getElementById('sendData').addEventListener('click', () => {
+            const data = {
+                column1: ['Apache', 'Arrow', 'ES6'],
+                column2: [1, 2, 3]
+            };
+
+            const table = Table.from(data);
+            const uint8array = table.serialize();
+
+            iframe.contentWindow.postMessage(uint8array, '*');
+        });
+
+        window.addEventListener('message', (event) => {
+            const table = Table.from(event.data);
+            console.log('Received data from iframe:', table.toString());
+        });
+    </script>
+</body>
+</html>

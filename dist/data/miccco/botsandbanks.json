@@ -1,0 +1,1897 @@
+{
+    "nodes": {
+        "5553gc": {
+            "label": "simcube",
+            "name": "CHASE",
+            "uuid": "5553gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bankcfhase.png",
+            "domain": "chase"
+        },
+        "5062gc": {
+            "label": "simcube",
+            "name": "WellsFargo",
+            "uuid": "5062gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "bankwellsfargo.png",
+            "domain": "wellsfargo"
+        },
+        "5967gc": {
+            "label": "simbot",
+            "name": "BOT ARCH Limit",
+            "uuid": "5967gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "img": "plunge.png",
+            "domain": "plungebot"
+        },
+        "3763gc": {
+            "label": "alias",
+            "name": "M2FX LLC ",
+            "uuid": "3763gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "subname": "Keykernel: AES Blob /localhost/"
+        },
+        "8020gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "8020gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "usdc",
+            "xxxxxx": "1918218182"
+        },
+        "6583gc": {
+            "label": "token",
+            "name": "Untitled",
+            "uuid": "6583gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "usdt",
+            "x2x2x2": "09090900909"
+        },
+        "8368gc": {
+            "label": "simcube",
+            "name": "Kraken",
+            "uuid": "8368gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "kraken"
+        },
+        "1824gc": {
+            "label": "simcube",
+            "name": "Coinbase",
+            "uuid": "1824gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "coinbase"
+        },
+        "6716gc": {
+            "label": "token",
+            "name": "Untitled",
+            "uuid": "6716gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "btc"
+        },
+        "7322gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "7322gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "ltc"
+        },
+        "275gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "275gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "eth"
+        },
+        "2641gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "2641gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "dai"
+        },
+        "4502gc": {
+            "label": "simbot",
+            "name": "BOT StopLoss",
+            "uuid": "4502gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "alphabot"
+        },
+        "5593gc": {
+            "label": "simcube",
+            "name": "Untitled",
+            "uuid": "5593gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "binance"
+        },
+        "6880gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "6880gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "ltc"
+        },
+        "9073gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "9073gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "usdt"
+        },
+        "6960gc": {
+            "label": "simfiat",
+            "name": "Untitled",
+            "uuid": "6960gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "usd"
+        },
+        "9981gc": {
+            "label": "simcube",
+            "name": "Untitled",
+            "uuid": "9981gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "bitmex"
+        },
+        "3449gc": {
+            "label": "token",
+            "name": "Untitled",
+            "uuid": "3449gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "btc"
+        },
+        "9465gc": {
+            "label": "simserver",
+            "name": "NordVPN",
+            "uuid": "9465gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "nordvpn",
+            "subname": "Tunnel ON"
+        },
+        "2450gc": {
+            "label": "simfiat",
+            "name": "Untitled",
+            "uuid": "2450gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "usd"
+        },
+        "2495gc": {
+            "label": "Repo",
+            "name": "Untitled",
+            "uuid": "2495gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "github"
+        },
+        "1279gc": {
+            "label": "token",
+            "name": "Untitled",
+            "uuid": "1279gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "btc"
+        },
+        "1729gc": {
+            "label": "simcube",
+            "name": "Untitled",
+            "uuid": "1729gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "geico"
+        },
+        "3788gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "3788gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "bnb"
+        },
+        "9441gc": {
+            "label": "Token",
+            "name": "Untitled",
+            "uuid": "9441gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "btc"
+        },
+        "9749gc": {
+            "label": "token",
+            "name": "Untitled",
+            "uuid": "9749gc",
+            "tele": {
+                "futurepos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "star": 0,
+                "subindex": 0,
+                "positions": {
+                    "default": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            },
+            "domain": "ltc"
+        }
+    },
+    "links": {
+        "1ec88adc-24fc-488a-97b4-f2be2c5177ee": {
+            "a": "5967gc",
+            "b": "5062gc",
+            "label": "CONNECTS",
+            "uuid": "1ec88adc-24fc-488a-97b4-f2be2c5177ee",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "1ec88adc-24fc-488a-97b4-f2be2c5177ee",
+                "id": "1ec88adc-24fc-488a-97b4-f2be2c5177ee"
+            }
+        },
+        "3ef5ab01-3713-4f2b-97b7-cb065dea29d4": {
+            "a": "5967gc",
+            "b": "5553gc",
+            "label": "CONNECTS",
+            "uuid": "3ef5ab01-3713-4f2b-97b7-cb065dea29d4",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "3ef5ab01-3713-4f2b-97b7-cb065dea29d4",
+                "id": "3ef5ab01-3713-4f2b-97b7-cb065dea29d4"
+            }
+        },
+        "31e1443b-2ef6-42cd-a5cd-d233f66b076f": {
+            "a": "3763gc",
+            "b": "5967gc",
+            "label": "CONNECTS",
+            "uuid": "31e1443b-2ef6-42cd-a5cd-d233f66b076f",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "31e1443b-2ef6-42cd-a5cd-d233f66b076f",
+                "id": "31e1443b-2ef6-42cd-a5cd-d233f66b076f"
+            }
+        },
+        "59a84cc7-43ee-4973-8cac-c1b632e50b2b": {
+            "a": "4502gc",
+            "b": "1824gc",
+            "label": "CONNECTS",
+            "uuid": "59a84cc7-43ee-4973-8cac-c1b632e50b2b",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "59a84cc7-43ee-4973-8cac-c1b632e50b2b",
+                "id": "59a84cc7-43ee-4973-8cac-c1b632e50b2b"
+            }
+        },
+        "d6130eea-a96e-47f1-b747-a1fdaa5ed02a": {
+            "a": "8368gc",
+            "b": "275gc",
+            "label": "CONNECTS",
+            "uuid": "d6130eea-a96e-47f1-b747-a1fdaa5ed02a",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "d6130eea-a96e-47f1-b747-a1fdaa5ed02a",
+                "id": "d6130eea-a96e-47f1-b747-a1fdaa5ed02a",
+                "xclass": "admin"
+            }
+        },
+        "3f12cb02-f79b-46de-850f-5596e0d4bbc3": {
+            "a": "8368gc",
+            "b": "7322gc",
+            "label": "CONNECTS",
+            "uuid": "3f12cb02-f79b-46de-850f-5596e0d4bbc3",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "3f12cb02-f79b-46de-850f-5596e0d4bbc3",
+                "id": "3f12cb02-f79b-46de-850f-5596e0d4bbc3"
+            }
+        },
+        "ac26a5c2-5f9a-44ce-b803-c66b38c0e177": {
+            "a": "8368gc",
+            "b": "6716gc",
+            "label": "CONNECTS",
+            "uuid": "ac26a5c2-5f9a-44ce-b803-c66b38c0e177",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "ac26a5c2-5f9a-44ce-b803-c66b38c0e177",
+                "id": "ac26a5c2-5f9a-44ce-b803-c66b38c0e177",
+                "xclass": "admin"
+            }
+        },
+        "e1fa2b8f-4560-4849-8696-f380ad0e3caa": {
+            "a": "3763gc",
+            "b": "4502gc",
+            "label": "CONNECTS",
+            "uuid": "e1fa2b8f-4560-4849-8696-f380ad0e3caa",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "e1fa2b8f-4560-4849-8696-f380ad0e3caa",
+                "id": "e1fa2b8f-4560-4849-8696-f380ad0e3caa",
+                "xclass": "auth"
+            }
+        },
+        "f7ba10bb-8bd3-4ac4-a65b-13bdaaba5592": {
+            "a": "1824gc",
+            "b": "2641gc",
+            "label": "CONNECTS",
+            "uuid": "f7ba10bb-8bd3-4ac4-a65b-13bdaaba5592",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "f7ba10bb-8bd3-4ac4-a65b-13bdaaba5592",
+                "id": "f7ba10bb-8bd3-4ac4-a65b-13bdaaba5592"
+            }
+        },
+        "2c2ab669-955e-4e27-b358-9db8b0f8bf6a": {
+            "a": "1824gc",
+            "b": "6583gc",
+            "label": "CONNECTS",
+            "uuid": "2c2ab669-955e-4e27-b358-9db8b0f8bf6a",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "2c2ab669-955e-4e27-b358-9db8b0f8bf6a",
+                "id": "2c2ab669-955e-4e27-b358-9db8b0f8bf6a"
+            }
+        },
+        "263b1a98-be5f-46f9-bcf7-62e19cda186a": {
+            "a": "1824gc",
+            "b": "8020gc",
+            "label": "CONNECTS",
+            "uuid": "263b1a98-be5f-46f9-bcf7-62e19cda186a",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "263b1a98-be5f-46f9-bcf7-62e19cda186a",
+                "id": "263b1a98-be5f-46f9-bcf7-62e19cda186a"
+            }
+        },
+        "eeb23f19-6f6e-485a-93b1-8ea5090a81cd": {
+            "a": "3763gc",
+            "b": "5553gc",
+            "label": "CONNECTS",
+            "uuid": "eeb23f19-6f6e-485a-93b1-8ea5090a81cd",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "eeb23f19-6f6e-485a-93b1-8ea5090a81cd",
+                "id": "eeb23f19-6f6e-485a-93b1-8ea5090a81cd"
+            }
+        },
+        "d81bfdbf-2c2d-4d3a-9de2-1ebb6d1424b2": {
+            "a": "5593gc",
+            "b": "6880gc",
+            "label": "CONNECTS",
+            "uuid": "d81bfdbf-2c2d-4d3a-9de2-1ebb6d1424b2",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "d81bfdbf-2c2d-4d3a-9de2-1ebb6d1424b2",
+                "id": "d81bfdbf-2c2d-4d3a-9de2-1ebb6d1424b2",
+                "xclass": "admin"
+            }
+        },
+        "bc1ab791-e198-4553-b624-adcf91eeed3e": {
+            "a": "3763gc",
+            "b": "5593gc",
+            "label": "CONNECTS",
+            "uuid": "bc1ab791-e198-4553-b624-adcf91eeed3e",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "bc1ab791-e198-4553-b624-adcf91eeed3e",
+                "id": "bc1ab791-e198-4553-b624-adcf91eeed3e",
+                "xclass": "auth"
+            }
+        },
+        "6840c659-b2b3-4ac8-97ab-d5ec736fe5dd": {
+            "a": "3763gc",
+            "b": "5062gc",
+            "label": "CONNECTS",
+            "uuid": "6840c659-b2b3-4ac8-97ab-d5ec736fe5dd",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "6840c659-b2b3-4ac8-97ab-d5ec736fe5dd",
+                "id": "6840c659-b2b3-4ac8-97ab-d5ec736fe5dd"
+            }
+        },
+        "856f4846-e62b-4b8b-b80d-d83365b63b43": {
+            "a": "3763gc",
+            "b": "8368gc",
+            "label": "CONNECTS",
+            "uuid": "856f4846-e62b-4b8b-b80d-d83365b63b43",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "856f4846-e62b-4b8b-b80d-d83365b63b43",
+                "id": "856f4846-e62b-4b8b-b80d-d83365b63b43"
+            }
+        },
+        "18701832-0979-49f8-b917-7f303f8968d6": {
+            "a": "8368gc",
+            "b": "9073gc",
+            "label": "CONNECTS",
+            "uuid": "18701832-0979-49f8-b917-7f303f8968d6",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "18701832-0979-49f8-b917-7f303f8968d6",
+                "id": "18701832-0979-49f8-b917-7f303f8968d6",
+                "xclass": "admin"
+            }
+        },
+        "80dd4743-56c9-4d93-a465-d9bc47af0be8": {
+            "a": "9981gc",
+            "b": "3449gc",
+            "label": "CONNECTS",
+            "uuid": "80dd4743-56c9-4d93-a465-d9bc47af0be8",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "80dd4743-56c9-4d93-a465-d9bc47af0be8",
+                "id": "80dd4743-56c9-4d93-a465-d9bc47af0be8",
+                "xclass": "admin"
+            }
+        },
+        "b7f8493a-3c97-4604-a08b-40f0705eec22": {
+            "a": "4502gc",
+            "b": "9465gc",
+            "label": "CONNECTS",
+            "uuid": "b7f8493a-3c97-4604-a08b-40f0705eec22",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "b7f8493a-3c97-4604-a08b-40f0705eec22",
+                "id": "b7f8493a-3c97-4604-a08b-40f0705eec22",
+                "xclass": "auth"
+            }
+        },
+        "b8248086-0913-4315-9201-d549de935020": {
+            "a": "9465gc",
+            "b": "9981gc",
+            "label": "CONNECTS",
+            "uuid": "b8248086-0913-4315-9201-d549de935020",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "b8248086-0913-4315-9201-d549de935020",
+                "id": "b8248086-0913-4315-9201-d549de935020",
+                "ffde": "f",
+                "xclass": "auth"
+            }
+        },
+        "efe23c31-dc51-4654-bf64-1c6d95da7987": {
+            "a": "5062gc",
+            "b": "6960gc",
+            "label": "CONNECTS",
+            "uuid": "efe23c31-dc51-4654-bf64-1c6d95da7987",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "efe23c31-dc51-4654-bf64-1c6d95da7987",
+                "id": "efe23c31-dc51-4654-bf64-1c6d95da7987"
+            }
+        },
+        "4581ebe5-87f9-4d54-9774-065f5120b3f0": {
+            "a": "5553gc",
+            "b": "2450gc",
+            "label": "CONNECTS",
+            "uuid": "4581ebe5-87f9-4d54-9774-065f5120b3f0",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "4581ebe5-87f9-4d54-9774-065f5120b3f0",
+                "id": "4581ebe5-87f9-4d54-9774-065f5120b3f0"
+            }
+        },
+        "25419c97-f0de-4c09-8713-cb0be3e18ff4": {
+            "a": "3763gc",
+            "b": "1729gc",
+            "label": "CONNECTS",
+            "uuid": "25419c97-f0de-4c09-8713-cb0be3e18ff4",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "25419c97-f0de-4c09-8713-cb0be3e18ff4",
+                "id": "25419c97-f0de-4c09-8713-cb0be3e18ff4",
+                "xclass": "auth"
+            }
+        },
+        "02e84ff0-14c5-4400-8bdc-19f314f75646": {
+            "a": "5967gc",
+            "b": "1824gc",
+            "label": "CONNECTS",
+            "uuid": "02e84ff0-14c5-4400-8bdc-19f314f75646",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "02e84ff0-14c5-4400-8bdc-19f314f75646",
+                "id": "02e84ff0-14c5-4400-8bdc-19f314f75646"
+            }
+        },
+        "e2c804ae-8dfc-437a-bdd2-4059c0be8378": {
+            "a": "5593gc",
+            "b": "1279gc",
+            "label": "CONNECTS",
+            "uuid": "e2c804ae-8dfc-437a-bdd2-4059c0be8378",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "e2c804ae-8dfc-437a-bdd2-4059c0be8378",
+                "id": "e2c804ae-8dfc-437a-bdd2-4059c0be8378",
+                "xclass": "admin"
+            }
+        },
+        "5075527f-6ffb-43de-903d-ccc87fb7c7f7": {
+            "a": "5593gc",
+            "b": "3788gc",
+            "label": "CONNECTS",
+            "uuid": "5075527f-6ffb-43de-903d-ccc87fb7c7f7",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "5075527f-6ffb-43de-903d-ccc87fb7c7f7",
+                "id": "5075527f-6ffb-43de-903d-ccc87fb7c7f7",
+                "xclass": "admin"
+            }
+        },
+        "c221e733-074a-4fb8-bfaa-4cde1cf5af08": {
+            "a": "1824gc",
+            "b": "9441gc",
+            "label": "CONNECTS",
+            "uuid": "c221e733-074a-4fb8-bfaa-4cde1cf5af08",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "c221e733-074a-4fb8-bfaa-4cde1cf5af08",
+                "id": "c221e733-074a-4fb8-bfaa-4cde1cf5af08"
+            }
+        },
+        "a9016538-ff0c-4411-b235-506a887ee4f5": {
+            "a": "9981gc",
+            "b": "9749gc",
+            "label": "CONNECTS",
+            "uuid": "a9016538-ff0c-4411-b235-506a887ee4f5",
+            "data": {
+                "type": "fresh",
+                "label": "CONNECTS",
+                "uuid": "a9016538-ff0c-4411-b235-506a887ee4f5",
+                "id": "a9016538-ff0c-4411-b235-506a887ee4f5"
+            }
+        }
+    },
+    "meta": {
+        "layout": 0,
+        "layouts": [
+            {
+                "5553gc": {
+                    "x": -20.98660010822692,
+                    "y": 0,
+                    "z": -18.530106490695104
+                },
+                "5062gc": {
+                    "x": -15.011252887858184,
+                    "y": 0,
+                    "z": -19.192352292980843
+                },
+                "5967gc": {
+                    "x": -11.524350104488759,
+                    "y": 0,
+                    "z": 0.687550805561358
+                },
+                "3763gc": {
+                    "x": 14.29476899514536,
+                    "y": 0,
+                    "z": -4.291004003258678
+                },
+                "8020gc": {
+                    "x": -30.607587217985945,
+                    "y": 0,
+                    "z": 22.29135890617205
+                },
+                "6583gc": {
+                    "x": -29.146684661406443,
+                    "y": 0,
+                    "z": 11.831921047618934
+                },
+                "8368gc": {
+                    "x": 18.343202583012957,
+                    "y": 0,
+                    "z": 28.71133443592418
+                },
+                "1824gc": {
+                    "x": -22.222673630737752,
+                    "y": 0,
+                    "z": 19.665587651645367
+                },
+                "6716gc": {
+                    "x": 19.802770085338217,
+                    "y": 0,
+                    "z": 38.26481874497583
+                },
+                "7322gc": {
+                    "x": 26.660480507137066,
+                    "y": 0,
+                    "z": 29.99794857959448
+                },
+                "275gc": {
+                    "x": 14.724332614461296,
+                    "y": 0,
+                    "z": 35.97408724116542
+                },
+                "2641gc": {
+                    "x": -27.16164524414373,
+                    "y": 0,
+                    "z": 30.380771649433846
+                },
+                "4502gc": {
+                    "x": -7.220503545189468,
+                    "y": 0,
+                    "z": 9.047152378554074
+                },
+                "5593gc": {
+                    "x": 32.61116114443137,
+                    "y": 0,
+                    "z": 13.637933525984725
+                },
+                "6880gc": {
+                    "x": 40.18584174687646,
+                    "y": 0,
+                    "z": 16.123796998547803
+                },
+                "9073gc": {
+                    "x": 24.734280379590817,
+                    "y": 0,
+                    "z": 34.99683379898425
+                },
+                "6960gc": {
+                    "x": -24.77526733779946,
+                    "y": 0,
+                    "z": -34.10917385166643
+                },
+                "9981gc": {
+                    "x": -4.859072972226672,
+                    "y": 0,
+                    "z": 36.48623299442687
+                },
+                "3449gc": {
+                    "x": -10.502095095586881,
+                    "y": 0,
+                    "z": 43.594676748105066
+                },
+                "9465gc": {
+                    "x": -7.007721248463815,
+                    "y": 0,
+                    "z": 25.722372683560558
+                },
+                "2450gc": {
+                    "x": -25.635569137659083,
+                    "y": 0,
+                    "z": -28.73213846815544
+                },
+                "2495gc": {
+                    "x": 22.440397583942154,
+                    "y": 0,
+                    "z": 51.194105586662886
+                },
+                "1279gc": {
+                    "x": 36.419263264739975,
+                    "y": 0,
+                    "z": 20.752604228034727
+                },
+                "1729gc": {
+                    "x": 23.580480361554265,
+                    "y": 0,
+                    "z": -21.085117470833417
+                },
+                "3788gc": {
+                    "x": 41.28666135470427,
+                    "y": 0,
+                    "z": 8.114192719622224
+                },
+                "9441gc": {
+                    "x": -20.715875798616057,
+                    "y": 0,
+                    "z": 26.736526941954853
+                },
+                "9749gc": {
+                    "x": -2.373635678804651,
+                    "y": 0,
+                    "z": 45.81793242471668
+                }
+            },
+            {
+                "5553gc": {
+                    "x": -19.104,
+                    "y": 0,
+                    "z": -44.7304
+                },
+                "5062gc": {
+                    "x": -22.5862,
+                    "y": 0,
+                    "z": 19.8228
+                },
+                "5967gc": {
+                    "x": -27.2913,
+                    "y": 0,
+                    "z": -11.8355
+                },
+                "3763gc": {
+                    "x": -42.3654,
+                    "y": 0,
+                    "z": 4.1789
+                },
+                "8020gc": {
+                    "x": 1.4052,
+                    "y": 0,
+                    "z": -1.4768
+                },
+                "6583gc": {
+                    "x": 1.5057,
+                    "y": 0,
+                    "z": -6.2356
+                },
+                "8368gc": {
+                    "x": -23.4649,
+                    "y": 0,
+                    "z": -21.3656
+                },
+                "1824gc": {
+                    "x": -26.2481,
+                    "y": 0,
+                    "z": 13.2984
+                },
+                "6716gc": {
+                    "x": 1.3831,
+                    "y": 0,
+                    "z": -10.2272
+                },
+                "7322gc": {
+                    "x": 1.6773,
+                    "y": 0,
+                    "z": -17.6601
+                },
+                "275gc": {
+                    "x": 1.6118,
+                    "y": 0,
+                    "z": -21.5169
+                },
+                "2641gc": {
+                    "x": 1.3361,
+                    "y": 0,
+                    "z": 2.5811
+                },
+                "4502gc": {
+                    "x": -28.987,
+                    "y": 0,
+                    "z": -4.2951
+                },
+                "5593gc": {
+                    "x": -20.589,
+                    "y": 0,
+                    "z": -31.8309
+                },
+                "6880gc": {
+                    "x": 1.5395,
+                    "y": 0,
+                    "z": -25.2294
+                },
+                "9073gc": {
+                    "x": 1.4287,
+                    "y": 0,
+                    "z": -13.7684
+                },
+                "6960gc": {
+                    "x": 2.2401,
+                    "y": 0,
+                    "z": 13.0362
+                },
+                "9981gc": {
+                    "x": -16.2762,
+                    "y": 0,
+                    "z": 25.5628
+                },
+                "3449gc": {
+                    "x": 1.2207,
+                    "y": 0,
+                    "z": 6.8953
+                },
+                "9465gc": {
+                    "x": -29.0059,
+                    "y": 0,
+                    "z": 8.1
+                },
+                "2450gc": {
+                    "x": 1.1087,
+                    "y": 0,
+                    "z": -30.414
+                },
+                "2495gc": {
+                    "x": 25.559257907563616,
+                    "y": 0,
+                    "z": 32.97432726252943
+                },
+                "1279gc": {
+                    "x": 1.3806335188457233,
+                    "y": 0,
+                    "z": -23.728363837932072
+                },
+                "1729gc": {
+                    "x": 18.90940842260674,
+                    "y": 0,
+                    "z": -15.774136519188426
+                },
+                "3788gc": {
+                    "x": 1.241263325940424,
+                    "y": 0,
+                    "z": -28.12437239815676
+                }
+            },
+            {
+                "5553gc": {
+                    "x": -14.392485484192605,
+                    "y": 0,
+                    "z": -12.318853681167091,
+                    "delay": 0.2616279980441295,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5062gc": {
+                    "x": -8.295893847955167,
+                    "y": 0,
+                    "z": -5.606736821099048,
+                    "delay": 0.2408204879089032,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5967gc": {
+                    "x": -11.0168,
+                    "y": 0,
+                    "z": -7.2546,
+                    "delay": 0.44148731899812443,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3763gc": {
+                    "x": -14.6679,
+                    "y": 0,
+                    "z": -6.8271,
+                    "delay": 0.05124071321372636,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8020gc": {
+                    "x": -15.368157555549354,
+                    "y": 0,
+                    "z": 15.751008925433078,
+                    "delay": 0.352489310389159,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6583gc": {
+                    "x": -3.1860223035631243,
+                    "y": 0,
+                    "z": 12.5236973475141,
+                    "delay": 0.07896825814857633,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8368gc": {
+                    "x": -10.144995991174032,
+                    "y": 0,
+                    "z": -11.04701089638474,
+                    "delay": 0.29044181309607175,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1824gc": {
+                    "x": -13.629142817278417,
+                    "y": 0,
+                    "z": -3.067113681435778,
+                    "delay": 0.056756653318324135,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6716gc": {
+                    "x": -9.451458415262564,
+                    "y": 0,
+                    "z": -33.41481114207236,
+                    "delay": 0.43462659959628214,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "7322gc": {
+                    "x": 9.765037331150559,
+                    "y": 0,
+                    "z": -18.541974051810385,
+                    "delay": 0.28726299493799956,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "275gc": {
+                    "x": 2.5062541208762283,
+                    "y": 0,
+                    "z": -28.545510117846653,
+                    "delay": 0.3064753304872214,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2641gc": {
+                    "x": -27.3246,
+                    "y": 0,
+                    "z": 10.9211,
+                    "delay": 0.37287650655331006,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "4502gc": {
+                    "x": -17.7537,
+                    "y": 0,
+                    "z": -6.9171,
+                    "delay": 0.04065847808223855,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5593gc": {
+                    "x": -19.12150842682083,
+                    "y": 0,
+                    "z": -10.635618682733906,
+                    "delay": 0.31191817435564806,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6880gc": {
+                    "x": -34.069490973792234,
+                    "y": 0,
+                    "z": -14.367138717505108,
+                    "delay": 0.27711635979447125,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9073gc": {
+                    "x": 10.216231624426669,
+                    "y": 0,
+                    "z": -6.763751851938057,
+                    "delay": 0.4755860496820997,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6960gc": {
+                    "x": 6.3242540433028225,
+                    "y": 0,
+                    "z": 4.224268151426212,
+                    "delay": 0.4798126546157271,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9981gc": {
+                    "x": -18.024700417862253,
+                    "y": 0,
+                    "z": -4.874962330146289,
+                    "delay": 0.2487045809359253,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3449gc": {
+                    "x": -34.27515210277082,
+                    "y": 0,
+                    "z": 0.427557464791537,
+                    "delay": 0.23849624043247308,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9465gc": {
+                    "x": -21.282474151487264,
+                    "y": 0,
+                    "z": -7.91054225176287,
+                    "delay": 0.08737839245330281,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2450gc": {
+                    "x": -25.189217659498897,
+                    "y": 0,
+                    "z": -29.985301184845525,
+                    "delay": 0.2613077655941939,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2495gc": {
+                    "x": -43.93009296880599,
+                    "y": 0,
+                    "z": -44.042464832048616,
+                    "delay": 0.36949569460570064,
+                    "duration": 0.8,
+                    "overwrite": false
+                }
+            },
+            {
+                "5553gc": {
+                    "x": -30.522911635966373,
+                    "y": 0,
+                    "z": -31.95765972558339,
+                    "delay": 0.06385312856570413,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5062gc": {
+                    "x": -14.23216908610902,
+                    "y": 0,
+                    "z": -26.851427815820195,
+                    "delay": 0.40889780188079405,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5967gc": {
+                    "x": -23.096792327905316,
+                    "y": 0,
+                    "z": -22.137447282440938,
+                    "delay": 0.11073188701626913,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3763gc": {
+                    "x": -34.21765645071375,
+                    "y": 0,
+                    "z": -7.310999156038524,
+                    "delay": 0.022213571404065435,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8020gc": {
+                    "x": 10.6686,
+                    "y": 0,
+                    "z": -12.1031,
+                    "delay": 0.43672602913727043,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6583gc": {
+                    "x": 6.8157361264896315,
+                    "y": 0,
+                    "z": -6.901088228982123,
+                    "delay": 0.4443500766689614,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8368gc": {
+                    "x": -4.409311770541361,
+                    "y": 0,
+                    "z": 4.651679059432176,
+                    "delay": 0.03446299902718353,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1824gc": {
+                    "x": 0.7871968347578289,
+                    "y": 0,
+                    "z": -10.992412404691152,
+                    "delay": 0.38074041549854076,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6716gc": {
+                    "x": 3.2328588668092273,
+                    "y": 0,
+                    "z": 11.930045331326625,
+                    "delay": 0.42038357360584533,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "7322gc": {
+                    "x": 4.460430037366765,
+                    "y": 0,
+                    "z": 0.7080970543745054,
+                    "delay": 0.07386465000803655,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "275gc": {
+                    "x": 5.908507154209044,
+                    "y": 0,
+                    "z": 5.935214880270742,
+                    "delay": 0.13105044931978838,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2641gc": {
+                    "x": 7.3512,
+                    "y": 0,
+                    "z": -17.7009,
+                    "delay": 0.16432769291934357,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "4502gc": {
+                    "x": -19.488409139552978,
+                    "y": 0,
+                    "z": -4.639642973246119,
+                    "delay": 0.3117233832908525,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5593gc": {
+                    "x": -13.295524408013563,
+                    "y": 0,
+                    "z": 11.523347083777978,
+                    "delay": 0.4935277828692466,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6880gc": {
+                    "x": -13.221122644469945,
+                    "y": 0,
+                    "z": 19.424672088995266,
+                    "delay": 0.0734606549749881,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9073gc": {
+                    "x": -4.4045402778010825,
+                    "y": 0,
+                    "z": 13.858712767254687,
+                    "delay": 0.4493951348454034,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6960gc": {
+                    "x": -4.525814092712576,
+                    "y": 0,
+                    "z": -37.02127921632822,
+                    "delay": 0.18935618630401863,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9981gc": {
+                    "x": -5.865450307454708,
+                    "y": 0,
+                    "z": -18.486562065490816,
+                    "delay": 0.20355802375419618,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3449gc": {
+                    "x": 2.5150701396651662,
+                    "y": 0,
+                    "z": -26.896432432874683,
+                    "delay": 0.03945488412216791,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9465gc": {
+                    "x": -18.28572078751858,
+                    "y": 0,
+                    "z": -13.58080646875667,
+                    "delay": 0.16694409620153183,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2450gc": {
+                    "x": -22.312320636465873,
+                    "y": 0,
+                    "z": -42.50833280515713,
+                    "delay": 0.42726705119299846,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2495gc": {
+                    "x": -43.5668,
+                    "y": 0,
+                    "z": -50.5727,
+                    "delay": 0.39594550547379015,
+                    "duration": 0.8,
+                    "overwrite": false
+                }
+            },
+            {
+                "5553gc": {
+                    "x": -12.673225888481952,
+                    "y": 0,
+                    "z": -21.70952540882564,
+                    "delay": 0.32032315318676197,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5062gc": {
+                    "x": -6.707584048178994,
+                    "y": 0,
+                    "z": -18.053321207356788,
+                    "delay": 0.3497403485317704,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5967gc": {
+                    "x": 2.559988226073301,
+                    "y": 0,
+                    "z": 3.612749574353586,
+                    "delay": 0.3327756369124766,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3763gc": {
+                    "x": -21.005034262795334,
+                    "y": 0,
+                    "z": -5.637637496977408,
+                    "delay": 0.27801397981914444,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8020gc": {
+                    "x": 24.423044333658524,
+                    "y": 0,
+                    "z": 9.356940604444901,
+                    "delay": 0.3541069369492621,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6583gc": {
+                    "x": 13.078305975987849,
+                    "y": 0,
+                    "z": 18.063381886020675,
+                    "delay": 0.4941838844969699,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "8368gc": {
+                    "x": -36.0881966350204,
+                    "y": 0,
+                    "z": -0.07768711006663451,
+                    "delay": 0.3370143111725862,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1824gc": {
+                    "x": 15.0606322648051,
+                    "y": 0,
+                    "z": 9.1140455632232,
+                    "delay": 0.40400449170652153,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6716gc": {
+                    "x": -44.78144009924003,
+                    "y": 0,
+                    "z": 3.466283595806111,
+                    "delay": 0.4586606343520393,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "7322gc": {
+                    "x": -46.298943888145196,
+                    "y": 0,
+                    "z": -1.9703950129082193,
+                    "delay": 0.4551695466578477,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "275gc": {
+                    "x": -41.73218936123011,
+                    "y": 0,
+                    "z": -6.9626681840043085,
+                    "delay": 0.19030930909350585,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2641gc": {
+                    "x": 18.590573231296844,
+                    "y": 0,
+                    "z": 14.349216144806086,
+                    "delay": 0.45662000069717024,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "4502gc": {
+                    "x": -27.89733344806564,
+                    "y": 0,
+                    "z": 5.245240723127649,
+                    "delay": 0.020652384068481577,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "5593gc": {
+                    "x": -1.8232062458466358,
+                    "y": 0,
+                    "z": 16.106239232697188,
+                    "delay": 0.3491484712822511,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6880gc": {
+                    "x": -1.539032397792719,
+                    "y": 0,
+                    "z": 24.40756777302679,
+                    "delay": 0.3696782600811789,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9073gc": {
+                    "x": -41.64573301925743,
+                    "y": 0,
+                    "z": 8.1041605350351,
+                    "delay": 0.02155476914488219,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "6960gc": {
+                    "x": 0.9605860247468954,
+                    "y": 0,
+                    "z": -28.661934132995583,
+                    "delay": 0.11082187642999564,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9981gc": {
+                    "x": -16.49105173079961,
+                    "y": 0,
+                    "z": 19.299136938867775,
+                    "delay": 0.334260380027146,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "3449gc": {
+                    "x": -15.040699808928327,
+                    "y": 0,
+                    "z": 26.94985845714114,
+                    "delay": 0.05727866636368906,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "9465gc": {
+                    "x": -25.217821650698113,
+                    "y": 0,
+                    "z": 15.34144927044407,
+                    "delay": 0.37025010862883434,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2450gc": {
+                    "x": -3.3030744609992677,
+                    "y": 0,
+                    "z": -33.496273906465504,
+                    "delay": 0.32361966498492933,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "2495gc": {
+                    "x": 27.93937750606294,
+                    "y": 0,
+                    "z": 72.66349212496326,
+                    "delay": 0.014622695595541635,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1279gc": {
+                    "x": 4.4709930893759235,
+                    "y": 0,
+                    "z": 19.7850776141022,
+                    "delay": 0.39490004838250137,
+                    "duration": 0.8,
+                    "overwrite": false
+                },
+                "1729gc": {
+                    "x": -7.6657220863031315,
+                    "y": 0,
+                    "z": -69.63322025200372,
+                    "delay": 0.06526290908250454,
+                    "duration": 0.8,
+                    "overwrite": false
+                }
+            },
+            {
+                "5553gc": {
+                    "x": -40.9924,
+                    "y": 0,
+                    "z": -20.052
+                },
+                "5062gc": {
+                    "x": -34.1118,
+                    "y": 0,
+                    "z": -26.8135
+                },
+                "5967gc": {
+                    "x": -37.6259,
+                    "y": 0,
+                    "z": -8.2389
+                },
+                "3763gc": {
+                    "x": -19.9221,
+                    "y": 0,
+                    "z": -5.8014
+                },
+                "8020gc": {
+                    "x": -52.708,
+                    "y": 0,
+                    "z": 4.7119
+                },
+                "6583gc": {
+                    "x": -46.5657,
+                    "y": 0,
+                    "z": 12.703
+                },
+                "8368gc": {
+                    "x": 9.606920053680724,
+                    "y": 0,
+                    "z": 5.667348857594341
+                },
+                "1824gc": {
+                    "x": -43.8824,
+                    "y": 0,
+                    "z": 6.479
+                },
+                "6716gc": {
+                    "x": 16.0148,
+                    "y": 0,
+                    "z": 10.9137
+                },
+                "7322gc": {
+                    "x": 18.2269,
+                    "y": 0,
+                    "z": 6.5256
+                },
+                "275gc": {
+                    "x": 17.8815,
+                    "y": 0,
+                    "z": 3.0908
+                },
+                "2641gc": {
+                    "x": -51.2656,
+                    "y": 0,
+                    "z": 9.1033
+                },
+                "4502gc": {
+                    "x": -30.4168,
+                    "y": 0,
+                    "z": 5.6047
+                },
+                "5593gc": {
+                    "x": -6.0077,
+                    "y": 0,
+                    "z": 18.1909
+                },
+                "6880gc": {
+                    "x": -4.9707,
+                    "y": 0,
+                    "z": 24.9332
+                },
+                "9073gc": {
+                    "x": 12.0128,
+                    "y": 0,
+                    "z": 14.9447
+                },
+                "6960gc": {
+                    "x": -41.5261,
+                    "y": 0,
+                    "z": -37.9496
+                },
+                "9981gc": {
+                    "x": -19.1946,
+                    "y": 0,
+                    "z": 16.8672
+                },
+                "3449gc": {
+                    "x": -15.5351,
+                    "y": 0,
+                    "z": 23.4696
+                },
+                "9465gc": {
+                    "x": -27.7732,
+                    "y": 0,
+                    "z": 12.3583
+                },
+                "2450gc": {
+                    "x": -51.0816,
+                    "y": 0,
+                    "z": -21.8649
+                },
+                "2495gc": {
+                    "x": -3.9077,
+                    "y": 0,
+                    "z": 38.5198
+                },
+                "1279gc": {
+                    "x": -0.2643,
+                    "y": 0,
+                    "z": 21.0296
+                },
+                "1729gc": {
+                    "x": -10.400397913045882,
+                    "y": 0,
+                    "z": -15.878313425653957
+                }
+            }
+        ],
+        "name": "botsandbanks"
+    }
+}

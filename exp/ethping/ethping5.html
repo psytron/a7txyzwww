@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <script src="./v_modules/web3.min.js" type="text/javascript"></script>
+    <script src="./v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script>
+    <div>
+        <button class="pay-button">TEST</button>
+        <div id="status"></div>
+    </div>
+    <script>
+        
+        window.addEventListener('load', async () => {
+        
+            
+            if (window.ethereum) {
+                window.web3 = new Web3(ethereum);
+                try {
+                    await ethereum.enable();
+                    
+                    var accountsx = await ethereum.getAccounts()
+                    console.log(' accounts; ',accountsx )
+                } catch (err) {
+                    console.log('Web3 from MM denied?', err)
+                }
+            } else if (window.web3) {
+                window.web3 = new Web3(web3.currentProvider)
+                
+            } else {
+                console.log('No Metamask (or other Web3 Provider) installed')
+            }
+        
+        
+
+
+            var ropstern = "https://ropsten.infura.io/v3/f7bb301d059644c6ba79f1ee780fc1cc"
+            var mainnet = "https://mainnet.infura.io/v3/f7bb301d059644c6ba79f1ee780fc1cc"
+            
+            var web3inf = new Web3( Web3.givenProvider || mainnet )
+            
+            web3.eth.getAccounts( function( err, accounts){
+                console.log(' wo ',accounts )
+            })
+
+            web3inf.eth.getAccounts( function( err , accounts){
+                console.log(' inf acounts', accounts )
+            })
+
+            // A Web3Provider wraps a standard Web3 provider, which is
+            // what Metamask injects as window.ethereum into each page
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+
+            // The Metamask plugin also allows signing transactions to
+            // send ether and pay to change state within the blockchain.
+            // For this, you need the account signer...
+            const signer = provider.getSigner()
+
+
+            // You can also use an ENS name for the contract address
+            const daiAddress = "dai.tokens.ethers.eth";
+
+            // The ERC-20 Contract ABI, which is a common contract interface
+            // for tokens (this is the Human-Readable ABI format)
+            const daiAbi = [
+            // Some details about the token
+            "function name() view returns (string)",
+            "function symbol() view returns (string)",
+
+            // Get the account balance
+            "function balanceOf(address) view returns (uint)",
+
+            // Send some of your tokens to someone else
+            "function transfer(address to, uint amount)",
+
+            // An event triggered whenever anyone transfers to someone else
+            "event Transfer(address indexed from, address indexed to, uint amount)"
+            ];
+
+            // The Contract object
+            const daiContract = new ethers.Contract(daiAddress, daiAbi, provider);
+
+
+            var i=8
+
+
+            async function fetchAbi() {
+                const response = await fetch('./abi/shellusd.json');
+                const ab = await response.json();
+                return ab;
+            }
+
+            fetchAbi().then( a => {
+                console.log( a ); // fetched movies
+            
+            });
+            fetchAbi()
+
+
+
+        })
+
+        
+
+
+    </script>
+    <script type="module">
+        
+
+        function promisified() {
+            var promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('Inside test await');
+                }, 1000);
+            });
+            return promise;
+        }
+        async function ping() {
+            await promisified().then((data) => {
+                console.log(data);
+            })
+            return 'hello asyncFunction';
+        }
+        
+        
+        ping().then((data) => {
+            console.log(data);
+        });
+        async function hello() {
+            var greeting = await Promise.resolve("Hello");
+            return greeting
+        };
+        hello().then(console.log);
+
+
+//Inside test await
+//hello asyncFunction
+        
+
+
+
+    </script>
+</body>
+
+</html>

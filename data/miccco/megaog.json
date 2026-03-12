@@ -1,0 +1,241 @@
+{
+    "nodes": [
+        {   
+            "slot":"free_uuid_slot",
+            "origin":"internal",
+            "payload":{
+                "label": "free",
+                "brand":"free",
+                "mesh":"pumpsphere.glb",
+                "uuid": "free_uuid_fe8fe",
+                "lat":49.0,
+                "lng":3.2,
+                "symbols":"rasp_verry_volt,raspverry_main_house",
+                "url":"http://127.0.0.1:8000/gui?x=bots"
+            }
+            
+        },    
+        {   
+            "slot":"cex_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "cex",
+                "brand":"gold",
+                "uuid": "cex_uuid",
+                "lat":49.0,
+                "lng":3.2,
+                "symbols":"rasp_verry_volt,raspverry_main_house",
+                "url":"http://127.0.0.1:8000/gui?x=bots"
+            }
+            
+        },    
+        {   
+            "slot":"cex2_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "cex",
+                "brand":"treeindex",
+                "uuid": "cex2_uuid",
+                "lat":49.0,
+                "lng":3.2,
+                "symbols":"rasp_verry_volt,raspverry_main_house",
+                "url":"http://127.0.0.1:8000/gui?x=tv",
+                "initurl":"http://127.0.0.1:8000/initcreds"                
+            }
+            
+        },            
+        {
+            "slot":"ctoken_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "ctoken",
+                "symbol":"ETH/USD",
+                "uuid": "ctoken_uuid",
+                "lat":29.0,
+                "lng":23.3
+            }
+        },                  
+        {
+            "slot":"tag_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "Tag",
+                "name": "X:0 Y:0",
+                "uuid": "tag_uuid",
+                "lat":21.0,
+                "lng":36.5,
+                "color":"0x9900FF"
+            }
+        },        
+        {
+            "slot":"banner_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "banner",
+                "name": "0x00FF:ADEX_SET001",
+                "uuid": "banner_uuid",
+                "lat":21.0,
+                "lng":36.5,
+                "color":"0xFF0000",
+                "scale":19
+            }
+        },    
+        {
+            "slot":"banner2_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "banner",
+                "name": "0X_(#EOP8:9008:020:DETERFORM",
+                "uuid": "banner2_uuid",
+                "lat":21.0,
+                "lng":36.5,
+                "color":"0x555555",
+                "scale":100
+            }
+        },                             
+        {
+            "slot":"repos_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "repo",
+                "name": "Attentionx",
+                "uuid": "fsfwefwef",
+                "lat":121.0,
+                "lng":136.5
+            }
+        },                     
+        {
+            "slot":"tagbig_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "coord",
+                "name": "Coord Te",
+                "uuid": "tagbig_uuid",
+                "weight":0.3,
+                "lat":121.0,
+                "lng":136.5
+            }
+        },     
+        {
+            "slot":"alias_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "alias",
+                "name": "VitID",
+                "uuid": "aliasid_uuid",
+                "weight":0.3,
+                "lat":121.0,
+                "lng":136.5
+            }
+        },                      
+        {
+            "slot":"flatsquare_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "flatsquare",
+                "name": "FlarSq2",
+                "uuid": "flatsquare_uuid",
+                "weight":0.3,
+                "lat":121.0,
+                "lng":136.5
+            }
+        } 
+
+    ],
+    "links": [
+        {
+            "slota":"ctoken_uuid",
+            "slotb":"tag_uuid",
+            "payload":{
+                "label": "dex",
+                "name": "Coord Error",
+                "uuid": "fsfwefwef",
+                "lat":121.0,
+                "lng":136.5,
+                "color":"0xFF0000",
+                "weight":5.0
+            }
+        },
+        {
+            "slots":["ctoken_uuid","flatsquare_uuid"],
+            "payload":{
+                "label": "dex",
+                "name": "Coord Error",
+                "uuid": "fsfwefwef",
+                "lat":121.0,
+                "lng":136.5,
+                "color":"0xFF0000",
+                "weight":5.0
+            }
+        }                 
+    ],
+    "meta": {
+        "layouts": [
+            {
+                "free_uuid_slot":{
+                    "x": 11,
+                    "y": 12,
+                    "z": 13 ,
+                    "1":"title",
+                    "disp2":"headquarters"                         
+                },
+                "cex_uuid":{
+                    "x": -10,
+                    "y": 0,
+                    "z": 10 ,
+                    "1":"title",
+                    "disp2":"headquarters"               
+                },
+                "cex2_uuid":{
+                    "x": -5,
+                    "y": 0,
+                    "z": 10 ,
+                    "1":"title",
+                    "disp2":"headquarters"               
+                },                
+                "ctoken_uuid":{
+                    "x": 10,
+                    "y": 0,
+                    "z": 10                    
+                },
+                "alias_uuid": {
+                    "x": -10,
+                    "y": 0,
+                    "z": -10
+                },
+                "tag_uuid": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }      ,
+                "banner_uuid": {
+                    "x": -650,
+                    "y": 10,
+                    "z": -100,
+                    "xr":-90,
+                    "s":2
+                } ,   
+                "banner2_uuid": {
+                    "x": -650,
+                    "y": -110,
+                    "z": -101,
+                    "xr":-90,
+                    "s":2
+                } ,                   
+                "tagbig_uuid": {
+                    "x": 20,
+                    "y": 10,
+                    "z": -10
+                }     ,
+                "flatsquare_uuid": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 25
+                }                                                           
+            }],
+        "props":["pointgrid"],
+        "name": "mega",
+        "layout": 0,
+        "default_perspective":"top"
+    }
+}

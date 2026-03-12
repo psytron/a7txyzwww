@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <script src="./v_modules/web3.min.js" type="text/javascript"></script>
+    <script src="./v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script>
+    <script src="./v_modules/refs.js" type="text/javascript"> </script>
+    
+    <div>
+        <button class="pay-button">TEST</button>
+        <div id="status"></div>
+    </div>
+    <script>
+
+
+
+
+        window.addEventListener('load', async () => {
+
+
+
+        // INITIALIZE ETHEREUM 
+        if (window.ethereum) {
+            window.web3 = new Web3(ethereum);
+            try {
+                await ethereum.enable();
+                
+
+                
+                //accountsx = await ethereum.getAccounts()
+                var lo = await window.web3.eth.getAccounts()
+                var account_x = lo[0];
+                console.log(' account x: ',account_x )
+
+                // CONTRACT 
+                var contract = new web3.eth.Contract( ref.abi.BasicCoin , ref.deploys.ropsten.BasicCoin ) // BasicCoin Ropsten 
+                contract.methods.balances( account_x ).call().then( res => {
+                    
+                    console.log( 'bal check ')
+                    console.log(  res  )
+                 
+                });  // CHECK VALUE
+
+                
+                // MINT NEW VALUE 
+                contract.methods.mint( ref.addr.fire , 100).send( { from:ref.addr.dcc } )
+                .then(function(receipt){
+                    console.log( ' send res: ' )
+                    console.log( receipt )
+                }).catch( er => { console.log('  send err: ', er )} ); 
+
+                // CHECK VALUE AGAIN
+                //contract.methods.get().call().then( console.log );
+
+
+
+
+
+            } catch (err) {
+                console.log('Web3 from MM denied?', err)
+            }
+        } else if (window.web3) {
+            window.web3 = new Web3(web3.currentProvider)
+            
+        } else {
+            console.log('No Metamask (or other Web3 Provider) installed.')
+        }
+
+
+
+    })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

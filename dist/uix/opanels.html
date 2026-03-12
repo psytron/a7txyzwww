@@ -1,0 +1,264 @@
+<body style="background-color:#010101;">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #000000;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <div id='do' class='elx'>
+
+        <style>
+            .tickertapecontainer {
+                background-color: #000;
+                font-size: 13px;
+                position: relative;
+                overflow: hidden;
+
+                width: 100%;
+                overflow: hidden;
+            }
+        </style>
+        <div class="tickertapecontainer">
+
+        </div>
+    </div>
+
+    <div id="minitickeritem" class="elx">
+        <style>
+            .minbold {
+                color: white;
+                font-family: 'roboto_condensed', sans-serif;
+                font-size: 13px;
+                margin-left: 6px;
+                font-weight: 900;
+            }
+            .minthin{
+                color:gray;
+                font-weight: 100;
+                font-family: 'roboto_condensed', sans-serif;
+                font-size: 13px;    
+                margin-right:5px;            
+            }
+        </style>
+        <span class='minbold'>${ obj.symbol }</span><span class="minthin">${obj.close}</span>
+    </div>
+
+
+    <div id="tickeritem" class="elx">
+
+        <style>
+            :root {
+                --main-bg-color: brown;
+            }
+            @font-face {
+                font-family: "roboto_condensed";
+                src: url("fonts/roboto_condensed.woff2") format('woff2');
+            }
+            .textpercent { 
+                font-weight: 100; 
+                font-size: 14px; 
+                margin-left: 21px; }
+            .tickeritemholder {
+                display:flex;
+                padding-left: 34px;
+                width:150px;
+                padding: 6px;
+                border-right: 1px solid #555555;
+                padding-right: 18px;
+            }  
+            .tickertexttop {
+                color:grey;
+                font-family: 'roboto_condensed', sans-serif;
+                font-weight: bold;
+                font-size: 23px;
+                margin-bottom: -3px;
+                margin-left: 6px;
+            }
+            .tickertextbottom {
+                color: white;
+                font-family: 'roboto_condensed', sans-serif;
+                font-size: 13px;
+                margin-left: 6px;
+                margin-top: -12px;
+                width:300px;
+            }
+            .bold{
+                font-weight: 900;
+            }
+            .thin{
+                font-weight: 100;
+            }
+            .green {
+                color: green;
+            }
+            .red {
+                color: red;
+            }               
+
+            .arrow_holder{
+                min-height: 1px;
+                padding:10px;
+                border-top: 1px solid transparent;
+                width:90px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: fill;
+            }
+            .asc .arrow{
+                background-image: url('./img/icons/star_arrow_up.svg');
+            }
+            .desc .arrow{
+                background-image: url('./img/icons/star_arrow_down.svg');
+            }            
+            .asc .thin{
+                color:#33FF33;
+            }
+            .desc .thin{
+                color:#FF3333;
+            }
+        </style>
+
+
+        <div class='tickeritemholder asc'>
+            <div class='arrow_holder arrow'>
+                 &nbsp;
+            </div>
+            <div>
+                <div class='tickertexttop'>
+                    <span class='bold'>${obj.close}</span>
+                    <span class='thin'></span>
+                </div>
+                <div class='tickertextbottom'>
+                    <span class='bold' style='color:white;'>${obj.symbol}</span>
+                    <span class='thin'>(%${obj.percentage})</span>
+                </div>
+            </div>            
+        </div>
+    </div>    
+
+    <div id="macroitem" class="elx" style='overflow:hidden; width:400px; margin-right:12px; '>
+        <style>
+            @font-face {
+                font-family: "roboto_condensed";
+                src: url("fonts/roboto_condensed.woff2") format('woff2');
+            }
+            .mcell {
+                display:flex;
+       
+                padding: 6px;
+                
+                max-width:90px;
+            }  
+            .macrotexttop {
+                color:grey;
+                font-family: 'roboto_condensed', sans-serif;
+                font-weight: bold;
+                font-size: 17px;
+                margin-bottom: 1px;
+                margin-left: 6px;
+            }
+            .macrotextbottom {
+                color: white;
+                font-family: 'roboto_condensed', sans-serif;
+                font-size: 11px;
+                margin-left: 6px;
+                margin-top: -4px;
+                width:300px;
+            }
+            .bold{
+                font-weight: 900;
+            }
+            .mint{
+                font-weight: 900;
+                color:#99DDAA;
+            }  
+            .ice{
+                font-weight: 900;
+                color:#CCCCDD;
+            }                        
+            .thin{
+                font-weight: 100;
+            }
+            .green {
+                color: green;
+            }
+            .red {
+                color: red;
+            }   
+        </style>
+        <div id="macroitemholder" style="display:flex;   justify-content:space-between; color:white; ">
+            
+            <div class='mcell'>
+                    <img src="./img/pie.png" id="symbol" style='height:40px;'></img>                        
+                    <div>
+                        <div class='macrotexttop'>
+                            <span class='bold ice' id='symbol' style='text-transform: uppercase;'>XLX</span><span class='thin'></span>
+                        </div>
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;' id='name'>Ximvog</span><span class='thin'> </span>
+                        </div>
+                    </div>        
+
+            </div>
+            
+            <div class='mcell'>
+                    <div>
+                        <div class='macrotexttop'>
+                            <span class='bold mint' id="current_price">fdf</span>
+                        </div>
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;' id="price_change_percentage_24h">$2300</span>
+                            <span class='thin'></span>
+                        </div>                        
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;' id="price_change_24h"></span>
+                            <span class='thin'></span>
+                        </div>
+                    </div>            
+            </div>
+
+            <div class='mcell'>
+                    <div>
+                        <div class='macrotexttop'>
+                            <span class='thin' id="total_supply">|</span>
+                        </div>
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;' id="circulating_supply">|</span>
+                            <span class='thin'></span>
+                        </div>                        
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;'>|</span>
+                            <span class='thin'></span>
+                        </div>
+                    </div>            
+            </div>            
+
+            <div class='mcell'>
+                    <div>
+                        <div class='macrotexttop'>
+                            <span class='thin' id="market_cap"></span>
+                        </div>
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;'  id="fully_diluted_valuation"></span>
+                            <span class='thin' > : D-VAL</span>
+                        </div>                        
+                        <div class='macrotextbottom'>
+                            <span class='bold' style='color:white;' ></span>
+                            <span class='thin'> : CIR</span>
+                        </div>
+                    </div>            
+            </div>       
+        </div>
+    </div>    
+
+
+
+
+
+</body>

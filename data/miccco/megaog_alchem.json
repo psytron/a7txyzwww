@@ -1,0 +1,239 @@
+{
+    "meta": {
+      "layout": 0,
+      "layouts": [
+        {
+          "free_uuid_slot": {
+            "x": 23.459761044914686,
+            "y": 12,
+            "z": 1.342586948528548
+          },
+          "cex_uuid": {
+            "x": 35.26590807487108,
+            "y": 0,
+            "z": -5.144701907797682
+          },
+          "cex2_uuid": {
+            "x": 30.999644529481422,
+            "y": 0,
+            "z": -22.109778921839784
+          },
+          "ctoken_uuid": {
+            "x": 31.220415160591887,
+            "y": 0,
+            "z": 9.28222728583122
+          },
+          "tag_uuid": {
+            "x": 11.458822598575253,
+            "y": 0,
+            "z": 1.1175724121424784
+          },
+          "banner_uuid": {
+            "x": -650,
+            "y": 10,
+            "z": -100
+          },
+          "banner2_uuid": {
+            "x": -650,
+            "y": -110,
+            "z": -101
+          },
+          "repos_uuid": {
+            "x": 45.41191853197782,
+            "y": 0,
+            "z": 1.5745645794122387
+          },
+          "tagbig_uuid": {
+            "x": 40.089882411283604,
+            "y": 10,
+            "z": -9.791290430966935
+          },
+          "alias_uuid": {
+            "x": 13.331857951711008,
+            "y": 0,
+            "z": -6.401931788696111
+          },
+          "flatsquare_uuid": {
+            "x": 43.407467023025816,
+            "y": 0,
+            "z": 24.990307182714982
+          }
+        }
+      ],
+      "name": "mega",
+      "elements": ["globe"],
+      "props":["beauty"],
+      "default_perspective": "top",
+      "encoder": "array",
+      "encoder_version": "0.1"
+    },
+    "nodes": [
+      {
+        "origin": "internal",
+        "slot": "free_uuid_slot",
+        "payload": {
+          "label": "free",
+          "brand": "free",
+          "mesh": "pumpsphere.glb",
+          "uuid": "free_uuid_fe8fe",
+          "lat": 49,
+          "lng": 3.2,
+          "symbols": "rasp_verry_volt,raspverry_main_house",
+          "url": "http://127.0.0.1:8000/gui?x=bots",
+          "name": "NAC",
+          "depth": "wordcount"
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "cex_uuid",
+        "payload": {
+          "label": "cex",
+          "brand": "gold",
+          "uuid": "cex_uuid",
+          "lat": 49,
+          "lng": 3.2,
+          "symbols": "rasp_verry_volt,raspverry_main_house",
+          "url": "http://127.0.0.1:8000/gui?x=bots"
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "cex2_uuid",
+        "payload": {
+          "label": "cex",
+          "brand": "treeindex",
+          "uuid": "cex2_uuid",
+          "lat": 49,
+          "lng": 3.2,
+          "symbols": "rasp_verry_volt,raspverry_main_house",
+          "url": "http://127.0.0.1:8000/gui?x=tv",
+          "initurl": "http://127.0.0.1:8000/initcreds"
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "ctoken_uuid",
+        "payload": {
+          "label": "ctoken",
+          "symbol": "ETH/USD",
+          "uuid": "ctoken_uuid",
+          "lat": 29,
+          "lng": 23.3
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "tag_uuid",
+        "payload": {
+          "label": "Tag",
+          "name": "X:0 Y:0",
+          "uuid": "tag_uuid",
+          "lat": 21,
+          "lng": 36.5,
+          "color": "0x9900FF"
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "banner_uuid",
+        "payload": {
+          "label": "banner",
+          "name": "0x00FF:ADEX_SET001",
+          "uuid": "banner_uuid",
+          "lat": 21,
+          "lng": 36.5,
+          "color": "0xFF0000",
+          "scale": 19
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "banner2_uuid",
+        "payload": {
+          "label": "banner",
+          "name": "0X_(#EOP8:9008:020:DETERFORM",
+          "uuid": "banner2_uuid",
+          "lat": 21,
+          "lng": 36.5,
+          "color": "0x555555",
+          "scale": 100
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "repos_uuid",
+        "payload": {
+          "label": "repo",
+          "name": "Attentionx",
+          "uuid": "fsfwefwef",
+          "lat": 121,
+          "lng": 136.5
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "tagbig_uuid",
+        "payload": {
+          "label": "coord",
+          "name": "Coord Te",
+          "uuid": "tagbig_uuid",
+          "weight": 0.3,
+          "lat": 121,
+          "lng": 136.5
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "alias_uuid",
+        "payload": {
+          "label": "alias",
+          "name": "VitID",
+          "uuid": "aliasid_uuid",
+          "weight": 0.3,
+          "lat": 121,
+          "lng": 136.5
+        }
+      },
+      {
+        "origin": "internal",
+        "slot": "flatsquare_uuid",
+        "payload": {
+          "label": "flatsquare",
+          "name": "FlarSq2",
+          "uuid": "flatsquare_uuid",
+          "weight": 0.3,
+          "lat": 121,
+          "lng": 136.5
+        }
+      }
+    ],
+    "links": [
+      {
+        "slota": "ctoken_uuid",
+        "slotb": "tag_uuid",
+        "payload": {
+          "label": "dex",
+          "name": "Coord Error",
+          "uuid": "fsfwefwef",
+          "lat": 121,
+          "lng": 136.5,
+          "color": "0xFF0000",
+          "weight": 5
+        }
+      },
+      {
+        "slota": "ctoken_uuid",
+        "slotb": "flatsquare_uuid",
+        "payload": {
+          "label": "dex",
+          "name": "Coord Error",
+          "uuid": "fsfwefwef",
+          "lat": 121,
+          "lng": 136.5,
+          "color": "0xFF0000",
+          "weight": 5
+        }
+      }
+    ]
+  }

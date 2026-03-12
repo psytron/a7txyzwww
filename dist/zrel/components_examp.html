@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <title>Web Components NXT</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+</head>
+
+<body>
+
+    <my-el></my-el>
+    <date-widget theme="green"></date-widget>
+
+    <editable-list title="LIST COMPONENT" list-item-0="Credit 1" list-item-1="Credit 2" add-item-text="NEW:"></editable-list>
+    <br>
+    <div> TabNav Component with 3 nested Components:</div>
+    <fancy-tabs background>
+        <button slot="title" selected>X Creds</button>
+        <button slot="title">Y Creds</button>
+        <button slot="title">Z Creds</button>
+        <section>
+            <editable-list title="LIST COMPONENT" lit-item-0="Sub Cred 1" list-item-1="Sub Cred 2" add-item-text="NEW"></editable-list>
+        </section>
+        <section>
+            <date-widget theme="blue"></date-widget>
+        </section>
+        <section>
+            <my-el></my-el>
+        </section>
+    </fancy-tabs>
+
+    <script type="module">
+        import './js/components/editablelist.js';
+        import './js/components/fancytabs.js';
+        import './js/components/date-widget.js';
+        import './js/components/my-el.js';
+
+        const todoyo = document.querySelector('editable-list');
+        todoyo.addEventListener('show', e => console.log(e));
+    </script>
+
+</body>
+</html>

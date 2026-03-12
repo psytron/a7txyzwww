@@ -1,0 +1,37 @@
+
+<body>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: black;
+        }        
+
+    </style>
+    <script type='module'>
+        import { factory2d } from '../../../factory/factory2d.js'
+
+    
+        async function ax(){
+            await factory2d.loadAll( ['./opanels.html']).then( ( libx )=>{  
+                console.log('library loaded') 
+
+
+            });  
+
+            //var vnod  = factory2d.renderNodeSync('tickeritem_green',{});
+            var vnod2 = factory2d.renderNodeSync('tickeritem',{ close:999 , symbol:'BTC/USD' , percentage:0.5 });
+            vnod2.querySelector('.arrow_holder').classList.add('up');
+            var vnod3 = factory2d.renderNodeSync('tickeritem',{});
+            vnod3.querySelector('.arrow_holder').classList.add('down');
+            //document.body.append( vnod );
+            document.body.append( vnod2 );
+            document.body.append( vnod3 );
+        }
+        ax();
+
+        
+    </script>
+
+
+
+</body>

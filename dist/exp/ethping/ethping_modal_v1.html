@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <script src="./v_modules/web3.min.js" type="text/javascript"></script>
+    <script src="./v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script>
+    <script src="./v_modules/ccxt.browser.js" type="text/javascript"> </script>
+    <script src="./v_modules/refs.js" type="text/javascript"> </script>
+    <script src="./v_modules/blockstate.js" type="text/javascript"> </script>
+    <script src="./v_modules/web3modal.js" type="text/javascript"></script>
+    <script src="./v_modules/fortmatic.js" type="text/javascript"></script>
+    <script src="./v_modules/walletconnect/provider/index.min.js" type="text/javascript"></script>
+    
+    <div>
+        <button class="pay-button">TEST</button>
+        <div id="status"></div>
+    </div>
+
+
+
+    <script>
+        
+        window.addEventListener('load', async () => {
+        
+            console.log('loaded')
+            //   You have to refer to default since it was bundled for ESModules
+            //  but after that the documentation will be the same
+
+            const Web3Modal = window.Web3Modal.default;
+            const providerOptions = {
+            /* See Provider Options Section */
+            };
+
+            const web3Modal = new Web3Modal({
+                network: "mainnet", // optional
+                cacheProvider: true, // optional
+                providerOptions // required
+            });
+
+            const provider = await web3Modal.connect();
+            console.log( ' yo ', provider)
+
+            // Subscribe to accounts change
+            provider.on("accountsChanged" , (accounts) => {
+                console.log(accounts);
+            });
+
+            // Subscribe to chainId change
+            provider.on("chainChanged", (chainId) => {
+                console.log(chainId);
+            });
+
+            // Subscribe to provider connection
+            provider.on("connect", (info) => {
+                console.log(info);
+            });
+
+            // Subscribe to provider disconnection
+            provider.on("disconnect", (error) => {
+                console.log(error);
+            });            
+
+            
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

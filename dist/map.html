@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+		<title>MAP SM V.3.39 </title><base href="" target="_blank">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+        <!--<script>window.clicky_site_ids = []; window.clicky_site_ids.push(101282159);</script><script async src="//static.getclicky.com/js"></script>-->
+      <script type="module" crossorigin src="/assets/map-kpC58cec.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/factory2d-nl3C2jTz.js">
+      <link rel="stylesheet" crossorigin href="/assets/factory2d-COwiXny5.css">
+    </head>
+
+    <body>
+		<!--
+	    <script src='js/ext/jquery-3.2.1.min.js'></script>		
+        <script src="./frame/basesession.js"></script>
+        <script src='./js/isobundle_window.js' type="module"></script>-->
+		
+		<!-- temp holder to replace the iso_bundle version -->
+		<!--<script src='./v_modules/ngraph.forcelayout.min.js'></script>-->
+		
+		<!-- Moved to fabric <script src="./v_modules/ethers-5.0.umd.min.js" type="text/javascript"> </script><script src="./v_modules/ccxt.browser.js" type="text/javascript"> </script> -->
+	    <!--
+		<script type="module">
+	        import './js/flowmodel.js';
+	        import './js/components/date-widget.js';
+	        import './js/components/nav-menu.js';
+	        import './js/components/brand-logo.js';
+	        import './js/components/ticker-tape.js';
+	        import './js/components/news-feed.js';
+	        import './js/components/plot-chart.js';
+	        import './js/components/grid-panel.js';
+	        import './js/components/info-panel.js';
+	        import './js/components/multi-comps.js';
+	    </script>-->
+	
+			
+		<!--||||||| TEST PANEL ||||||||-->
+        <div id="messageTestPanel" style='position:absolute; right:90px; display:none; '>
+			<style>
+				.messageTestLink{
+					color:white;
+					cursor:pointer;
+					font-size:14px;
+				}
+				@font-face {
+					font-family: 'helvetiker_regular';
+					src: url('/assets/helvetiker_regular.typeface-B9JafPRX.json');
+					font-weight: normal;
+					font-style: normal;
+				}
+
+				html {
+					font-family: 'helvetiker_regular', sans-serif;
+				}				
+			</style>
+
+			<div class='messageTestLink'>object_map</div>		
+			<div class='messageTestLink'>object_add</div>
+			<div class='messageTestLink'>object_update1</div>
+			<div class='messageTestLink'>object_update2</div>
+			<div class='messageTestLink'>object_update3</div>
+			<div class='messageTestLink'>object_update4</div>
+			<div class='messageTestLink'>loadMarkets</div>
+			<div class='messageTestLink'>object_link</div>		
+				
+			<script>
+				//import t from '/x_modules/autocomponents/TickerTape.js';
+				//t.buildTicker()
+				function directCallFunction( wut ){
+					console.log(' direct call works ? ',wut )
+				}
+			</script>
+
+			<script>
+				/*
+				function postMessageX( obj ){
+					console.log( obj );
+					controller.allIncomingMessages( { data:obj } ,"*")    
+					
+				} 
+
+				var whole_map={
+					"nodes": {
+						"9942gsc": {
+							"label": "Alias",
+							"name": "Monglio",
+							"uuid": "9942gc",
+							"tele": {
+								"futurepos": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"star": 0,
+								"subindex": 0,
+								"positions": {
+									"default": {
+										"x": 0,
+										"y": 0,
+										"z": 0
+									}
+								}
+							}
+						},
+						"8568gc": {
+							"label": "Project",
+							"name": "wouio",
+							"uuid": "8568gc",
+							"tele": {
+								"futurepos": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"star": 0,
+								"subindex": 0,
+								"positions": {
+									"default": {
+										"x": 0,
+										"y": 0,
+										"z": 0
+									}
+								}
+							}
+						}
+					},
+					"links": {
+						"611a6c5a-1d2e-4015-b435-dd35283e596f": {
+							"a": "9942gc",
+							"b": "8568gc",
+							"label": "CONNECTS",
+							"uuid": "611a6c5a-1d2e-4015-b435-dd35283e596f",
+							"data": {
+								"type": "fresh",
+								"label": "CONNECTS",
+								"uuid": "611a6c5a-1d2e-4015-b435-dd35283e596f",
+								"id": "611a6c5a-1d2e-4015-b435-dd35283e596f"
+							}
+						}
+					},
+					"meta": {
+						"layout": 0,
+						"layouts": [
+							{
+								"9942gc": {
+									"x": 0.33600581563830767,
+									"y": 0,
+									"z": 0.8507803961225449
+								},
+								"8568gc": {
+									"x": 15.230890326263847,
+									"y": 0,
+									"z": -11.687065332475534
+								}
+							}
+						],
+						"name": "woop"
+					},
+					"action": "savemap"
+				}
+				var part_map = {
+					nodes:{
+						'o9d9s9d9s':{
+							uuid:'o9d9s9d9s',
+							name:'whut',
+							not:'woti',
+							label:'Alias'
+						}
+					}
+				}
+				var link_map = {
+					links:{
+						"f182f8f2-6ace-4e4d-9eaa-c0cb8302b666": {
+				            "a": "tr3r3r7gc",
+				            "b": "xx7307gc",
+				            "label": "CONNECTS",
+				            "uuid": "f182f8f2-6ace-4e4d-9eaa-c0cb8302b666"
+				        }
+					}
+				}				
+				var clusters = {
+					object_map: whole_map,         ////////////  LOAD NEW MAP 
+					object_add: part_map,         ////////////  NEW OBJECT ON MAP 
+					object_link: link_map,
+					object_update1:              ////////////  UPDATE FROM SERVICES 
+					{
+						type:'update',
+						method:'fetchTicker',
+						uuid:'token_uuid',
+						close:3.888
+					},
+					object_update2:              ////////////  UPDATE FROM SERVICES 
+					{
+						type:'update',
+						method:'fetchTicker',
+						uuid:'token_uuid',
+						close:10025.00008
+					},
+					object_update3:              ////////////  UPDATE FROM SERVICES 
+					{
+						type:'update',
+						method:'fetchTicker',
+						uuid:'module_uuid',
+						close:9999.00008
+					},				
+					object_update4:              ////////////  UPDATE FROM SERVICES 
+					{
+						type:'update',
+						method:'fetchTicker',
+						uuid:'module_uuid',
+						close:0.17
+					},
+					loadMarkets:              ////////////  UPDATE FROM SERVICES 
+					{
+						type:'update',
+						method:'loadMarkets',
+						uuid:'module_uuid',
+						payload:{
+							'BTC/USD':{
+								
+							},
+							'LTC/USD':{
+								
+							}
+						}
+					}						
+				}
+
+				document.addEventListener('click', function( e ){
+					var link_desc = e.target.textContent;
+					if( e.target.getAttribute('class') == 'messageTestLink' ){
+						postMessageX( clusters[link_desc] );							
+					}
+
+				});
+
+				window.addEventListener( 'registerEvent' , function(e){} ); // this will future listen to emitting internal events 
+				// ( interests )
+				*/	
+			</script>
+			
+        </div>
+
+
+
+    <script>
+
+		/*
+		var requestURL = "/data/comodhashes.json";
+        document.addEventListener('DOMContentLoaded', function(e){
+            $.ajax({
+                url: requestURL,
+                type: "GET",
+                contentType: 'application/json;charset=UTF-8',
+                data: {
+                    //'selected': document.getElementById('first_cat').value
+                    'selected':'bars'
+                },
+                dataType:"json",
+                success:function ( data){
+                    document.body.insertAdjacentHTML( 'beforeend', '<ticker-tape id="tickertape2"></ticker-tape>' )
+                    tickertape2.onDataUpdate( data )
+
+                    //this.add( {} )
+                    tickertape.onDataUpdate( data )
+                    gridpanel.onDataUpdate( data )
+                    newsfeed.onDataUpdate( {nodes:[{symbol:'NEWS ITEM DYNAMIC 1'},
+                        {symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                        {symbol:'NEWS ITEM DYN44 TO THE RESCUE'},
+                        {symbol:'ETHER BTC BRIDGE PUMPING JAMMING EXCITEMENT'},
+                        {symbol:'FANTASTIC MOTTO M$ ROBOTO BTC UPROADING'},
+                        {symbol:'NASDAQ GIANT DIP HAPPENING NOW BIGGEST DIP EVER'},
+                        {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}] } )
+                    l = 33
+                }.bind(this)
+            });
+        }, false);
+
+        document.addEventListener('DOMContentLoaded', function(e){
+            $.ajax({
+                url: "/data/timehashes.json",
+                type: "GET",
+                contentType: 'application/json;charset=UTF-8',
+                data: {
+                    //'selected': document.getElementById('first_cat').value
+                    'selected':'bars'
+                },
+                dataType:"json",
+                success:function ( data){
+                    newsfeed.onDataUpdate( {nodes:[
+							{symbol:'XVAL XFAJ XEWE XQWE'},
+							{symbol:'NEWS ITEM DYNAMIC 1'},
+                            {symbol:'BTC ROLLING LOUD BIG NEWS ITEM DYNAMIC 2'},
+                            {symbol:'NEWS ITEM DYN %%$44'},
+                            {symbol:'WORDLER 5000000 MAKERS LARGER HEAD'}] } )
+
+                    l = 33
+                }.bind(this)
+            });
+        }, false);
+ 
+         */
+    </script>		
+	<div style="position:absolute; top:0px;">
+	    
+		<ticker-tape id='tickertape'></ticker-tape>
+	    <news-feed id='newsfeed'></news-feed>
+	</div>
+
+		
+	</body>
+</html>

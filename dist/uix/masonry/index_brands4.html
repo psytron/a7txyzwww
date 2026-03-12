@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Special Communication Procedure for Protecting Health of the Ocean">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Special Communications Procedure</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <script src="../airtable.browser.js" class="writerscript"></script>
+    <script id="writerscript" type="module" class="writerscript">
+
+        import { factory2d } from './../../factory/factory2d.js'
+        import gluemapper from './../../util/gluemapper.js'
+
+        var cont = document.querySelector('#maincont');
+        factory2d.storeStaticTemplate( cont.children[0] )
+        cont.innerHTML =''
+        
+        var iMap = { 
+            '.card-title':'title' 
+        }
+        // inline append 
+        // var items = logo_items;
+        // for (var i in items) {
+        //     let obj = items[i];
+        //     var vnode = factory2d.renderNodeSync( 'orgPanel', {}  )             
+        //     //gluemapper.pushx( obj , vnode );
+        //     cont.appendChild( vnode )
+        // } 
+        var Airtable = require('airtable');
+
+        var base = new Airtable({ apiKey: 'patQNGpM0GAYJm3pi.aebb60bfae22c13f4063cc446257dbb3e7ed6ed3874e6e4cb8c9ee9d99bfbb1b' }).base('appS3sAlqo9U2DKWb');
+
+        var loadItems = function() {
+            //$('#artists').empty();
+
+            base('endorsements').select(
+            {
+                sort: [ {field: 'index', direction: 'asc'} ],
+                fields: [ "name", "index" ,"url", "image" ]
+            }).eachPage(function page(records, fetchNextPage) {
+                records.forEach(function(record) {
+                    
+                    var obj = {}
+                    obj.name = record.get('name');
+                    obj.site =  record.get('url');
+                    
+                    var imgx = record.get('image')
+                    var logoimg = ( imgx && imgx.length > 0) ? imgx[0] :false; 
+                    
+                    obj.img = logoimg.url;
+
+                    var vnode = factory2d.renderNodeSync( 'orgPanel', {}  )  
+                    gluemapper.pushx( obj , vnode );
+
+                    vnode.querySelector('#img').setAttribute('filename' , logoimg.filename  )
+                    cont.appendChild( vnode )
+
+                });
+
+                fetchNextPage();
+            }, function done(error) {
+                console.log(error);
+            });
+        };
+
+        var loadMedia = function() {
+            //$('#artists').empty();
+
+            base('media').select(
+            {
+                sort: [ {field: 'index', direction: 'asc'} ],
+                fields: [ "title","image", "description" ,"url", "image" ]
+            }).eachPage(function page(records, fetchNextPage) {
+                records.forEach(function(record) {
+                    
+                    var obj = {}
+                    obj.name = record.get('title');
+                    obj.site =  record.get('url');
+                    
+                    var imgx = record.get('image')
+                    var logoimg = ( imgx && imgx.length > 0) ? imgx[0] :false; 
+                    
+                    obj.img = logoimg.url;
+
+                    var vnode = factory2d.renderNodeSync( 'orgPanel', {}  )  
+                    gluemapper.pushx( obj , vnode );
+
+                    vnode.querySelector('#img').setAttribute('filename' , logoimg.filename  )
+                    cont.appendChild( vnode )
+
+                });
+
+                fetchNextPage();
+            }, function done(error) {
+                console.log(error);
+            });
+        };
+        
+
+        
+
+        loadMedia();
+
+
+        async function save() {
+              var htmlContent = document.documentElement.outerHTML;
+              var bl = new Blob( [htmlContent], {type: "text/html"});
+              var t = await bl.text();
+              var a = document.createElement("a");
+              a.href = URL.createObjectURL(bl);
+              a.download = "bigeldoc.html";
+              document.body.appendChild(a);
+              a.innerHTML = "something random doesnt matter";
+              a.click();
+        }
+
+        window.save = save;
+
+        
+    </script>
+
+
+
+
+    
+    <style>
+        /* basic styling */
+        .container_q {
+            max-width: 1050px;
+            margin: auto;
+            flex-wrap: wrap;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;            
+        }
+        .container2 {
+            max-width: 1050px;
+            margin: auto;
+            padding: 1rem;
+        }   
+        .org-item{
+            width:130px;
+            background:#fff;
+            
+            margin:4px;
+            display:flex;
+            flex-direction:column;
+            
+        }
+        .org-item img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;   
+            /*mix-blend-mode: multiply;    */ 
+        }
+        .e_button {
+            background-color:#a5d7f1; 
+            border-radius:30px; 
+            color:white;
+            font-family:Arial;
+            font-size:28px;
+            padding:16px;
+        }
+        .address_to{ 
+            margin:0px;
+        }
+        .doc_text{
+            font-size:16px;
+        }
+        .title_1{
+            font-size:28px;
+            color:#111111;
+            text-align:center;
+        }
+        .title_2{
+            font-size:23px;
+            color:#555555;
+            text-align:center;
+        }        
+        a{
+            text-decoration: underline;
+            color:blue;
+        }
+    </style>
+
+    
+    <div class="container2" style="font-size:23px; font-family:serif;">
+        
+
+
+        <p style="margin-top:80px;"></p>
+
+            <div class="title_1">Worldwide Endorsement of the Special Procedure Communication </div>
+                    <div class="title_1">To Protect Our Ocean and Health</div>
+        
+        <div class="title_2">Addressed to the Office of the High Commissioner for Human Rights at the United Nations Office Geneva. Prepared by the Attorneys of <a href="https://oceanvisionlegal.com">Ocean Vision Legal</a>, the Scientists of the Independent Expert Panel, and officially endorsed by organizations around the world herein. </div>
+
+        <p style="padding-left:50px;"> </p>
+        <div style="text-align:center; "> <a href="./download.pdf">READ FULL DOCUMENT HERE</a> </div>
+        <div style="text-align:center; ">Endorsed By: </div>
+    </div>
+    <div style="  ">
+    </div>
+    
+    <div id="maincont" class="container_q">
+        
+        <div id="orgPanel" class="org-item">
+            <a href="#">
+                <img id='img' src="../img/genericlogo.png" style='  padding:2px;' /> 
+            </a>
+            <div id="name" style="text-align: center;  font-size:11px; ">
+                Orgname Int.
+            </div>
+            <div style=" display:flex; justify-content: space-around; font-size:9px; ">
+                
+                <a id="site" href="#">Website</a>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br> 
+    
+    <div id="maincont" style="text-align:center;">
+        
+        <br>
+
+        <div style="text-align:center;">
+            <a href="https://github.com/oceanhealth/special_communication" style="color:white; text-decoration:none;"><button  class="btn btn-info" style="font-size:27px; margin:4px; "> Copy Website</button> </a> 
+            <a href="https://airtable.com/appS3sAlqo9U2DKWb/shrPSXhibeYtSCZAH" style=" color:white; text-decoration:none;"><button  class="btn btn-info" style="font-size:27px; margin:4px; "> Join Campaign</button> </a> 
+        </div>        
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>        
+
+    <div id="maincont" style="text-align:center; ">
+        
+        &#128167; <br>
+        Water is life <br>
+        The air we breathe <br>
+        The food we eat <br>
+        The life we live <br>
+        <br>
+        <br>
+        <a href="https://airtable.com/appS3sAlqo9U2DKWb/shrPSXhibeYtSCZAH" >Add your Logo or Signature Here</a>  <br>  
+
+
+        <br> 
+        Thank You <br>
+        <span style='color:red;'>&#x1F40B; &#x2665;</span>
+
+    </div>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    .
+    
+    <!--<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!--<script async src="../masonry.pkgd.min.js"></script>-->
+
+    <script async data-id="101422356" src="//static.getclicky.com/js"></script>
+
+</body>
+
+</html>

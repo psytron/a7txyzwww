@@ -1,0 +1,91 @@
+<body style="background-color:#010101;">
+    <div class='tickeritem' style="display:inline-block; position:relative; color:red; padding-left:5px;">
+        <style>
+            .tickertapecontainer {
+                background-color: #000;
+                font-size: 13px;
+                position: relative;
+                font-family: 'Roboto Condensed', sans-serif;
+                overflow: hidden;
+                display:inline-flex;
+                width:100%;
+                overflow:hidden;
+            }
+      
+            .tapeitem{
+                /*overflow:hidden;*/ 
+                display:inline-block; 
+                position:relative; 
+                padding-left:34px;
+                padding:6px;
+                border-right:1px solid #222222;
+                padding-right:18px;
+            }
+            .tapeitem::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                background:url(img/icons/arrowrightlongthin.svg)no-repeat left top;
+                transform: rotate(30deg);
+            }
+            .greentext{
+                color:green;
+            }
+            .redtext{
+                color:red;
+            }
+            .greenOG{
+                background:url(img/icons/angle-up-solid.svg)no-repeat left top;
+                background-position-x: 10px; 
+                background-size: 20px;
+            }
+            .green{
+                /*background:url(img/icons/arrowrightlongthin.svg)no-repeat left top;*/
+                background-position-x: 10px; 
+                background-size: 20px;
+            }
+            .red{
+                /*background:url(img/icons/angle-down-solid.svg)no-repeat left top;*/
+                background-position-x: 10px;
+                background-size: 20px;  
+            }
+            .textpercent{
+                font-weight: 100;
+                font-size:14px;
+                margin-left:21px;
+            }                
+            .tickertext{
+                margin-left:24px;
+                margin-top:1px;
+            }
+            .tickertexttop{
+                font-weight:bold;
+                font-size:17px;
+                margin-bottom:-3px;
+                margin-left:21px;
+            }
+            .tickertextbottom{
+                color:white;
+                font-size:13px;
+                margin-left:21px;
+            }
+            .redarrow{
+                position:absolute;
+                top:50%;
+                width:24px;
+                left:15px;
+                transform: translate(-50%,-50%) rotate(90deg);
+            }
+           .greenarrow{
+                position:absolute;
+                top:50%;
+                width:24px;
+                left:15px;
+                transform: translate(-50%,-50%) rotate(-90deg);
+            }
+        </style>        
+        <i class="uparr" style="color:red;"></i>
+        <div style="color:white; font-weight:bold;">8888.30</div>
+        <div>BTC/USD</div>
+    </div>    
+</body>

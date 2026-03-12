@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href=""></base>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Authentication
+        </title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <!-- attribute integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"  -->
+        <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h3 class="text-center" style="height:200px">
+            <!--<img src="img/{{domain}}_logo.png" style="max-width:270px; margin-top:20px;"></img>-->
+        </h3>
+        <div class="container" style="max-width:390px;">
+            <form>
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input type="text" class="form-control" id="username" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <div id="logerrout" style="text-align:center; margin-bottom:5px;">
+                    </div>
+                </div>
+                <div style="width:100%; text-align:center;">
+                    <button type="button" class="btn btn-primary" onclick="register()">Register</button>
+                    <button type="button" class="btn btn-primary" onclick="auth()">Login</button>
+                    <button type="button" class="btn btn-primary" onclick="test()">STAT</button>
+                    <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
+                </div>
+
+            </form>
+            <div id="token-display">
+            </div>
+            <div style="font-size:11px; text-align:center; margin-top:10px;">
+                <br>
+            </div>
+        </div>
+        </br>
+        </br>
+        <!--
+        <div class="container"  style="max-width:390px;">
+            <form>
+                <div class="form-group">
+                    <label for="token">Token</label>
+                    <input  type="text" class="form-control" id="token" placeholder="token" ></input>
+                </div>
+                <button type="button" class="btn btn-primary center-block" onclick="getlist()">Activate</button>
+            </form>
+            <div id="list">
+            </div>
+        </div>
+        -->
+        <script type="text/javascript">
+            var official_base = window.location.protocol + "//" + window.location.host;
+            //var official_base = "https://signalmesh.io"
+            var official_base = "http://localhost:8851"
+            var jtkn = 'blank'
+            register= function(){
+                document.getElementById("logerrout").innerHTML='Registering Flow...';
+                if( document.getElementById("password").value.length < 8){
+                    document.getElementById("password").value=''
+                    document.getElementById("logerrout").innerHTML='Password Minimum 8 Characters';
+                    return false;
+                }
+                data={
+                    un:document.getElementById("username").value,
+                    pw:document.getElementById("password").value
+                }
+                //XHTTP
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (xhttp.readyState==4 && xhttp.status==200) {
+                        var response = JSON.parse(xhttp.responseText);
+                        document.getElementById("logerrout").innerHTML=JSON.parse(xhttp.responseText).message;
+                        //document.getElementById("token").innerHTML = response.token;
+                        //document.getElementById("token").value = response.token;
+                    }
+                    if(xhttp.readyState==4 && xhttp.status==403){
+                        document.getElementById("logerrout").innerHTML=JSON.parse(xhttp.responseText).message;
+                    }
+                    if(xhttp.readyState==4 && xhttp.status==400){
+                        document.getElementById("logerrout").innerHTML=JSON.parse(xhttp.responseText).message;
+                    }
+                };
+                xhttp.open("POST", official_base+"/jxtreg", true);
+                xhttp.setRequestHeader("Content-type", 'application/json; charset=UTF-8');
+                xhttp.send(JSON.stringify(data));
+            }
+            auth= function(){
+                document.getElementById("logerrout").innerHTML='Auth Flow...';
+                data={
+                    un:document.getElementById("username").value,
+                    pw:document.getElementById("password").value
+                }/*
+                function leftPad (str, len, ch) {
+                  str = String(str);
+                  var i = -1;
+                  if (!ch && ch !== 0) ch = ' ';
+                  len = len - str.length;
+                  while (++i < len){
+                    str = ch + str; }
+                  return str;}
+                var valin = document.getElementById("password").value
+                data['pwh']= Web3.sha3((valin).toString(16), { encoding: 'hex' })*/
+
+                //XHTTP
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (xhttp.readyState==4 ) {
+                        var resObj = JSON.parse(xhttp.responseText);
+                        if( xhttp.status == 200){
+                            document.getElementById("logerrout").innerHTML=resObj.message;
+                            jtkn = resObj.tkn
+                        }else{
+                            document.getElementById("logerrout").innerHTML=resObj.message;
+                        }
+                        //window.location.replace('/');
+                    }
+                };
+                // xhttp.open("POST", official_base+"/jxtavail", true);
+                //xhttp.withCredentials = true;
+                xhttp.open("POST", official_base+"/jxtlogin", true);
+                xhttp.setRequestHeader("Content-type", 'application/json; charset=UTF-8');
+                xhttp.send(JSON.stringify(data));
+            }
+            test= function(){
+                console.log(' test ')
+                // data={token:document.getElementById("token").value}
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+
+                    if (xhttp.readyState==4) {
+
+                        if( xhttp.status==200 ){
+                            resObj = JSON.parse(xhttp.responseText)
+                            document.getElementById("logerrout").innerHTML=resObj.message;
+                        }else{
+                            document.getElementById("logerrout").innerHTML='ERROR PERM';
+                        }
+                    }
+                };
+                xhttp.open("POST", official_base+"/jxttest", true);
+                xhttp.setRequestHeader('Authorization', jtkn);
+                xhttp.setRequestHeader("Content-type", 'application/json; charset=UTF-8');
+                xhttp.send();
+            }
+            logout= function(){
+                console.log(' test ')
+                // data={token:document.getElementById("token").value}
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    resObj = JSON.parse(xhttp.responseText)
+                    if (xhttp.readyState==4 && xhttp.status==200) {
+                        var response = JSON.parse(xhttp.responseText);
+                        document.getElementById("logerrout").innerHTML=resObj.message;
+                    }
+                    if(xhttp.readyState==4 && xhttp.status==403){
+                        document.getElementById("logerrout").innerHTML=resObj.message;
+                    }
+                };
+                xhttp.open("POST", official_base+"/jxtlogout", true);
+                //xhttp.withCredentials = true;
+                xhttp.setRequestHeader("Content-type", 'application/json; charset=UTF-8');
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

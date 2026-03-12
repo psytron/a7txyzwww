@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>DYN LOGO</title><base href="" target="_blank">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+        <!--
+        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101282159);</script>
+        <script async src="//static.getclicky.com/js"></script>
+    -->
+        
+    </head>
+    <body style="background-color:#000000;">
+ 
+        <div style="
+            width:100%; 
+            height:100vh; 
+            display:flex; 
+            border:solid green 1px; 
+            justify-content:center; 
+            align-items:center; ">
+            <div id="title" style="  border:solid red 1px;  color:#002300; transform:rotate(-10deg);
+               font-weight:1000; font-family:arial black; font-size:60px;
+               align-content:center; position:absolute;">
+               SEKT 
+            </div>
+            <div id="subtitle" style=" border:solid red 1px;  color:#002222; transform:rotate(-10deg);
+               font-weight:1000; font-family:arial black; font-size:100px; 
+               align-content:center;position:absolute; ">
+               DLX
+            </div>            
+        </div>
+ 
+
+ 
+        <script>
+            var blx = [
+                "D400D",
+                "L_321",
+                'D12_ao',
+                "WHKT_k",
+                "C_16",
+                "000000000000",
+                "000000000000",
+                "000000000000",
+                "000000000000"
+            ]
+            var blx2 = [
+                "S+15:99=00====8",
+                "S_180_0_0001",
+                'Q_15_a888_8_812',
+                "K__#_329k",
+                "N+288228+8",
+                "000000000000",
+                "000000000000",
+                "000000000000",
+                "000000000000"
+            ]            
+            var top_level = {
+                a:true,
+                inland:1
+            }
+            var t1 = document.querySelector("#title")
+            var t2 = document.querySelector("#subtitle")
+			function animate() {
+
+			    requestAnimationFrame( animate );
+			    console.log('stroben ')
+			    t1.innerHTML = blx[ Math.round( Math.random()*8 )  ]
+			    t2.innerHTML = blx2[ Math.round( Math.random()*8 )  ]
+			}
+			animate();
+
+
+        </script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML5 JavaScript App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #app {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <!--
+    What are the variations
+    Click Main Tile and it loads array or list below ... 
+            Loads list below and has non expansion on sides
+            expands the whole thing and goes full width inside 
+    
+    click array tile and it expands to reveal detail inside 
+
+    (    {  icon_holder   nested_holder }      )
+    
+    -->
+    <script type="module">
+ 
+        import Cell from './x_modules/cell/cell.js'; // Adjust the path as necessary
+
+        // Create a new Cell instance and pass it an HTML node reference
+        const appElement = document.getElementById('app');
+        const cell = new Cell(appElement);
+
+        cell.render( [ { "xclass":"appbtn" ,  "title":"something" , "icon":"add.png" } , 
+                       { "xclass":"appbtn" ,  "title":"something2"} ])
+
+        cell.render( [ { "xclass":"appbtn" ,  "title":"something" } , 
+                       { "xclass":"appbtn" ,  "title":"something2"} ])                       
+
+    </script>
+</body>
+</html>
+
+
+ 

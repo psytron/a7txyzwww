@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>🔧 Miniglyph Factory 🔌</title><base href="" target="_blank">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
+        <meta name="robots" content="noindex, nofollow"> 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💚</text></svg>">
+    </head>
+    <body>
+        <div id="save" style="cursor:pointer; color:white;">SAVE</div>
+        <div id="glyphbox" style="width:400px; height:400px; background-color:green;"></div>
+        
+        <script type="module">
+            var r=0;
+            import { startGlyph } from '/x_modules/miniglyph.js'
+            //startGlyph( { label:'module' , campos:[0,5,5] , camlook:[0,1,0], holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'atm' , campos:[0,4,6.8] , camlook:[0,3,0], holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'repo' , campos:[0,3,4] , camlook:[0,0.6,0], holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'bot' , campos:[0,3,3.5] , camlook:[0,2.3,0], objrot:0  ,holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'tower', campos:[0,4,5.5], camlook:[0.3,1.7,0] , objrot:[0.1,0,0]  ,  holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'alias', campos:[0,5.8,8], camlook:[0,5.3,0] , objrot:[0.1,0,0]  ,  holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'project' , campos:[0,4,4.5] , camlook:[0,1,0], objrot:[Math.PI/4], holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'service' , campos:[0,4,3.5] , camlook:[0,1,0], objrot:[Math.PI/4], holder:document.querySelector('#glyphbox') } )
+            //startGlyph( { label:'tag'  , campos:[0,0,2.5] , camlook:[0,0,0], objrot:[Math.PI/4], holder:document.querySelector('#glyphbox') } )
+            startGlyph( { label:'simbot' , img:'plunge.png' , campos:[0,4,4.5] , camlook:[0,1.2,0], objrot:[Math.PI/4], holder:document.querySelector('#glyphbox') , data:{ controller:{} } } )
+            
+        </script>        
+	</body>
+</html>

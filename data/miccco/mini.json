@@ -1,0 +1,65 @@
+{
+    "nodes": [
+        {   
+            "slot":"cex_uuid",
+            "origin":"internal",
+            "payload":{
+                "label": "cex",
+                "brand":"coinbase",
+                "uuid": "cex_uuid",
+                "lat":49.0,
+                "lng":43.2
+            }
+            
+        }    
+    ],
+    "links": [],
+    "meta": {
+        "layouts": [
+            {
+                "cex_uuid":{
+                    "x": -10,
+                    "y": 0,
+                    "z": 20                    
+                },
+                "ctoken_uuid":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 22                    
+                },
+                "alias_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 10
+                },
+                "module_uuid": {
+                    "x": -10,
+                    "y": 0,
+                    "z": 10
+                },
+                "token_uuid": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                },
+                "org_uuid": {
+                    "x": 10,
+                    "y": 0,
+                    "z": 10
+                },
+                "finorg_uuid": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 10
+                },
+                "plain_uuid": {
+                    "x": -20,
+                    "y": 0,
+                    "z": 0
+                }                                
+            }],
+        "props":[],
+        "name": "mega",
+        "layout": 0
+    }
+}
